@@ -1,0 +1,107 @@
+[
+  {
+    "Timestamp": "2025-11-24T08:50:11.3573129+00:00",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "ClusterID": "WYNE-CLUSTER-PRIMARY",
+    "Region": "UK-West",
+    "Modules": [
+      "SGI-Core",
+      "Guardian",
+      "Integrity-Engine",
+      "Heartbeat",
+      "Telemetry",
+      "Policy-Engine",
+      "Upgrade-Engine",
+      "Node-Identity",
+      "Event-Catalogue",
+      "CloudLink",
+      "NodeMesh",
+      "TrustSeal",
+      "SyncChain",
+      "Ledger",
+      "ComplianceChain"
+    ],
+    "Environment": {
+      "PSVersion": "7.5.4",
+      "ComputerName": "WFSL-SAS-INK-PC",
+      "OSVersion": "10.0.26200",
+      "User": "WFSL"
+    },
+    "Paths": {
+      "System": "E:\\CIC\\WyneOS\\System",
+      "Root": "E:\\CIC\\WyneOS",
+      "Dashboard": "E:\\CIC\\WyneOS\\Dashboard",
+      "Repos": "E:\\CIC\\Repos"
+    }
+  },
+  {
+    "Timestamp": "2025-11-24T09:51:21.4600416+00:00",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "ClusterID": "WYNE-CLUSTER-PRIMARY",
+    "Region": "UK-West",
+    "Modules": [
+      "SGI-Core",
+      "Guardian",
+      "Integrity-Engine",
+      "Heartbeat",
+      "Telemetry",
+      "Policy-Engine",
+      "Upgrade-Engine",
+      "Node-Identity",
+      "Event-Catalogue",
+      "CloudLink",
+      "NodeMesh",
+      "TrustSeal",
+      "SyncChain",
+      "Ledger",
+      "ComplianceChain"
+    ],
+    "Environment": {
+      "OSVersion": "10.0.26200",
+      "PSVersion": "7.5.4",
+      "User": "WFSL",
+      "ComputerName": "WFSL-SAS-INK-PC"
+    },
+    "Paths": {
+      "Root": "E:\\CIC\\WyneOS",
+      "System": "E:\\CIC\\WyneOS\\System",
+      "Dashboard": "E:\\CIC\\WyneOS\\Dashboard",
+      "Repos": "E:\\CIC\\Repos"
+    }
+  },
+  {
+    "Timestamp": "2025-11-24T10:53:34.1928934+00:00",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "ClusterID": "WYNE-CLUSTER-PRIMARY",
+    "Region": "UK-West",
+    "Modules": [
+      "SGI-Core",
+      "Guardian",
+      "Integrity-Engine",
+      "Heartbeat",
+      "Telemetry",
+      "Policy-Engine",
+      "Upgrade-Engine",
+      "Node-Identity",
+      "Event-Catalogue",
+      "CloudLink",
+      "NodeMesh",
+      "TrustSeal",
+      "SyncChain",
+      "Ledger",
+      "ComplianceChain"
+    ],
+    "Environment": {
+      "OSVersion": "10.0.26200",
+      "ComputerName": "WFSL-SAS-INK-PC",
+      "PSVersion": "7.5.4",
+      "User": "WFSL"
+    },
+    "Paths": {
+      "Root": "E:\\CIC\\WyneOS",
+      "Repos": "E:\\CIC\\Repos",
+      "Dashboard": "E:\\CIC\\WyneOS\\Dashboard",
+      "System": "E:\\CIC\\WyneOS\\System"
+    }
+  }
+]

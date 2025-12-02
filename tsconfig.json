@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "Core/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "v5",
+    "Backups",
+    "**/*.tsx"
+  ]
+}

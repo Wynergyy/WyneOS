@@ -1,0 +1,26 @@
+{
+  "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+  "Timestamp": "2025-11-24T08:59:52.1054203+00:00",
+  "Faults": [
+    {
+      "Engine": "SGI-Core",
+      "Severity": "Critical",
+      "Timestamp": "2025-11-24T08:59:52.1002021+00:00"
+    },
+    {
+      "Engine": "Heartbeat",
+      "Severity": "Critical",
+      "Timestamp": "2025-11-24T08:59:52.1046073+00:00"
+    },
+    {
+      "Engine": "Telemetry",
+      "Severity": "Critical",
+      "Timestamp": "2025-11-24T08:59:52.1047087+00:00"
+    },
+    {
+      "Engine": "ClusterState",
+      "Severity": "Critical",
+      "Timestamp": "2025-11-24T08:59:52.1047507+00:00"
+    }
+  ]
+}

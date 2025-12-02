@@ -1,0 +1,11 @@
+{
+  "endpoints": {
+    "install": "install-app.ps1",
+    "get": "get-app.ps1",
+    "list": "list-apps.ps1"
+  },
+  "gateway": "WyneOS AppStore Gateway",
+  "database": "E:\\CIC\\WyneOS\\appstore\\db\\store.apps.json",
+  "created": "2025-11-23 04:33:26Z",
+  "version": "1.0"
+}

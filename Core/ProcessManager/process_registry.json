@@ -1,0 +1,22 @@
+[
+    {
+        "name": "kernel_bridge",
+        "path": "E:\\CIC\\WyneOS\\Orchestration\\kernel_bridge.ps1",
+        "type": "system"
+    },
+    {
+        "name": "event_bus",
+        "path": "E:\\CIC\\WyneOS\\Orchestration\\event_bus.ps1",
+        "type": "system"
+    },
+    {
+        "name": "task_engine",
+        "path": "E:\\CIC\\WyneOS\\Orchestration\\task_engine.ps1",
+        "type": "system"
+    },
+    {
+        "name": "service_router",
+        "path": "E:\\CIC\\WyneOS\\Services\\service_router.ps1",
+        "type": "services"
+    }
+]

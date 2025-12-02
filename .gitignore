@@ -1,0 +1,52 @@
+# ======================================
+# WYNEOS GITIGNORE BLUEPRINT
+# Source-only repository
+# ======================================
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build and dist artefacts
+dist/
+build/
+pkg/
+*.tmp
+*.log
+
+# Backups, snapshots, dumps
+Backups/
+**/snapshots/
+**/snapshot/
+**/*.dump
+**/*.bak
+
+# Telemetry and runtime output
+telemetry/**/*.log
+telemetry/**/output/
+wpm/telemetry/
+Orchestration/logs/
+Orchestration/output/
+
+# System state files
+system/**/runtime/
+system/**/state/
+kernel/state/
+Scheduler/logs/
+SecurityGrid/logs/
+
+# IDE/system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Prevent giant files
+*.zip
+*.7z
+*.tar
+*.gz
+*.iso

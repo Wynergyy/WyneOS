@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "WyneOS.EventTracer"
+  ],
+  "publisher": "WyneOS",
+  "capabilities": [
+    "replay",
+    "forensics",
+    "diagnostics"
+  ],
+  "version": "2025.1",
+  "name": "WyneOS.EventReplay"
+}

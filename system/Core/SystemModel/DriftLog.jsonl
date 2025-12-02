@@ -1,0 +1,91 @@
+{
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_222510.json",
+  "Timestamp": "2025-11-23T23:05:40",
+  "Result": [
+    "\u001b[31;1mCompare-Object: \u001b[0mE:\\CIC\\WyneOS\\System\\Core\\Integrity\\Drift-Compare.ps1:19\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m  19 | \u001b[0m $diff = \u001b[36;1mCompare-Object $old $new -Property *\u001b[0m | Select-Object *\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mWildcard characters are not allowed in \"*\".\u001b[0m",
+    "DRIFT_NONE"
+  ],
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230538.json"
+}
+{
+  "Result": [
+    "\u001b[31;1mCompare-Object: \u001b[0mE:\\CIC\\WyneOS\\System\\Core\\Integrity\\Drift-Compare.ps1:19\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m  19 | \u001b[0m $diff = \u001b[36;1mCompare-Object $old $new -Property *\u001b[0m | Select-Object *\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m",
+    "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mWildcard characters are not allowed in \"*\".\u001b[0m",
+    "DRIFT_NONE"
+  ],
+  "Timestamp": "2025-11-23T23:07:39",
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230736.json",
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230538.json"
+}
+{
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230928.json",
+  "Result": [
+    "DRIFT_DETECTED",
+    "{",
+    "  \"NewValue\": \"2025-11-23T23:09:28\",",
+    "  \"OldValue\": \"2025-11-23T23:07:36\",",
+    "  \"Property\": \"Timestamp\"",
+    "}"
+  ],
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230736.json",
+  "Timestamp": "2025-11-23T23:09:30"
+}
+{
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_233929.json",
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_233241.json",
+  "Result": [
+    "DRIFT_DETECTED",
+    "{",
+    "  \"Property\": \"Timestamp\",",
+    "  \"NewValue\": \"2025-11-23T23:39:29\",",
+    "  \"OldValue\": \"2025-11-23T23:32:41\"",
+    "}"
+  ],
+  "Timestamp": "2025-11-23T23:39:31"
+}
+{
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234109.json",
+  "Result": [
+    "DRIFT_DETECTED",
+    "{",
+    "  \"NewValue\": \"2025-11-23T23:41:09\",",
+    "  \"OldValue\": \"2025-11-23T23:39:29\",",
+    "  \"Property\": \"Timestamp\"",
+    "}"
+  ],
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_233929.json",
+  "Timestamp": "2025-11-23T23:41:10"
+}
+{
+  "Result": [
+    "DRIFT_DETECTED",
+    "{",
+    "  \"OldValue\": \"2025-11-23T23:41:09\",",
+    "  \"NewValue\": \"2025-11-23T23:41:57\",",
+    "  \"Property\": \"Timestamp\"",
+    "}"
+  ],
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234109.json",
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234157.json",
+  "Timestamp": "2025-11-23T23:41:58"
+}
+{
+  "Result": [
+    "DRIFT_DETECTED",
+    "{",
+    "  \"Property\": \"Timestamp\",",
+    "  \"NewValue\": \"2025-11-23T23:42:49\",",
+    "  \"OldValue\": \"2025-11-23T23:41:57\"",
+    "}"
+  ],
+  "Timestamp": "2025-11-23T23:42:50",
+  "OldSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234157.json",
+  "NewSnapshot": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234249.json"
+}

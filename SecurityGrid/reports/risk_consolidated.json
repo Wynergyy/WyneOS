@@ -1,0 +1,107 @@
+[
+  {
+    "app": "WyneOS.AnalyticsCore",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.ConfigCenter",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.CoreEditor",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.EventReplay",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.EventTracer",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.FileManager",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.NetworkConsole",
+    "score": 2,
+    "kernel": false,
+    "priv": false,
+    "net": true
+  },
+  {
+    "app": "WyneOS.PolicyEngine",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.PowerControl",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.SecureVault",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.SecurityPortal",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.SystemBackup",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.SystemMonitor",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.TaskRunner",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  },
+  {
+    "app": "WyneOS.TerminalPlus",
+    "score": 0,
+    "kernel": false,
+    "priv": false,
+    "net": false
+  }
+]

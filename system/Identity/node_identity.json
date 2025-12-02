@@ -1,0 +1,9 @@
+{
+  "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+  "ClusterID": "WYNE-CLUSTER-PRIMARY",
+  "Region": "UK-West",
+  "CertFingerprint": "DB1321CDB7B4C0E80E0FB4A8A34214D4C1DA5696",
+  "CreatedAt": "2025-11-24T08:01:37.5581471+00:00",
+  "UpdatedAt": "2025-11-24T10:53:30.5389964+00:00",
+  "Version": "1.0"
+}

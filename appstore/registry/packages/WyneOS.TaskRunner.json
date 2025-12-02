@@ -1,0 +1,10 @@
+{
+  "capabilities": [
+    "automation",
+    "scheduler"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.TaskRunner",
+  "dependencies": [],
+  "version": "2025.1"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "Status": "Enabled",
+    "Name": "RequireNodeIdentity",
+    "Description": "Node identity must exist before any subsystem can run."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireSGIIntegrity",
+    "Description": "SGI Integrity Engine must be online."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireHeartbeatActive",
+    "Description": "Heartbeat must be executing every cycle."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireTelemetryActive",
+    "Description": "Telemetry logs must be updating."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequirePolicyEngineActive",
+    "Description": "Policy Engine must not be disabled."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireUpgradeEngine",
+    "Description": "Upgrade engine must be operational."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireTrustSeal",
+    "Description": "TrustSeal must exist for SyncChain operations."
+  },
+  {
+    "Status": "Enabled",
+    "Name": "RequireMeshOnline",
+    "Description": "NodeMesh must have a mesh ID and discovery timestamp."
+  }
+]

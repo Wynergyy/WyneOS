@@ -1,0 +1,11 @@
+{
+  "capabilities": [
+    "backup",
+    "filesystem",
+    "security"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.SystemBackup",
+  "dependencies": [],
+  "version": "2025.1"
+}

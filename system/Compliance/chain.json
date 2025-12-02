@@ -1,0 +1,42 @@
+[
+  {
+    "Timestamp": "2025-11-24T08:28:00.7781175+00:00",
+    "LedgerHash": null,
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "Status": "VALID"
+  },
+  {
+    "Timestamp": "2025-11-24T08:36:46.2843729+00:00",
+    "LedgerHash": "03AB45EB92E62C563F85B2D8E473305ECF019883B8A43B72207B1699B5C870B2",
+    "Seal": null,
+    "LedgerEntry": {
+      "Timestamp": "2025-11-24T08:35:55.2044023+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "7998587"
+    }
+  },
+  {
+    "Timestamp": "2025-11-24T08:36:51.3445724+00:00",
+    "LedgerHash": "03AB45EB92E62C563F85B2D8E473305ECF019883B8A43B72207B1699B5C870B2",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "Status": "VALID"
+  },
+  {
+    "Timestamp": "2025-11-24T08:40:55.1615909+00:00",
+    "LedgerHash": "E20880C8C4CC6D41461FA5A9E3A3DE1718F86C51B3CD7911821560C2BD9653A3",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "Status": "VALID"
+  },
+  {
+    "Timestamp": "2025-11-24T09:51:20.5838033+00:00",
+    "LedgerHash": "014135B1163DB9B8CC39C655C6DB87FFD1146E0679D2024CF13545698E0805C5",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "Status": "VALID"
+  },
+  {
+    "Timestamp": "2025-11-24T10:53:33.3263602+00:00",
+    "LedgerHash": "2AB42F01F05C1F485BE06C0357959701D25EF9CB4039CB808034E6826894E82C",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "Status": "VALID"
+  }
+]

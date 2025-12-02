@@ -1,0 +1,28 @@
+{
+  "version": "5.0.0",
+  "codename": "Wynerace Meta-Fabric",
+  "governanceLevel": "meta",
+  "description": "Supervisory governance layer for WyneOS v5",
+
+  "components": {
+    "policyEngine": "wynerace.policy.ts",
+    "hardeningController": "wynerace.hardening.controller.ts",
+    "forecastEngine": "wynerace.forecast.ts",
+    "integritySupervisor": "wynerace.integrity.supervisor.ts",
+    "auditAssurance": "wynerace.audit.assurance.ts"
+  },
+
+  "compliance": {
+    "gdpr": true,
+    "ico_accountability": true,
+    "audit_ready": true,
+    "legal_traceability": true,
+    "evidence_chain": "WyneChain"
+  },
+
+  "integrity": {
+    "chainSealEnabled": true,
+    "merkleRootVerification": true,
+    "redundantNodesRequired": 3
+  }
+}

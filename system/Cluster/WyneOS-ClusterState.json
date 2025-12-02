@@ -1,0 +1,12 @@
+{
+  "MeshSize": 1,
+  "Created": "2025-11-24T16:03:43+00:00",
+  "Nodes": [
+    {
+      "Timestamp": "2025-11-24T16:03:43+00:00",
+      "NodeId": "0649e8c9-2063-43df-9025-b557bd066b6e",
+      "Status": "Active"
+    }
+  ],
+  "ClusterId": "f1c2a414-b0b8-4c3b-9f21-93ab00c2fdb8"
+}

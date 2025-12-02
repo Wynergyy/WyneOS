@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "WyneOS.EventTracer"
+  ],
+  "publisher": "WyneOS",
+  "capabilities": [
+    "analytics",
+    "telemetry",
+    "processing"
+  ],
+  "version": "2025.1",
+  "name": "WyneOS.AnalyticsCore"
+}

@@ -1,0 +1,11 @@
+{
+  "heartbeat": "E:\\CIC\\WyneOS\\Heartbeat",
+  "eventBus": "E:\\CIC\\WyneOS\\EventBus",
+  "version": "0.1.0",
+  "sgiCore": "E:\\CIC\\WynergyFibreSolutions\\Platform\\SGI-Core",
+  "appStore": "E:\\CIC\\WyneOS\\AppStore",
+  "created": "2025-11-23 06:12:41Z",
+  "kernel": "E:\\CIC\\WyneOS\\Kernel",
+  "systemID": "acf86827-b659-4d49-881e-0509496b7b6f",
+  "wpm": "E:\\CIC\\WyneOS\\WPM"
+}

@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 32789f474ca1acfe09ce510f1ee955a36cda7e25 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764607551 +0000	commit (initial): WyneOS Phase 0 Core: EventBus, TelemetryMatrix, Heartbeat, GuardianMesh
+32789f474ca1acfe09ce510f1ee955a36cda7e25 0000000000000000000000000000000000000000 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764607553 +0000	Branch: renamed refs/heads/main to refs/heads/main
+32789f474ca1acfe09ce510f1ee955a36cda7e25 32789f474ca1acfe09ce510f1ee955a36cda7e25 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764607553 +0000	Branch: renamed refs/heads/main to refs/heads/main
+32789f474ca1acfe09ce510f1ee955a36cda7e25 d5909c32e287b737c41e541afbc3872b138b5826 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764609815 +0000	commit: chunk sync 1
+d5909c32e287b737c41e541afbc3872b138b5826 8370c327d791ee3bd03ac8ff46a51bf53f8baecd WFSL <95259192+Wynergyy@users.noreply.github.com> 1764611162 +0000	commit: Verify core CI workflow
+8370c327d791ee3bd03ac8ff46a51bf53f8baecd 5a6faf65521cb655255bf0f6929213dcb7896986 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764611216 +0000	commit: Normalize line endings
+5a6faf65521cb655255bf0f6929213dcb7896986 18ead50f803f1498a2d3a6d484db12f6428e4b75 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764616654 +0000	commit: Add Phase 0 Integrity Engine (Hasher, Snapshot, Validators)
+18ead50f803f1498a2d3a6d484db12f6428e4b75 50ff5ebec97e7413e40d549275e0b6da207f91e3 WFSL <95259192+Wynergyy@users.noreply.github.com> 1764641103 +0000	commit: Remove recursive snapshots directory from repository

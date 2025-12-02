@@ -1,0 +1,179 @@
+{
+  "Timestamp": "2025-11-24T10:53:34.9173688+00:00",
+  "NodeIdentity": {
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "ClusterID": "WYNE-CLUSTER-PRIMARY",
+    "Region": "UK-West",
+    "CertFingerprint": "DB1321CDB7B4C0E80E0FB4A8A34214D4C1DA5696",
+    "CreatedAt": "2025-11-24T08:01:37.5581471+00:00",
+    "UpdatedAt": "2025-11-24T10:53:30.5389964+00:00",
+    "Version": "1.0"
+  },
+  "Capabilities": [
+    {
+      "Name": "SGI-Core",
+      "Path": "E:\\CIC\\WyneOS\\System\\SGI",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Guardian",
+      "Path": "E:\\CIC\\WyneOS\\System\\SGI",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Integrity-Engine",
+      "Path": "E:\\CIC\\WyneOS\\System\\SGI\\Integrity",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Heartbeat",
+      "Path": "E:\\CIC\\WyneOS\\System\\Heartbeat",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Telemetry",
+      "Path": "E:\\CIC\\WyneOS\\System\\Telemetry",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Policy-Engine",
+      "Path": "E:\\CIC\\WyneOS\\System\\Policy",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Upgrade-Engine",
+      "Path": "E:\\CIC\\WyneOS\\System\\Upgrade",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Node-Identity",
+      "Path": "E:\\CIC\\WyneOS\\System\\Identity",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    },
+    {
+      "Name": "Event-Catalogue",
+      "Path": "E:\\CIC\\WyneOS\\System\\Events",
+      "Version": "1.0",
+      "LastUpdated": "2025-11-24T07:48:34",
+      "Active": true,
+      "Health": "OK"
+    }
+  ],
+  "MeshState": {
+    "MeshID": "ecfe9425-fbab-4dc1-abe0-7787a4f1a9ea",
+    "Nodes": [
+      {
+        "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+        "Region": "UK-West",
+        "Health": "OK",
+        "LastSeen": "2025-11-24T10:53:31.2393294+00:00"
+      }
+    ],
+    "Discovery": "2025-11-24T10:53:31.2408271+00:00"
+  },
+  "TrustSeal": {
+    "TrustSeal": "0EFBF035E785A420D899595C5080573EE382B858ABA70F4027D558906EFA8831",
+    "GeneratedAt": "2025-11-24T00:00:00Z",
+    "Version": "1.0"
+  },
+  "SyncChain": {
+    "EntryID": "516c9b99-7f13-45c8-8f39-6e93d3c2d8a0",
+    "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+    "MeshID": "e2fa96e9-1a3c-43a9-9e2a-42aefbed21de",
+    "TrustSeal": "0EFBF035E785A420D899595C5080573EE382B858ABA70F4027D558906EFA8831",
+    "Timestamp": "2025-11-24T08:25:36.249706+00:00"
+  },
+  "Ledger": [
+    {
+      "Timestamp": "2025-11-24T08:34:35.6561905+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "6978457"
+    },
+    {
+      "Timestamp": "2025-11-24T08:35:55.2044023+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "7998587"
+    },
+    {
+      "Timestamp": "2025-11-24T08:40:54.6981238+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "3388005"
+    },
+    {
+      "Timestamp": "2025-11-24T09:51:20.1396498+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "7733088"
+    },
+    {
+      "Timestamp": "2025-11-24T10:53:32.8686116+00:00",
+      "Source": "WyneOS-LedgerEngine",
+      "Hash": "9363574"
+    }
+  ],
+  "Compliance": [
+    {
+      "Timestamp": "2025-11-24T08:28:00.7781175+00:00",
+      "LedgerHash": null,
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Status": "VALID"
+    },
+    {
+      "Timestamp": "2025-11-24T08:36:46.2843729+00:00",
+      "LedgerHash": "03AB45EB92E62C563F85B2D8E473305ECF019883B8A43B72207B1699B5C870B2",
+      "Seal": null,
+      "LedgerEntry": {
+        "Timestamp": "2025-11-24T08:35:55.2044023+00:00",
+        "Source": "WyneOS-LedgerEngine",
+        "Hash": "7998587"
+      }
+    },
+    {
+      "Timestamp": "2025-11-24T08:36:51.3445724+00:00",
+      "LedgerHash": "03AB45EB92E62C563F85B2D8E473305ECF019883B8A43B72207B1699B5C870B2",
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Status": "VALID"
+    },
+    {
+      "Timestamp": "2025-11-24T08:40:55.1615909+00:00",
+      "LedgerHash": "E20880C8C4CC6D41461FA5A9E3A3DE1718F86C51B3CD7911821560C2BD9653A3",
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Status": "VALID"
+    },
+    {
+      "Timestamp": "2025-11-24T09:51:20.5838033+00:00",
+      "LedgerHash": "014135B1163DB9B8CC39C655C6DB87FFD1146E0679D2024CF13545698E0805C5",
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Status": "VALID"
+    },
+    {
+      "Timestamp": "2025-11-24T10:53:33.3263602+00:00",
+      "LedgerHash": "2AB42F01F05C1F485BE06C0357959701D25EF9CB4039CB808034E6826894E82C",
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Status": "VALID"
+    }
+  ]
+}
