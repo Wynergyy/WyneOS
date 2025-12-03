@@ -1,0 +1,82 @@
+{
+  "policy": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Provide clear and enforceable rules that govern how runtime components operate within WyneOS.",
+
+  "executionModes": {
+    "normal": {
+      "description": "The system is stable and all engines may run within their defined limits.",
+      "permissions": [
+        "Phase 1 to Phase 9 engines",
+        "telemetry collection",
+        "governance evaluation",
+        "predictive load assessment"
+      ]
+    },
+    "controlled": {
+      "description": "Restricted mode used when anomalies or partial failures occur.",
+      "permissions": [
+        "heartbeat only",
+        "integrity scan",
+        "limited governance checks"
+      ],
+      "prohibitions": [
+        "emergent behaviour engine",
+        "optimisation engine",
+        "predictive engine"
+      ]
+    },
+    "critical": {
+      "description": "Emergency mode triggered by integrity breach or invalid manifest.",
+      "permissions": [
+        "audit logging",
+        "seal verification",
+        "system identity verification"
+      ],
+      "prohibitions": [
+        "all engines",
+        "all predictive operations",
+        "all optimisation logic",
+        "all emergent behaviour functions"
+      ]
+    }
+  },
+
+  "runtimeRules": {
+    "sealRequirement": "No engine may run unless all seals from Phase 0 to Phase 9 are valid.",
+    "manifestRequirement": "All manifests must be present and verified before loading any engine.",
+    "telemetryRequirement": "Telemetry must be current and readable before any decision pathway is executed.",
+    "sandboxing": "Engines operate in isolated execution boundaries with restricted access to system files.",
+    "resourceLimits": {
+      "cpu": "Maximum 25 percent per engine instance",
+      "memory": "Maximum 150 MB per engine instance"
+    }
+  },
+
+  "prohibitedBehaviour": {
+    "unauthorisedScripts": "No script outside the runtime or engine directories may execute.",
+    "selfModification": "Engines must not write to their own code or manifests.",
+    "externalExecution": "No external processes may be launched without governance approval."
+  },
+
+  "auditRequirements": {
+    "events": [
+      "engine start",
+      "engine stop",
+      "engine failure",
+      "mode transition",
+      "integrity breach",
+      "manifest failure",
+      "governance override"
+    ],
+    "location": "system/audit"
+  },
+
+  "summary": {
+    "statement": "This policy defines what is and is not allowed during execution. All runtime components must comply with this document as a condition of operation."
+  }
+}
