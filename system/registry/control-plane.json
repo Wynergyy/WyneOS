@@ -1,0 +1,85 @@
+{
+  "controlPlane": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the mechanisms that direct, coordinate, and regulate internal system activities across all modules, engines, and phases.",
+
+  "coreFunctions": {
+    "orchestration": {
+      "description": "Coordinates the execution order of modules, engines, telemetry flows, and policy checks.",
+      "inputs": ["scheduler", "policy engine", "runtime signals"],
+      "outputs": ["task allocation", "workflow progression"]
+    },
+    "governanceRouting": {
+      "description": "Ensures all system decisions align with the governance model.",
+      "inputs": ["policy engine", "decision matrix", "feedback loops"],
+      "outputs": ["approved actions", "fallback paths"]
+    },
+    "telemetryIngestion": {
+      "description": "Collects and validates telemetry from heartbeat, integrity, sync, predictive models, and emergent behaviour.",
+      "inputs": ["telemetry grid", "runtime checks"],
+      "outputs": ["normalised metrics", "alerts"]
+    },
+    "runtimeManagement": {
+      "description": "Controls script execution, monitors failures, and ensures safe runtime behaviour for both PowerShell and Node pipelines.",
+      "inputs": ["runtime mesh", "execution logs"],
+      "outputs": ["runtime status", "execution decisions"]
+    },
+    "integrityEnforcement": {
+      "description": "Validates manifests, seals, and system identity before allowing any operation.",
+      "inputs": ["seal records", "manifest hashes"],
+      "outputs": ["approved", "denied"]
+    }
+  },
+
+  "operationalFlows": {
+    "initialisation": [
+      "load system identity",
+      "verify seals",
+      "mount telemetry grid",
+      "activate governance model",
+      "start heartbeat"
+    ],
+    "continuousOperation": [
+      "collect telemetry",
+      "analyse patterns",
+      "apply optimisation rules",
+      "run predictive load checks",
+      "evaluate emergent behaviour",
+      "route actions through governance",
+      "commit audit entries"
+    ],
+    "controlledMode": [
+      "reduce execution frequency",
+      "pause emergent engine",
+      "increase audit logging",
+      "await governance clearance"
+    ]
+  },
+
+  "controlContracts": {
+    "consistency": "The system must behave consistently when given the same inputs.",
+    "observability": "All decisions must be traceable.",
+    "reversibility": "The system must support rollback to stable states.",
+    "safety": "No module may bypass integrity or governance checks."
+  },
+
+  "audit": {
+    "logLocation": "system/audit",
+    "requiredFields": [
+      "operation",
+      "module",
+      "decision path",
+      "timestamp",
+      "result",
+      "follow up action"
+    ]
+  },
+
+  "summary": {
+    "statement": "The control plane provides the rules, processes, and decision pathways that allow WyneOS to function as a coordinated enterprise system."
+  }
+}
