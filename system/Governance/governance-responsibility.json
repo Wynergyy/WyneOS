@@ -1,0 +1,71 @@
+{
+  "governance": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define clear ownership and accountability for each governance action within WyneOS.",
+
+  "roles": {
+    "CoreController": {
+      "description": "Primary authority for critical decisions.",
+      "responsibilities": [
+        "approve mode transitions",
+        "validate seals and manifests",
+        "authorise Phase 7 governance engine"
+      ]
+    },
+
+    "GovernanceEngine": {
+      "description": "Automated evaluation engine for policy and rules.",
+      "responsibilities": [
+        "evaluate decision matrix",
+        "detect rule conflicts",
+        "apply governance conditions",
+        "escalate anomalies to CoreController"
+      ]
+    },
+
+    "AssuranceEngine": {
+      "description": "Responsible for oversight of compliance and audit.",
+      "responsibilities": [
+        "verify audit chain",
+        "confirm integrity status",
+        "ensure runtime activity aligns with policy"
+      ]
+    },
+
+    "TelemetryLayer": {
+      "description": "Collects and validates all operational signals.",
+      "responsibilities": [
+        "provide heartbeat",
+        "provide integrity readings",
+        "provide sync data"
+      ]
+    },
+
+    "EmergentEngine": {
+      "description": "Provides adaptive behaviour when allowed by policy.",
+      "responsibilities": [
+        "only operate in normal mode",
+        "pause during controlled mode",
+        "stop during critical mode",
+        "report behavioural summaries to AssuranceEngine"
+      ]
+    }
+  },
+
+  "governanceFlow": {
+    "sealValidation": "CoreController is responsible for verifying all seals.",
+    "manifestValidation": "GovernanceEngine checks manifest consistency.",
+    "policyApplication": "GovernanceEngine applies rules and conditions.",
+    "auditVerification": "AssuranceEngine confirms all events are recorded.",
+    "telemetryDependency": "Every decision must rely on validated telemetry.",
+    "fallbackDecision": "CoreController triggers fallback when anomalies occur."
+  },
+
+  "summary": {
+    "statement": "These responsibilities define how WyneOS operates safely and consistently. Each component has a clear role and must remain within its authority."
+  }
+}
