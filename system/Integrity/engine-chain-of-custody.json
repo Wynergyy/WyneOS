@@ -1,0 +1,95 @@
+{
+  "engineChainOfCustody": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Ensure full traceability and integrity for all engines, manifests, seals, and behaviour outputs across WyneOS.",
+
+  "custodyStages": {
+    "creation": {
+      "description": "Engine or file is created and registered.",
+      "requirements": [
+        "record creation timestamp",
+        "record file hash",
+        "record responsible module",
+        "store entry in audit log"
+      ]
+    },
+    "verification": {
+      "description": "Integrity and correctness checks before activation.",
+      "requirements": [
+        "validate seal",
+        "validate manifest",
+        "compare stored hash with current hash",
+        "log verification result"
+      ]
+    },
+    "activation": {
+      "description": "Engine becomes permitted to run.",
+      "requirements": [
+        "confirm governance approval",
+        "confirm telemetry validity",
+        "record activation timestamp"
+      ]
+    },
+    "operation": {
+      "description": "Engine runs under defined boundaries.",
+      "requirements": [
+        "continuous telemetry checks",
+        "periodic integrity checks",
+        "event based audit entries"
+      ]
+    },
+    "output": {
+      "description": "Engine produces results or behavioural signals.",
+      "requirements": [
+        "log output identifier",
+        "store output hash",
+        "record which engine produced it"
+      ]
+    },
+    "retirement": {
+      "description": "Engine or file is removed or replaced.",
+      "requirements": [
+        "record retirement timestamp",
+        "confirm deletion hash",
+        "audit the retirement event"
+      ]
+    }
+  },
+
+  "custodyFields": {
+    "engineId": "Unique identifier for the engine.",
+    "source": "Which phase or module created it.",
+    "hash": "SHA256 hash for immutability.",
+    "timestamp": "Time of the event.",
+    "action": "Creation, verification, activation, operation, output, or retirement.",
+    "mode": "System state at the time of action.",
+    "result": "Success, warning, or failure."
+  },
+
+  "integrityRules": {
+    "hashRequirement": "Every custody event must include a stored hash.",
+    "manifestLink": "Every engine must be tied to a verified manifest.",
+    "sealLink": "Every engine must be tied to a valid seal.",
+    "telemetryLink": "Custody events must include telemetry snapshots where relevant."
+  },
+
+  "audit": {
+    "location": "system/audit",
+    "eventStructure": [
+      "timestamp",
+      "engine identifier",
+      "action taken",
+      "hash",
+      "telemetry snapshot",
+      "system mode"
+    ]
+  },
+
+  "summary": {
+    "statement": "This chain of custody ensures complete traceability for all engines, files, and behavioural outputs within WyneOS."
+  }
+}
