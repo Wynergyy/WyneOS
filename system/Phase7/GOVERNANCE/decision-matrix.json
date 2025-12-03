@@ -1,0 +1,6 @@
+{
+  "rules": [
+    { "id": 1, "condition": "heartbeat.active", "action": "allow" },
+    { "id": 2, "condition": "integrity.status == 'OK'", "action": "allow" }
+  ]
+}
