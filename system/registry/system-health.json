@@ -1,0 +1,52 @@
+{
+  "healthContract": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": "",
+    "status": "operational"
+  },
+
+  "checks": {
+    "heartbeat": {
+      "required": true,
+      "source": "telemetry/heartbeat.json",
+      "criteria": "valid timestamp and active state"
+    },
+
+    "integrity": {
+      "required": true,
+      "source": "telemetry/integrity.json",
+      "criteria": "valid seal and no corruption"
+    },
+
+    "syncChain": {
+      "required": true,
+      "source": "telemetry/sync.json",
+      "criteria": "synchronised components and no drift"
+    },
+
+    "governance": {
+      "required": true,
+      "source": "Core/Phase7/GOVERNANCE",
+      "criteria": "active policy engine and valid decisions"
+    },
+
+    "intelligence": {
+      "required": true,
+      "source": "engine/Phase8",
+      "criteria": "predictive and optimisation layers responding"
+    },
+
+    "behaviour": {
+      "required": true,
+      "source": "engine/Phase9",
+      "criteria": "stable emergent behaviour"
+    }
+  },
+
+  "resultFormat": {
+    "status": "string",
+    "timestamp": "ISO8601",
+    "details": "object"
+  }
+}
