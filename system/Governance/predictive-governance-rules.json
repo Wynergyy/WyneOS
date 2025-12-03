@@ -1,0 +1,66 @@
+{
+  "predictiveGovernance": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the limits and approved use of predictive logic within governance pathways.",
+
+  "principles": {
+    "supportOnly": "Predictive outputs may inform decisions but cannot override core governance rules.",
+    "noAutonomy": "Predictive engines may not apply changes to system state directly.",
+    "explainability": "Predictive outputs must include a clear explanation of their basis.",
+    "auditability": "All predictive decisions must be logged before use."
+  },
+
+  "inputRequirements": {
+    "validatedTelemetry": [
+      "heartbeat.json",
+      "integrity.json",
+      "sync.json"
+    ],
+    "verifiedManifests": true,
+    "sealStatus": "all seals valid",
+    "governanceMode": "normal only"
+  },
+
+  "approvedUses": {
+    "loadForecasting": "Predict expected system load to optimise engine scheduling.",
+    "riskAssessment": "Estimate risk levels based on prior anomalies.",
+    "behaviourPrediction": "Predict next behaviour state for safety assessments.",
+    "optimisationSupport": "Provide non-mandatory suggestions to optimisation engine."
+  },
+
+  "prohibitedUses": {
+    "modeChanges": "Predictive logic may not trigger mode transitions.",
+    "sealDecisions": "Predictive logic cannot influence seal validation.",
+    "manifestDecisions": "Predictive logic cannot declare manifests valid or invalid.",
+    "runtimeOverrides": "Predictive outputs cannot override runtime restrictions."
+  },
+
+  "validation": {
+    "requiredChecks": [
+      "telemetry freshness",
+      "result confidence",
+      "consistency with observed data"
+    ],
+    "failureAction": "Discard predictive output and write audit entry."
+  },
+
+  "auditRules": {
+    "fields": [
+      "timestamp",
+      "input telemetry hashes",
+      "model output",
+      "confidence score",
+      "applied or discarded",
+      "reason"
+    ],
+    "location": "system/audit"
+  },
+
+  "summary": {
+    "statement": "These rules ensure predictive engines support governance without overriding core integrity or system policy."
+  }
+}
