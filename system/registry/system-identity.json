@@ -1,0 +1,44 @@
+{
+  "systemIdentity": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "codename": "Foundation",
+    "status": "active",
+    "lastUpdated": ""
+  },
+
+  "ownership": {
+    "organisation": "Wynergy Fibre Solutions Ltd",
+    "division": "WyneOS Core Architecture",
+    "maintainer": "WyneOS Governance and Integrity Team"
+  },
+
+  "identityAttributes": {
+    "systemID": "WyneOS_Core",
+    "classification": "enterprise-internal",
+    "releaseType": "controlled",
+    "architectureModel": "phased-governed-telemetry-driven"
+  },
+
+  "identityGuarantees": {
+    "consistency": "WyneOS must present the same identity across all environments.",
+    "traceability": "All phases, manifests, and seals trace back to this identity.",
+    "versionControl": "Version 1.0.0 is locked under the version contract."
+  },
+
+  "relationships": {
+    "upstream": [
+      "WFSL Core Services",
+      "SAS-CIC Governance Layer"
+    ],
+    "downstream": [
+      "Future WyneOS API services",
+      "WFSL and SAS-CIC operational platforms"
+    ]
+  },
+
+  "summary": {
+    "purpose": "Define the system’s formal identity and operational ownership.",
+    "notes": "Identity attributes apply to all future 1.x releases unless superseded."
+  }
+}
