@@ -7,3 +7,5 @@ Core/Sync/keys/
 Backups/
 system/Core/SystemModel/State/
 system/State/
+build/
+dist/
