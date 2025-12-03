@@ -1,0 +1,10 @@
+{
+  "commands": {
+    "install": "wpm-install.ps1",
+    "list": "wpm-list.ps1",
+    "remove": "wpm-remove.ps1"
+  },
+  "registry": "E:\\CIC\\WyneOS\\pkg\\wpm\\db\\wpm.pkgdb.json",
+  "built": "2025-11-23 04:32:02Z",
+  "wpmVersion": "1.0"
+}

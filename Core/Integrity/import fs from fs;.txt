@@ -1,0 +1,48 @@
+import fs from "fs";
+import path from "path";
+
+const configFile = path.join(process.cwd(), "tmp", "sync-config.json");
+
+/**
+ * Default configuration for outbound sync.
+ * Outbound sync is disabled until the user enables it.
+ */
+const defaultConfig = {
+  enabled: false,
+  target: "none",       // "kv", "d1", or "custom"
+  endpoint: "",
+  encryption: {
+    enabled: false,
+    key: ""             // AES-256 key (base64 encoded)
+  },
+  signing: {
+    enabled: false,
+    publicKey: "",
+    privateKey: ""
+  },
+  protocolVersion: "4.0.0"
+};
+
+function ensureConfig() {
+  if (!fs.existsSync(path.dirname(configFile))) {
+    fs.mkdirSync(path.dirname(configFile), { recursive: true });
+  }
+  if (!fs.existsSync(configFile)) {
+    fs.writeFileSync(configFile, JSON.stringify(defaultConfig, null, 2), "utf8");
+  }
+}
+
+export function readSyncConfig() {
+  ensureConfig();
+  try {
+    const raw = fs.readFileSync(configFile, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return defaultConfig;
+  }
+}
+
+export function writeSyncConfig(cfg: any) {
+  ensureConfig();
+  fs.writeFileSync(configFile, JSON.stringify(cfg, null, 2), "utf8");
+}
