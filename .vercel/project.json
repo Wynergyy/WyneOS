@@ -3,6 +3,9 @@
   "orgId": "wynergyys-projects",
   "settings": {
     "framework": "nextjs",
-    "rootDirectory": "v5/wyneos-ui"
+    "rootDirectory": "v5/wyneos-ui",
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "outputDirectory": ".vercel/output"
   }
 }

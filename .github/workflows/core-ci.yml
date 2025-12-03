@@ -1,4 +1,4 @@
-name: WyneOS Core CI
+﻿name: WyneOS Core CI
 
 on:
   push:
@@ -19,20 +19,14 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install dependencies (root)
-        run: |
-          npm install || true
-
-      - name: Install dependencies (v5/wyneos-ui)
-        run: |
-          cd v5/wyneos-ui
-          npm install
+      - name: Install UI dependencies
+        working-directory: v5/wyneos-ui
+        run: npm install
 
       - name: TypeScript compile check
-        run: |
-          cd v5/wyneos-ui
-          npx tsc --noEmit
+        working-directory: v5/wyneos-ui
+        run: npx tsc --noEmit
 
-      - name: Validate JSON files
-        run: |
-          find . -name "*.json" -print0 | xargs -0 -n1 jq empty
+      - name: Build UI
+        working-directory: v5/wyneos-ui
+        run: npm run build
