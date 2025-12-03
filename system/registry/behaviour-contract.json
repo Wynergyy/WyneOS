@@ -1,0 +1,50 @@
+{
+  "behaviourContract": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "defined",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define behavioural guarantees and operational constraints for WyneOS v1.0, including Phase 9 emergent behaviour.",
+
+  "behaviourModel": {
+    "baseline": "System behaviour must remain consistent with sealed manifests and defined phases.",
+    "governanceControl": "All behaviour is subject to governance approval and rule enforcement.",
+    "stabilityRequirement": "Emergent behaviour must remain within controlled and predictable limits."
+  },
+
+  "guaranteedBehaviours": {
+    "telemetry": "System provides continuous, accurate heartbeat, sync, and integrity data.",
+    "decisionConsistency": "Governance decisions are consistent and repeatable.",
+    "integrityProtection": "The system will reject actions that alter sealed or protected files.",
+    "predictiveLogic": "Predictive behaviour follows established baselines and models.",
+    "emergentBehaviour": "Phase 9 produces higher order behaviour without exceeding stability parameters."
+  },
+
+  "restrictedBehaviours": {
+    "selfModification": "System cannot modify its own sealed files or manifests.",
+    "governanceBypass": "System cannot bypass governance rules under any circumstance.",
+    "unsupervisedEmergence": "Phase 9 behaviour cannot operate without stability checks.",
+    "runtimeDeviation": "Runtime modules cannot exceed defined operational boundaries."
+  },
+
+  "prohibitedBehaviours": [
+    "Generating actions that violate sealed integrity files.",
+    "Producing behaviours that conflict with governance outcomes.",
+    "Altering telemetry outputs dishonestly.",
+    "Executing unverified or unauthorised runtime code."
+  ],
+
+  "responseToDeviation": {
+    "detection": "Behaviour outside defined limits triggers a governance review.",
+    "automaticAction": "System enters safe mode if integrity or stability is compromised.",
+    "audit": "All deviations logged in the audit chain for review.",
+    "recovery": "Predictive and emergent modules recalibrated when required."
+  },
+
+  "summary": {
+    "statement": "This contract ensures WyneOS behaves predictably, safely, and within governance boundaries at all times.",
+    "notes": "Behavioural guarantees apply to all 1.x versions unless formally modified."
+  }
+}
