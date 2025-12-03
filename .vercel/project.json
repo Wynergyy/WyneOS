@@ -1,0 +1,8 @@
+﻿{
+  "projectId": "wyne-os",
+  "orgId": "wynergyys-projects",
+  "settings": {
+    "framework": "nextjs",
+    "rootDirectory": "v5/wyneos-ui"
+  }
+}
