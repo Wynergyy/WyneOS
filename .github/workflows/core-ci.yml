@@ -1,7 +1,3 @@
-cd E:\CIC\WyneOS
-git add .github/workflows/core-ci.yml
-git commit -m "Fix CI: correct working directories and install steps"
-git push
 name: WyneOS Core CI
 
 on:
