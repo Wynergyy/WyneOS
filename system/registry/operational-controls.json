@@ -1,0 +1,69 @@
+{
+  "operationalControls": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the operational control structure that governs all system behaviour, including telemetry, integrity, governance, runtime, and emergent functions.",
+
+  "controlLayers": {
+    "telemetryControl": {
+      "description": "Ensures the system reports true and current state information.",
+      "inputs": ["heartbeat", "sync", "integrity"],
+      "enforcement": "Telemetry anomalies trigger alerts and governance review."
+    },
+
+    "integrityControl": {
+      "description": "Protects sealed files, manifests, and phase definitions.",
+      "checks": ["file hashes", "seal validation", "tamper detection"],
+      "response": "Rejects unauthorised changes and raises audit entries."
+    },
+
+    "governanceControl": {
+      "description": "Evaluates all system proposals and behavioural decisions.",
+      "sources": ["policy engine", "decision matrix", "governance feed"],
+      "authority": "Overrides all lower level modules."
+    },
+
+    "runtimeControl": {
+      "description": "Regulates PowerShell and Node runtime actions.",
+      "boundaries": [
+        "disallow unsigned operations",
+        "restrict unsafe execution paths",
+        "validate environment before running modules"
+      ],
+      "enforcement": "Runtime requests routed through governance and integrity layers."
+    },
+
+    "emergentControl": {
+      "description": "Ensures Phase 9 behaviour remains safe and predictable.",
+      "inputs": ["fusion output", "behaviour model", "stability checks"],
+      "rules": [
+        "no deviation outside approved bounds",
+        "no autonomous behaviour without stability confirmation",
+        "immediate fallback to safe mode if unstable"
+      ]
+    }
+  },
+
+  "priorityOrder": [
+    "Integrity control",
+    "Governance control",
+    "Telemetry control",
+    "Runtime control",
+    "Emergent behaviour control"
+  ],
+
+  "failureResponse": {
+    "detection": "Any layer may trigger deviation alerts.",
+    "containment": "The system enters controlled mode to isolate risk.",
+    "reporting": "All events logged in the audit chain.",
+    "recovery": "Modules recalibrated and stability restored."
+  },
+
+  "summary": {
+    "statement": "WyneOS operational controls ensure predictable, enforceable behaviour across all system layers.",
+    "notes": "Control definitions apply to all 1.x versions unless replaced by a higher governance decision."
+  }
+}
