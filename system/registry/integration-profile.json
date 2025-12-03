@@ -1,0 +1,60 @@
+{
+  "integrationProfile": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "defined",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Describe how external systems may integrate with WyneOS in a controlled and predictable manner.",
+
+  "integrationScope": {
+    "enabled": [
+      "Reading telemetry outputs",
+      "Reading registry files",
+      "Consuming capability and version information",
+      "Monitoring audit logs for operational insight"
+    ],
+    "restricted": [
+      "Writing directly to any system directories",
+      "Modifying sealed files or manifests",
+      "Executing code inside WyneOS without authorisation"
+    ],
+    "planned": [
+      "Formal API layer",
+      "Event subscription model",
+      "Distributed governance endpoints"
+    ]
+  },
+
+  "requiredAccess": {
+    "telemetry": "Read-only access to heartbeat, sync, and integrity data.",
+    "registry": "Read-only access to registry files for version, health, and capability checks.",
+    "audit": "Controlled access to audit logs, if permitted.",
+    "runtime": "No direct interaction unless approved through operational policy."
+  },
+
+  "integrationPatterns": {
+    "monitoring": "External systems may track telemetry to assess health and performance.",
+    "compliance": "External systems may reference manifests and seals for audit alignment.",
+    "governance": "External decision tools may evaluate governance outputs but cannot bypass enforcement."
+  },
+
+  "externalRequirements": {
+    "environment": "Stable system environment with access to WyneOS directories.",
+    "security": "Independent external security controls must be maintained.",
+    "protocol": "Any integration must follow read-only access unless authorised."
+  },
+
+  "riskControls": {
+    "isolation": "WyneOS maintains internal isolation of critical modules.",
+    "governanceEnforcement": "Governance rules prevent unauthorised operations.",
+    "integrityProtection": "Seals and manifests ensure tampering is detected immediately."
+  },
+
+  "integrationReadiness": {
+    "internalPartners": "WFSL and SAS-CIC approved.",
+    "externalPartners": "Permitted for controlled testing.",
+    "publicIntegration": "Not available in version 1.0."
+  }
+}
