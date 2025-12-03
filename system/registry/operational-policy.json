@@ -1,0 +1,56 @@
+{
+  "operationalPolicy": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "active",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the operational rules and expectations for running WyneOS in a controlled environment.",
+
+  "principles": {
+    "stability": "System behaviour must remain predictable across all operations.",
+    "integrity": "Critical files, manifests, and seals must not be altered outside controlled updates.",
+    "traceability": "All operations must be traceable through logs and audit trails.",
+    "governance": "All actions must comply with the active governance model.",
+    "safety": "Predictive and emergent behaviour cannot override governance or integrity controls."
+  },
+
+  "operationalRules": {
+    "updates": {
+      "allowed": "Minor and patch releases may be applied without altering system behaviour.",
+      "restricted": "Major updates require review of seals, manifests, and governance rules.",
+      "prohibited": "Any direct change to sealed files or audit logs."
+    },
+
+    "runtime": {
+      "permitted": [
+        "Authorised PowerShell scripts within runtime/powershell",
+        "Authorised Node scripts within runtime/node"
+      ],
+      "restricted": [
+        "Execution of unverified external scripts",
+        "Direct modification of engine output files"
+      ]
+    },
+
+    "telemetry": {
+      "requirement": "Heartbeat, integrity, and sync telemetry must remain active.",
+      "failureResponse": "If telemetry becomes invalid, governance may enforce a safe mode."
+    },
+
+    "governance": {
+      "enforcement": "Policy engine decisions override runtime operations.",
+      "violations": "Any breach triggers an enforced governance lock."
+    }
+  },
+
+  "deployment": {
+    "environment": "Controlled internal deployment within WFSL and SAS-CIC systems.",
+    "requirements": [
+      "Stable runtime environment",
+      "Access to system registry and telemetry files",
+      "Integrity seals must be present and valid"
+    ]
+  }
+}
