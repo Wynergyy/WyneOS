@@ -1,0 +1,38 @@
+{
+  "system": {
+    "name": "WyneOS",
+    "version": "1.0.0",
+    "build": "stable",
+    "status": "operational",
+    "lastUpdated": ""
+  },
+
+  "identity": {
+    "systemID": "WyneOS_Core",
+    "owner": "Wynergy Fibre Solutions Ltd",
+    "governanceModel": "Phase 7",
+    "intelligenceModel": "Phase 8",
+    "behaviourModel": "Phase 9"
+  },
+
+  "modules": {
+    "core": true,
+    "telemetry": true,
+    "governance": true,
+    "integrity": true,
+    "predictive": true,
+    "optimisation": true,
+    "emergent": true,
+    "serviceMesh": true,
+    "audit": true
+  },
+
+  "paths": {
+    "manifests": "system/manifests",
+    "seals": "system/seals",
+    "audit": "system/audit",
+    "engine": "engine",
+    "core": "Core",
+    "runtime": "runtime"
+  }
+}
