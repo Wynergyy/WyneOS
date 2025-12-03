@@ -1,0 +1,83 @@
+{
+  "contract": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the rules and guarantees that preserve the reliability, safety, and continuity of the WyneOS ecosystem across all operational states.",
+
+  "principles": {
+    "integrityFirst": "No operation can run unless seals and manifests are verified.",
+    "governanceAligned": "All actions must pass through approved governance routes.",
+    "auditContinuous": "Every significant event must have an audit entry.",
+    "stableExecution": "Modules must run within defined resource and timing limits.",
+    "recoveryReady": "Failures must trigger fallback or recovery procedures."
+  },
+
+  "rules": {
+    "sealVerification": {
+      "description": "Validate all phase seals and system identity before execution.",
+      "required": ["PHASE0.GUARD", "PHASE1.ACTIVATION", "Phase1.MANIFEST.hash", "INTEGRITY.SEAL"]
+    },
+    "manifestChecks": {
+      "description": "Validate manifests for Phase 1 to Phase 9 before allowing the engines to run.",
+      "required": [
+        "Phase1.MANIFEST.json",
+        "Phase2.MANIFEST.json",
+        "Phase3.MANIFEST.json",
+        "Phase4.MANIFEST.json",
+        "Phase5.MANIFEST.json",
+        "Phase6.MANIFEST.json",
+        "Phase8.MANIFEST.json",
+        "Phase9.MANIFEST.json"
+      ]
+    },
+    "telemetryRequirements": {
+      "description": "Telemetry must be available, current, and valid for all decision pathways.",
+      "sources": [
+        "heartbeat.json",
+        "integrity.json",
+        "sync.json"
+      ]
+    },
+    "runtimeRestrictions": {
+      "description": "No script or engine may execute if the system is in controlled mode or if an integrity breach is detected.",
+      "states": ["normal", "controlled", "critical"]
+    },
+    "auditPolicy": {
+      "description": "All decisions, failures, and fallback actions must be written to system audit.",
+      "location": "system/audit"
+    }
+  },
+
+  "recovery": {
+    "fallback": [
+      "pause emergent engine",
+      "reduce runtime frequency",
+      "increase audit entries",
+      "force governance evaluation"
+    ],
+    "restart": [
+      "validate all manifests",
+      "validate all seals",
+      "reinitialise telemetry",
+      "reconnect engines",
+      "restore normal mode"
+    ]
+  },
+
+  "compliance": {
+    "requirements": [
+      "traceability of decisions",
+      "full audit chain",
+      "validated identity records",
+      "secure runtime boundaries",
+      "predictable behaviour across versions"
+    ]
+  },
+
+  "summary": {
+    "statement": "This contract defines the operational safety boundaries of WyneOS. No engine, module, or runtime may act outside these constraints."
+  }
+}
