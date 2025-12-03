@@ -1,0 +1,44 @@
+{
+  "event": "KERNEL_SERVICES_START",
+  "ts": "2025-11-23 06:16:53Z"
+}
+{
+  "event": "SERVICE_MANAGER_INSTALLED",
+  "ts": "2025-11-23 06:16:53Z"
+}
+{
+  "event": "SERVICE_REGISTRY_INSTALLED",
+  "ts": "2025-11-23 06:16:53Z"
+}
+{
+  "event": "SERVICE_HEALTH_ENGINE_INSTALLED",
+  "ts": "2025-11-23 06:16:53Z"
+}
+{
+  "event": "SERVICE_TELEMETRY_ENGINE_INSTALLED",
+  "ts": "2025-11-23 06:16:53Z"
+}
+{
+  "event": "SERVICE_AUTORESTART_INSTALLED",
+  "ts": "2025-11-23 06:16:54Z"
+}
+{
+  "event": "SERVICE_PERMISSIONS_LAYER_INSTALLED",
+  "ts": "2025-11-23 06:16:54Z"
+}
+{
+  "event": "SERVICE_HASH_ENGINE_INSTALLED",
+  "ts": "2025-11-23 06:16:54Z"
+}
+{
+  "event": "SERVICE_CHANNEL_ENGINE_INSTALLED",
+  "ts": "2025-11-23 06:16:54Z"
+}
+{
+  "event": "SERVICE_SNAPSHOT_ENGINE_INSTALLED",
+  "ts": "2025-11-23 06:16:55Z"
+}
+{
+  "event": "KERNEL_SERVICES_SIGNATURE_COMPLETE",
+  "ts": "2025-11-23 06:16:55Z"
+}

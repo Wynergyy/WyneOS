@@ -1,0 +1,16 @@
+{
+  "ts": "2025-11-23 06:34:31Z",
+  "event": "DISPATCHER_START"
+}
+{
+  "ts": "2025-11-23 06:34:31Z",
+  "event": "DISPATCH_MESSAGE: TEST on core"
+}
+{
+  "ts": "2025-11-23 06:34:31Z",
+  "event": "NO_SUBSCRIBERS: core"
+}
+{
+  "ts": "2025-11-23 06:34:31Z",
+  "event": "DISPATCHER_END"
+}

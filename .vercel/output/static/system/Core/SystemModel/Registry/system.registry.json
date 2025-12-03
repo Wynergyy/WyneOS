@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "components": [
+    {
+      "certificate": "",
+      "capabilities": null,
+      "dependencies": null,
+      "category": "",
+      "name": "",
+      "policies": null
+    },
+    {
+      "dependencies": null,
+      "capabilities": null,
+      "policies": null,
+      "category": "",
+      "name": "",
+      "certificate": ""
+    },
+    {
+      "policies": null,
+      "category": "",
+      "name": "",
+      "certificate": "",
+      "dependencies": null,
+      "capabilities": null
+    },
+    {
+      "capabilities": null,
+      "category": "",
+      "name": "",
+      "dependencies": null,
+      "certificate": "",
+      "policies": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "capabilities": [
+    "security",
+    "ui"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.SecurityPortal",
+  "dependencies": [
+    "WyneOS.SystemMonitor"
+  ],
+  "version": "2025.1"
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": [],
+  "publisher": "WyneOS",
+  "capabilities": [
+    "encryption",
+    "storage",
+    "security"
+  ],
+  "version": "2025.1",
+  "name": "WyneOS.SecureVault"
+}

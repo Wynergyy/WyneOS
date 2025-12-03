@@ -1,0 +1,28 @@
+{
+  "event": "WPM_GATEWAY_LINK_START",
+  "ts": "2025-11-23 04:35:05Z"
+}
+{
+  "event": "WPM_LIST_CREATED",
+  "ts": "2025-11-23 04:35:05Z"
+}
+{
+  "event": "WPM_INSTALL_CREATED",
+  "ts": "2025-11-23 04:35:05Z"
+}
+{
+  "event": "WPM_INFO_CREATED",
+  "ts": "2025-11-23 04:35:05Z"
+}
+{
+  "event": "WPM_VERIFY_STORE_CREATED",
+  "ts": "2025-11-23 04:35:05Z"
+}
+{
+  "event": "WPM_CONTROLLER_CREATED",
+  "ts": "2025-11-23 04:35:06Z"
+}
+{
+  "event": "WPM_GATEWAY_LINK_COMPLETE",
+  "ts": "2025-11-23 04:35:06Z"
+}

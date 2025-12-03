@@ -1,0 +1,15 @@
+{
+  "name": "WyneOS.System.Manifest",
+  "version": "1.0.0",
+  "issuedAt": "2025-11-23T21:26:12.4029993+00:00",
+  "components": [
+    "Governance",
+    "Enforcement",
+    "Certificates",
+    "Integrity",
+    "Services",
+    "Apps"
+  ],
+  "hashAlgorithm": "SHA256",
+  "rootHash": "9CFA8D0D799434BB53816B565ECF0D34822C4E7F7778BDC7E449EE3EC8765275"
+}

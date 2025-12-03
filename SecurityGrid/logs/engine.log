@@ -1,0 +1,6 @@
+{
+  "result": false,
+  "timestamp": "2025-11-23 18:37:57Z",
+  "rule": "Privileged App Detection",
+  "severity": "high"
+}

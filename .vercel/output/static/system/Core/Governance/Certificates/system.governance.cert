@@ -1,0 +1,12 @@
+{
+  "certificateVersion": "1.0.0",
+  "issuedTo": "SYSTEM",
+  "issuedAt": "2025-11-23T21:21:44.2235716+00:00",
+  "policiesApplied": [
+    "global-governance"
+  ],
+  "integrity": {
+    "hashAlgorithm": "SHA256",
+    "hash": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "WyneOS.AppCapabilityCertificate.Schema",
+  "version": "1.0.0",
+  "fields": {
+    "appName": "string",
+    "appCategory": "string",
+    "allowedActions": "array",
+    "deniedActions": "array",
+    "allowedResources": "array",
+    "deniedResources": "array",
+    "requiredPolicies": "array",
+    "hashAlgorithm": "string",
+    "signature": "string",
+    "issuedAt": "string",
+    "issuedBy": "string"
+  }
+}

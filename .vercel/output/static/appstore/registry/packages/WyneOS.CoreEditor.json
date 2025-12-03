@@ -1,0 +1,10 @@
+{
+  "capabilities": [
+    "editor",
+    "ui"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.CoreEditor",
+  "dependencies": [],
+  "version": "2025.1"
+}

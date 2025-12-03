@@ -1,0 +1,11 @@
+{
+  "capabilities": [
+    "system",
+    "metrics",
+    "ui"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.SystemMonitor",
+  "dependencies": [],
+  "version": "2025.1"
+}

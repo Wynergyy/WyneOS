@@ -1,0 +1,14 @@
+{
+  "name": "WyneOS.Governance.PolicySchema",
+  "version": "1.0.0",
+  "fields": {
+    "id": "string",
+    "category": "string",
+    "description": "string",
+    "rules": "array",
+    "severity": "string",
+    "allowedActions": "array",
+    "deniedActions": "array",
+    "complianceLevel": "string"
+  }
+}

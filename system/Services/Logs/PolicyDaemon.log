@@ -1,0 +1,36 @@
+{
+  "Event": "POLICY_DAEMON_START",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "POLICY_FILE_MISSING",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "POLICY_DAEMON_COMPLETE",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "POLICY_DAEMON_START",
+  "Timestamp": "2025-11-24T00:29:24"
+}
+{
+  "Event": "POLICY_FILE_MISSING",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "POLICY_DAEMON_COMPLETE",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "POLICY_DAEMON_START",
+  "Timestamp": "2025-11-24T00:31:04"
+}
+{
+  "Event": "POLICY_FILE_MISSING",
+  "Timestamp": "2025-11-24T00:31:05"
+}
+{
+  "Event": "POLICY_DAEMON_COMPLETE",
+  "Timestamp": "2025-11-24T00:31:05"
+}
