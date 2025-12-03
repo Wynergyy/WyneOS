@@ -1,0 +1,71 @@
+{
+  "riskRegister": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "documented",
+    "lastUpdated": ""
+  },
+
+  "risks": [
+    {
+      "id": 1,
+      "name": "Telemetry Failure",
+      "description": "Heartbeat or sync telemetry stops updating.",
+      "impact": "Loss of visibility into system state.",
+      "likelihood": "low",
+      "control": "Telemetry health checks and Phase 3 enforcement.",
+      "mitigation": "Trigger safe mode if telemetry becomes invalid."
+    },
+    {
+      "id": 2,
+      "name": "Integrity Seal Break",
+      "description": "Sealed files modified without authorisation.",
+      "impact": "Potential corruption or security compromise.",
+      "likelihood": "very low",
+      "control": "SHA256 hashing and seal verification.",
+      "mitigation": "Lock system and require governance approval."
+    },
+    {
+      "id": 3,
+      "name": "Predictive Model Drift",
+      "description": "Predictive outputs become inaccurate.",
+      "impact": "Incorrect optimisation decisions.",
+      "likelihood": "medium",
+      "control": "Baseline checks and Phase 8 recalibration.",
+      "mitigation": "Rebuild predictive baseline using telemetry."
+    },
+    {
+      "id": 4,
+      "name": "Emergent Behaviour Instability",
+      "description": "Phase 9 behaviour exceeds defined boundaries.",
+      "impact": "Unexpected output or system deviation.",
+      "likelihood": "very low",
+      "control": "Stability checks within Phase 9.",
+      "mitigation": "Governance override and controlled shutdown."
+    },
+    {
+      "id": 5,
+      "name": "Unauthorised Runtime Execution",
+      "description": "Unapproved scripts executed in Node or PowerShell runtime.",
+      "impact": "Potential threat or system manipulation.",
+      "likelihood": "low",
+      "control": "Controlled runtime directories and policy rules.",
+      "mitigation": "Runtime lockdown and audit review."
+    },
+    {
+      "id": 6,
+      "name": "External Integration Misuse",
+      "description": "External system attempts to exceed permitted access.",
+      "impact": "Security or integrity risk.",
+      "likelihood": "low",
+      "control": "Service boundary definition and governance.",
+      "mitigation": "Deny access and trigger governance alert."
+    }
+  ],
+
+  "overallAssessment": {
+    "riskLevel": "low",
+    "summary": "WyneOS v1.0 presents a low operational risk with strong governance, integrity controls, and telemetry validation.",
+    "notes": "All identified risks have active controls and mitigations."
+  }
+}
