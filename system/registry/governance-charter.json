@@ -1,0 +1,62 @@
+{
+  "governanceCharter": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "active",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the governance model, authority structure, and rule enforcement framework for WyneOS v1.0.",
+
+  "governanceModel": {
+    "phase": "Phase 7",
+    "authority": "WyneOS Governance and Integrity Team",
+    "scope": [
+      "Policy enforcement",
+      "Decision evaluation",
+      "Operational rule validation",
+      "Behavioural oversight"
+    ]
+  },
+
+  "principles": {
+    "transparency": "All governance decisions traceable through logs and the decision matrix.",
+    "consistency": "Same rules applied across all system operations.",
+    "integrity": "No action permitted that compromises system integrity or sealed components.",
+    "accountability": "All rule changes and overrides must be authorised and logged."
+  },
+
+  "decisionFramework": {
+    "policyEngine": "Evaluates actions against policy rules and governance feed.",
+    "decisionMatrix": "Determines allowed, restricted, or denied actions.",
+    "overrideProtocol": "Overrides only permitted through authorised governance channels."
+  },
+
+  "changeControl": {
+    "ruleChanges": "Must be approved by the Governance and Integrity Team.",
+    "engineUpdates": "Any change to the governance engine requires a version review.",
+    "auditRequirement": "All governance changes recorded within the audit chain."
+  },
+
+  "governanceBoundaries": {
+    "allowed": [
+      "Evaluation of runtime activity",
+      "Policy-based permissioning",
+      "Integrity-linked decision enforcement"
+    ],
+    "restricted": [
+      "Direct modification of sealed files",
+      "Unauthorised execution of scripts",
+      "Bypassing telemetry validations"
+    ],
+    "prohibited": [
+      "Any action that compromises manifests or seals",
+      "Any override without proper authority"
+    ]
+  },
+
+  "summary": {
+    "statement": "The governance charter ensures that WyneOS operates under strict, consistent, and accountable governance control.",
+    "notes": "This charter applies to all future 1.x versions unless formally revised."
+  }
+}
