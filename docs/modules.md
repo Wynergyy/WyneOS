@@ -1,38 +1,62 @@
-\# WyneOS Modules Reference
+\# WyneOS Module Reference
 
 
 
 \## WAR Runtime
 
-Handles registered routes and safe execution of handlers.
+Handles safe execution of registered routes.
 
 
 
 \## DataFabric
 
-Local store. No persistence. No external calls.
+Provides temporary in-memory storage.
 
 
 
 \## WyneID
 
-Identity structure holding claims and user-granted consent flags.
+Identity objects with local-only claims and consent.
 
 
 
 \## GuardianMesh
 
-Stores manual events with timestamps for transparency.
+Records events manually supplied by the user.
 
 
 
 \## WYNE-UI
 
-Simple component primitives for UI rendering.
+Simple string-based UI components.
 
 
 
-All modules operate in safe mode and cannot access external systems.
+\## Security Module
+
+Contains hashing helpers.
+
+
+
+\## Diagnostics Module
+
+Health checks and status summaries.
+
+
+
+\## Utils Module
+
+Time formatting and helper functions.
+
+
+
+\## Testing Module
+
+Local test runner for consistency checks.
+
+
+
+All modules are isolated, safe, and non-privileged.
 
 
 

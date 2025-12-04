@@ -2,53 +2,55 @@
 
 
 
-WyneOS Genesis is a modular, safe, local-only system with five core components:
+WyneOS Genesis is built from five modular pillars:
 
 
 
-1\. WAR Runtime  
+\## 1. WAR Runtime
 
-&nbsp;  Simple route execution engine.
-
-
-
-2\. DataFabric  
-
-&nbsp;  Local key-value data layer.
+A simple routing engine that executes registered handlers in a local-only environment.
 
 
 
-3\. WyneID  
+\## 2. DataFabric
 
-&nbsp;  Transparent identity object with user-controlled claims and consent.
-
-
-
-4\. GuardianMesh  
-
-&nbsp;  Manual event recording system.
+A transparent key-value storage layer for in-memory data.
 
 
 
-5\. WYNE-UI  
+\## 3. WyneID
 
-&nbsp;  Minimal UI components (local rendering only).
-
-
-
-All modules avoid:
-
-\- networking
-
-\- telemetry
-
-\- automation
-
-\- system access
+Identity object for holding claims and user-controlled consent flags.
 
 
 
-The entire platform is designed for safety, clarity, and long-term maintainability.
+\## 4. GuardianMesh
+
+Manual event log with timestamped entries.
+
+
+
+\## 5. WYNE-UI
+
+Simple UI primitives for non-interactive output.
+
+
+
+All modules:
+
+\- run entirely locally  
+
+\- require manual invocation  
+
+\- perform no networking  
+
+\- contain no automation  
+
+\- operate in safe mode  
+
+
+
+This architecture is clear, inspectable, and maintainable.
 
 
 
