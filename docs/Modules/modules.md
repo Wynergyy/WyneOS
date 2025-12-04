@@ -1,138 +1,84 @@
-\# WyneOS Modules  
+# WyneOS Modules Overview
 
-Public Overview of the Genesis Framework
+WyneOS is built as a modular, extensible framework.  
+Each component serves a distinct purpose while remaining interoperable  
+through a stable core architecture.
 
-
-
-The public edition of WyneOS introduces four conceptual modules.  
-
-These represent the safe, non-operational foundations of the system.
-
-
+This document introduces the major modules and their roles.
 
 ---
 
+## Core Runtime: WAR (WyneOS Autonomous Runtime)
 
+WAR powers request handling, routing, and lightweight computation.  
+It is intentionally minimal to ensure long-term stability.
 
-\## WAR Runtime
-
-
-
-A minimal execution model that demonstrates how WyneOS routes  
-
-and behaviours may work in a simulated environment.
-
-
-
-\- simple route registration  
-
-\- predictable behaviour  
-
-\- conceptual backbone of the system  
-
-
+Key responsibilities:
+- route registration  
+- payload handling  
+- deterministic outputs  
 
 ---
 
+## DataFabric
 
+A unified interface for storing structured data.  
+Designed for portability and long operational lifespans.
 
-\## DataFabric
-
-
-
-A structured model for handling safe, non-sensitive data.
-
-
-
-Focus areas:
-
-
-
-\- clarity  
-
-\- consistency  
-
-\- maintainability  
-
-\- predictable patterns  
-
-
+Capabilities:
+- key-value storage  
+- object persistence  
+- local-first operations  
 
 ---
 
+## WyneID
 
+Identity built on dignity, security, and clarity.
 
-\## WyneID
-
-
-
-A conceptual identity wrapper illustrating:
-
-
-
-\- integrity-first identity  
-
-\- stable identifiers  
-
-\- responsibility-driven design  
-
-
-
-The private implementation remains internal.  
-
-This public model is purely illustrative.
-
-
+Provides:
+- unique identifier generation  
+- namespace safety  
+- long-term stable identity primitives  
 
 ---
 
+## GuardianMesh
 
+Ethical governance and event oversight.
 
-\## GuardianMesh
+Handles:
+- event registration  
+- anomaly detection  
+- safety rules  
 
-
-
-A model for event-driven coordination and ethical governance.
-
-
-
-It explores:
-
-
-
-\- system-to-system signalling  
-
-\- safe coordination patterns  
-
-\- transparent oversight  
-
-
-
-Not monitoring.  
-
-Not surveillance.  
-
-Just structured clarity.
-
-
+GuardianMesh enforces trust without surveillance.
 
 ---
 
+## How These Modules Align
 
+Each module solves a real-world technical and human challenge:
 
-\## Combined Purpose
+- WAR ensures predictable behaviour  
+- DataFabric maintains integrity and continuity  
+- WyneID safeguards identity and structure  
+- GuardianMesh preserves safety and trust  
 
+Together they form the foundation of WyneOS:  
+a system engineered for longevity, clarity, and public benefit.
 
+---
 
-These modules together demonstrate the \*shape\* of WyneOS  
+## Future Modules
 
-without revealing operational engines, security layers,  
+Planned additions include:
 
-or internal compliance frameworks.
+- Telemetry Matrix  
+- Predictive Engine  
+- Observability Layer  
+- Integrity Mesh  
+- Distributed Knowledge Graph  
 
-
-
-WyneOS grows carefully, with long-term intent.
-
-
-
+All future modules will follow the same principles:  
+simple, stable, transparent, and designed for the next century.
