@@ -1,38 +1,46 @@
-\# WyneOS Documentation
+<!-- GitHub Pages Navigation Sidebar -->
 
 
 
-\[Home](/index.md)
+\* \*\*Start\*\*
+
+&nbsp; \* \[Home](/docs/index.md)
 
 
 
-\## Core
+\* \*\*Philosophy\*\*
 
-\- \[Philosophy](/Philosophy/philosophy.md)
-
-\- \[Modules](/Modules/modules.md)
-
-\- \[Roadmap](/Roadmap/roadmap.md)
+&nbsp; \* \[Foundations](/docs/Philosophy/philosophy.md)
 
 
 
-\## Concepts
+\* \*\*Future Concepts\*\*
 
-\- \[Identity](/Concepts/identity.md)
-
-\- \[Governance](/Concepts/governance.md)
-
-\- \[Infrastructure](/Concepts/infrastructure.md)
+&nbsp; \* \[Future Concepts](/docs/FutureConcepts/future-concepts.md)
 
 
 
-\## Vision Papers
+\* \*\*Design\*\*
 
-\- \[Foundations](/Vision/foundation.md)
+&nbsp; \* \[Design Principles](/docs/Design/getting-started.md)
 
-\- \[Civilisation-Scale Thinking](/Vision/civilisation-model.md)
 
-\- \[Ethical Design](/Vision/ethical-design.md)
+
+\* \*\*Architecture\*\*
+
+&nbsp; \* \[WyneOS Architecture](/docs/Architecture/architecture.md)
+
+
+
+\* \*\*Vision\*\*
+
+&nbsp; \* \[Long-Term Vision](/docs/Vision/vision.md)
+
+
+
+\* \*\*Roadmap\*\*
+
+&nbsp; \* \[Roadmap](/docs/Roadmap/roadmap.md)
 
 
 
