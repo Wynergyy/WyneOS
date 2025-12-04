@@ -1,62 +1,138 @@
-\# WyneOS Module Reference
+\# WyneOS Modules  
+
+Public Overview of the Genesis Framework
+
+
+
+The public edition of WyneOS introduces four conceptual modules.  
+
+These represent the safe, non-operational foundations of the system.
+
+
+
+---
 
 
 
 \## WAR Runtime
 
-Handles safe execution of registered routes.
+
+
+A minimal execution model that demonstrates how WyneOS routes  
+
+and behaviours may work in a simulated environment.
+
+
+
+\- simple route registration  
+
+\- predictable behaviour  
+
+\- conceptual backbone of the system  
+
+
+
+---
 
 
 
 \## DataFabric
 
-Provides temporary in-memory storage.
+
+
+A structured model for handling safe, non-sensitive data.
+
+
+
+Focus areas:
+
+
+
+\- clarity  
+
+\- consistency  
+
+\- maintainability  
+
+\- predictable patterns  
+
+
+
+---
 
 
 
 \## WyneID
 
-Identity objects with local-only claims and consent.
+
+
+A conceptual identity wrapper illustrating:
+
+
+
+\- integrity-first identity  
+
+\- stable identifiers  
+
+\- responsibility-driven design  
+
+
+
+The private implementation remains internal.  
+
+This public model is purely illustrative.
+
+
+
+---
 
 
 
 \## GuardianMesh
 
-Records events manually supplied by the user.
+
+
+A model for event-driven coordination and ethical governance.
 
 
 
-\## WYNE-UI
-
-Simple string-based UI components.
+It explores:
 
 
 
-\## Security Module
+\- system-to-system signalling  
 
-Contains hashing helpers.
+\- safe coordination patterns  
 
-
-
-\## Diagnostics Module
-
-Health checks and status summaries.
+\- transparent oversight  
 
 
 
-\## Utils Module
+Not monitoring.  
 
-Time formatting and helper functions.
+Not surveillance.  
 
-
-
-\## Testing Module
-
-Local test runner for consistency checks.
+Just structured clarity.
 
 
 
-All modules are isolated, safe, and non-privileged.
+---
+
+
+
+\## Combined Purpose
+
+
+
+These modules together demonstrate the \*shape\* of WyneOS  
+
+without revealing operational engines, security layers,  
+
+or internal compliance frameworks.
+
+
+
+WyneOS grows carefully, with long-term intent.
 
 
 
