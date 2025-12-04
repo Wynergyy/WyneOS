@@ -1,19 +1,60 @@
-# Future Infrastructure  
-Designing for the Century, Not the Moment
+\# WyneOS Genesis Roadmap
 
-WyneOS is built with a long-horizon perspective.  
-Infrastructure should be able to evolve across decades, not collapse  
-under its own weight within years.
 
-Key principles explored in WyneOS include:
 
-- resilience as a baseline  
-- modularity without fragility  
-- clarity over complexity  
-- ethical data handling  
-- systems that support communities and organisations  
+This roadmap reflects future safe and transparent enhancements.
 
-Long-term infrastructure is not just technology.  
-It is responsibility.
 
-WyneOS is a contribution to that conversation.
+
+\## Phase 1 – Public Release (Complete)
+
+\- Core modules established
+
+\- Documentation drafted
+
+\- GitHub repository published
+
+
+
+\## Phase 2 – Developer Experience
+
+\- Expand documentation
+
+\- Add examples and patterns
+
+\- Improve CLI utilities (local only)
+
+
+
+\## Phase 3 – UI \& Presentation
+
+\- Extended WYNE-UI mock components
+
+\- Demo dashboards (static)
+
+\- Clean branding and design elements
+
+
+
+\## Phase 4 – Integration Layer
+
+\- Reusable utilities for WFSL, SAS-CIC, and internal tools
+
+\- Shared schemas and config patterns
+
+
+
+\## Phase 5 – Community \& Visibility
+
+\- GitHub Pages site
+
+\- Tutorials and guides
+
+\- Public changelog and versioning
+
+
+
+All future work remains safe, local-only, and non-autonomous.
+
+
+

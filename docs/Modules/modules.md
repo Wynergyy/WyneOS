@@ -1,138 +1,62 @@
-\# WyneOS Modules  
-
-Public Overview of the Genesis Framework
-
-
-
-The public edition of WyneOS introduces four conceptual modules.  
-
-These represent the safe, non-operational foundations of the system.
-
-
-
----
+\# WyneOS Module Reference
 
 
 
 \## WAR Runtime
 
-
-
-A minimal execution model that demonstrates how WyneOS routes  
-
-and behaviours may work in a simulated environment.
-
-
-
-\- simple route registration  
-
-\- predictable behaviour  
-
-\- conceptual backbone of the system  
-
-
-
----
+Handles safe execution of registered routes.
 
 
 
 \## DataFabric
 
-
-
-A structured model for handling safe, non-sensitive data.
-
-
-
-Focus areas:
-
-
-
-\- clarity  
-
-\- consistency  
-
-\- maintainability  
-
-\- predictable patterns  
-
-
-
----
+Provides temporary in-memory storage.
 
 
 
 \## WyneID
 
-
-
-A conceptual identity wrapper illustrating:
-
-
-
-\- integrity-first identity  
-
-\- stable identifiers  
-
-\- responsibility-driven design  
-
-
-
-The private implementation remains internal.  
-
-This public model is purely illustrative.
-
-
-
----
+Identity objects with local-only claims and consent.
 
 
 
 \## GuardianMesh
 
-
-
-A model for event-driven coordination and ethical governance.
-
-
-
-It explores:
+Records events manually supplied by the user.
 
 
 
-\- system-to-system signalling  
+\## WYNE-UI
 
-\- safe coordination patterns  
-
-\- transparent oversight  
+Simple string-based UI components.
 
 
 
-Not monitoring.  
+\## Security Module
 
-Not surveillance.  
-
-Just structured clarity.
+Contains hashing helpers.
 
 
 
----
+\## Diagnostics Module
+
+Health checks and status summaries.
 
 
 
-\## Combined Purpose
+\## Utils Module
+
+Time formatting and helper functions.
 
 
 
-These modules together demonstrate the \*shape\* of WyneOS  
+\## Testing Module
 
-without revealing operational engines, security layers,  
-
-or internal compliance frameworks.
+Local test runner for consistency checks.
 
 
 
-WyneOS grows carefully, with long-term intent.
+All modules are isolated, safe, and non-privileged.
 
 
 
