@@ -1,0 +1,9 @@
+# WyneOS Logs Directory
+
+This folder is reserved for user-controlled logs only.
+
+No automated logging.
+No telemetry.
+No network operations.
+
+You choose what gets written here.

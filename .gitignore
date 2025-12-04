@@ -1,11 +1,5 @@
-tmp/
-sync-outbound/
-Core/Sync/keys/
-*.pem
-*.key
-*.txt
-Backups/
-system/Core/SystemModel/State/
-system/State/
-build/
 dist/
+node_modules/
+*.map
+*.log
+.env
