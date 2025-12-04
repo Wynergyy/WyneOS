@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WyneOS</title>
+  <link rel="stylesheet" href="../globals.css" />
+</head>
+
+<body>
+  <h1>WyneOS</h1>
+  <p>The emerging framework for long-term, human-centred systems.</p>
+
+  <h2>Documentation</h2>
+  <ul>
+    <li><a href="../docs/philosophy/philosophy.md">Philosophy</a></li>
+    <li><a href="../docs/FutureConcepts/future-concepts.md">Future Concepts</a></li>
+    <li><a href="../docs/Design/getting-started.md">Design Principles</a></li>
+    <li><a href="../docs/Architecture/architecture.md">Architecture</a></li>
+    <li><a href="../docs/Modules/modules.md">Modules</a></li>
+    <li><a href="../docs/Roadmap/roadmap.md">Roadmap</a></li>
+    <li><a href="../docs/Vision/vision.md">Vision</a></li>
+  </ul>
+
+  <h2>GitHub Repository</h2>
+  <p>
+    <a href="https://github.com/Wynergyy/WyneOS" target="_blank">View on GitHub</a>
+  </p>
+</body>
+</html>
