@@ -1,0 +1,115 @@
+{
+  "clusterRole": "seed",
+  "topology": [
+    {
+      "timestamp": "2025-12-05T04:51:23.264Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T04:53:54.343Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T04:55:59.962Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:00:41.982Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:00:47.797Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:05:30.996Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:08:06.508Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:11:09.349Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:14:14.641Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-05T05:18:59.761Z",
+      "nodeCount": 1,
+      "nodes": [
+        {
+          "nodeID": "3710d005-8306-4d82-8814-730fb58046b7",
+          "nodeType": "single",
+          "registered": true
+        }
+      ]
+    }
+  ]
+}
