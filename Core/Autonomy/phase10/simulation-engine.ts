@@ -1,31 +1,25 @@
-import { Phase10Analysis, Phase10Simulation, Phase10SimResult } from "./phase10-types";
+import { Phase10Analysis, Phase10Simulation, Phase10SimResult } from "./phase10-types.ts";
 
 /**
  * Phase 10 Simulation Engine
- * SAFE: Performs dry-run simulations only.
- * No real actions are executed.
+ * SAFE: Produces hypothetical outcomes only.
  */
 
 export const simulateActions = async (
   analysis: Phase10Analysis
 ): Promise<Phase10Simulation> => {
 
-  const results: Phase10SimResult[] = [];
-
-  for (const plan of analysis.recommended) {
-    results.push({
-      action: plan.action,
-      simulated: true,
-      risk: plan.risk,
-      outcome: `Simulation completed for ${plan.action}`,
-      rationale: plan.rationale
-    });
-  }
+  const results: Phase10SimResult[] = analysis.recommended.map(actionPlan => ({
+    action: actionPlan.action,
+    risk: actionPlan.risk,
+    rationale: actionPlan.rationale,
+    predictedOutcome: "success" // placeholder for simulated result
+  }));
 
   return {
     timestamp: Date.now(),
     analysis,
-    results,
+    simulationResults: results,
     sealed: false
   };
 };

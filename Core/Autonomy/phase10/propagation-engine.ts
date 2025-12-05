@@ -1,29 +1,19 @@
-import { Phase10EnforcementResult, Phase10PropagationResult } from "./phase10-types";
+import { Phase10EnforcementResult, Phase10PropagationResult } from "./phase10-types.ts";
 
 /**
  * Phase 10 Propagation Engine
- * SAFE: Only propagates updates after human-approved enforcement.
+ * SAFE: Calculates the propagation effects of enforcement requests.
  */
 
-export const propagateState = async (
-  enforcement: Phase10EnforcementResult
-): Promise<Phase10PropagationResult> => {
+export const propagateEffects = (
+  enforcementResults: Phase10EnforcementResult[]
+): Phase10PropagationResult[] => {
 
-  // No propagation allowed unless enforcement was executed.
-  if (!enforcement.executed) {
-    return {
-      timestamp: Date.now(),
-      propagated: false,
-      reason: "Propagation skipped: enforcement not executed",
-      sealed: false
-    };
-  }
-
-  // If human-approved enforcement occurred, allow propagation.
-  return {
-    timestamp: Date.now(),
-    propagated: true,
-    reason: "Propagation completed after human approval",
+  return enforcementResults.map(result => ({
+    action: result.action,
+    risk: result.risk,
+    rationale: result.rationale,
+    propagatedImpact: "none", // placeholder for simulation
     sealed: false
-  };
+  }));
 };

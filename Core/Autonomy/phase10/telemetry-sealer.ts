@@ -1,18 +1,16 @@
-import { createHash } from "crypto";
-import { Phase10Sealed } from "./phase10-types";
+import { Phase10Sealed } from "./phase10-types.ts";
 
 /**
  * Phase 10 Telemetry Sealer
- * SAFE: Produces sealed telemetry objects for audit integrity.
+ * SAFE: Seals telemetry data for audit and reporting purposes.
  */
 
-export const sealTelemetry = <T>(input: T): Phase10Sealed<T> => {
-  const serialized = JSON.stringify(input);
-  const seal = createHash("sha256").update(serialized).digest("hex");
-
-  return {
-    data: input,
-    seal,
-    sealedAt: Date.now()
+export const sealTelemetry = (payload: any): Phase10Sealed => {
+  const sealedPayload = {
+    ...payload,
+    sealed: true,
+    sealTimestamp: Date.now()
   };
+
+  return sealedPayload;
 };
