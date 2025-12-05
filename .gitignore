@@ -1,6 +1,60 @@
-dist/
-node_modules/
-*.map
-*.log
+# =============================
+# WyneOS Repository Hardening
+# Level 1 .gitignore
+# =============================
+
+# Environment variables
 .env
-Backups/*.zip
+.env.local
+.env.*.local
+
+# Secrets and keys
+*.key
+*.pem
+*.pfx
+*.cert
+*.der
+secrets/
+keys/
+certs/
+
+# Licence Engine sensitive paths
+Core/LicenceEngine/keys/
+Core/LicenceEngine/signatures/
+Core/LicenceEngine/private/
+Core/LicenceEngine/internal/
+
+# Builds and output
+dist/
+build/
+out/
+coverage/
+tmp/
+
+# Dependency folders
+node_modules/
+.cache/
+.temp/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Backups and local configurations
+*.backup
+*.local.json
+*.local.yaml
+*.history
+*.bak
+
+# Editor / IDE noise
+.vscode/
+.idea/
+*.code-workspace
