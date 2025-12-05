@@ -1,46 +1,18 @@
-<!-- GitHub Pages Navigation Sidebar -->
-
-
-
-\* \*\*Start\*\*
-
-&nbsp; \* \[Home](/docs/index.md)
-
-
-
-\* \*\*Philosophy\*\*
-
-&nbsp; \* \[Foundations](/docs/Philosophy/philosophy.md)
-
-
-
-\* \*\*Future Concepts\*\*
-
-&nbsp; \* \[Future Concepts](/docs/FutureConcepts/future-concepts.md)
-
-
-
-\* \*\*Design\*\*
-
-&nbsp; \* \[Design Principles](/docs/Design/getting-started.md)
-
-
-
-\* \*\*Architecture\*\*
-
-&nbsp; \* \[WyneOS Architecture](/docs/Architecture/architecture.md)
-
-
-
-\* \*\*Vision\*\*
-
-&nbsp; \* \[Long-Term Vision](/docs/Vision/vision.md)
-
-
-
-\* \*\*Roadmap\*\*
-
-&nbsp; \* \[Roadmap](/docs/Roadmap/roadmap.md)
-
-
-
+* [Home](/index.md)
+* Core Documentation
+  * [Getting Started](/getting-started.md)
+  * [Architecture](/architecture.md)
+  * [Modules Overview](/modules.md)
+  * [Philosophy](/philosophy.md)
+  * [Roadmap](/roadmap.md)
+  * [Foundation](/foundation.md)
+* Future Concepts
+  * [Overview](/future-concepts/future-concepts.md)
+  * [Vision Extensions](/future-concepts/vision.md)
+* Additional References
+  * [Audit Chain](/audit-chain.md)
+  * [Governance Model](/governance-model.md)
+  * [System Versioning](/system-versioning.md)
+  * [Telemetry](/telemetry.md)
+  * [Build and Runtime](/build-and-runtime.md)
+  * [Module Map](/module-map.md)
