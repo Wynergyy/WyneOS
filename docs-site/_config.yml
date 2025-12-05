@@ -1,0 +1,6 @@
+title: WyneOS Documentation
+description: A Framework for Long-Horizon Digital Infrastructure
+theme: jekyll-theme-minimal
+logo: /images/wyneos-logo.png
+show_downloads: false
+markdown: kramdown

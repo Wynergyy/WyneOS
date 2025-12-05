@@ -1,2 +1,7 @@
-{}
-{}
+{
+  "name": "wyneos",
+  "version": "1.0.0",
+  "description": "WyneOS Core System",
+  "type": "module",
+  "license": "MIT"
+}

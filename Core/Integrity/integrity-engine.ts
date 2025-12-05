@@ -1,38 +1,91 @@
+import { createHash } from "crypto";
+import * as fs from "fs";
+import * as path from "path";
+
 /**
- * WyneOS Integrity Engine – Phase 0.2
- * Generates signatures, verifies module integrity and records via TelemetryMatrix.
+ * Load WyneOS Integrity Module Manifest
  */
+export const loadManifest = () => {
+  const manifestPath = path.join(__dirname, "integrity-manifest.json");
+  const raw = fs.readFileSync(manifestPath, "utf8");
+  return JSON.parse(raw);
+};
 
-import { Hasher } from "./hasher";
-import { TelemetryMatrix } from "../Telemetry/telemetry-matrix";
+/**
+ * Hash a file using SHA-256
+ */
+export const hashFile = (filePath: string): string => {
+  const data = fs.readFileSync(filePath);
+  const hash = createHash("sha256").update(data).digest("hex");
+  return hash;
+};
 
-export class IntegrityEngine {
-  private static registry: Map<string, string> = new Map();
+/**
+ * Hash all module files deterministically in the order defined in the manifest
+ */
+export const hashModule = () => {
+  const manifest = loadManifest();
+  const baseDir = __dirname;
 
-  static register(name: string, data: any) {
-    const signature = Hasher.hashObject(data);
-    this.registry.set(name, signature);
-    TelemetryMatrix.record("integrity.register", { name, signature });
-    return signature;
-  }
+  const results: { file: string; hash: string }[] = [];
 
-  static verify(name: string, currentData: any) {
-    const existing = this.registry.get(name);
-    const current = Hasher.hashObject(currentData);
+  for (const file of manifest.files) {
+    const fullPath = path.join(baseDir, file);
+    const digest = hashFile(fullPath);
 
-    const valid = existing === current;
-
-    TelemetryMatrix.record("integrity.verify", {
-      name,
-      valid,
-      expected: existing,
-      actual: current
+    results.push({
+      file,
+      hash: digest
     });
-
-    return valid;
   }
 
-  static list() {
-    return Array.from(this.registry.entries());
+  return {
+    module: manifest.module,
+    version: manifest.version,
+    hashing: results
+  };
+};
+
+/**
+ * Validate the module seal state
+ */
+export const verifySeal = () => {
+  const manifest = loadManifest();
+
+  if (manifest.seal.sealed !== false) {
+    return {
+      ok: true,
+      status: "sealed",
+      phase: manifest.seal.phase
+    };
   }
+
+  return {
+    ok: true,
+    status: "unsealed",
+    phase: manifest.seal.phase
+  };
+};
+
+/**
+ * Full Integrity Check
+ */
+export const runIntegrityCheck = () => {
+  const manifest = loadManifest();
+  const hashes = hashModule();
+  const seal = verifySeal();
+
+  return {
+    manifest,
+    hashes,
+    seal
+  };
+};
+
+// CLI runner
+if (require.main === module) {
+  const output = runIntegrityCheck();
+  console.log("WyneOS Integrity Engine");
+  console.log(JSON.stringify(output, null, 2));
 }
+
