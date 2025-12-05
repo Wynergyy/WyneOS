@@ -1,27 +1,39 @@
-import { runDetection } from "./detection-engine.ts";
-import { analyseDetection } from "./analysis-engine.ts";
-import { simulateActions } from "./simulation-engine.ts";
-import { sealTelemetry } from "./telemetry-sealer.ts";
-import { Phase10StateBundle } from "./phase10-types.ts";
+// WyneOS Phase 10
+// State Provider
+// Deterministic Phase 10 system report
 
 import { getIntegrityState } from "./stubs/integrity-provider.ts";
-import { getMeshState } from "./stubs/mesh-provider.ts";
 import { getLicenceState } from "./stubs/licence-provider.ts";
+import { getAutonomyState } from "./stubs/state-provider.ts";
 
-export const buildPhase10State = async (): Promise<Phase10StateBundle> => {
-  const integrity = await getIntegrityState();
-  const mesh = await getMeshState();
-  const licence = await getLicenceState();
+function safe(label, fn) {
+  return fn().catch(err => ({
+    ok: false,
+    label,
+    error: String(err)
+  }));
+}
 
-  return { timestamp: Date.now(), integrity, mesh, licence };
-};
+export async function buildPhase10Report() {
+  const timestamp = new Date().toISOString();
 
-export const buildPhase10Report = async () => {
-  const state = await buildPhase10State();
+  const integrity = await safe("integrity", async () => {
+    return await getIntegrityState();
+  });
 
-  const detection = await runDetection(state.integrity.snapshot, state.mesh, state.licence);
-  const analysis = analyseDetection(detection);
-  const simulation = await simulateActions(analysis);
+  const licence = await safe("licence", async () => {
+    return await getLicenceState();
+  });
 
-  return sealTelemetry({ state, detection, analysis, simulation });
-};
+  const autonomy = await safe("autonomy", async () => {
+    return await getAutonomyState();
+  });
+
+  return {
+    phase: 10,
+    generated: timestamp,
+    integrity,
+    licence,
+    autonomy
+  };
+}
