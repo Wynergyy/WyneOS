@@ -1,40 +1,30 @@
-/**
- * WyneOS Phase 14 – Legal Engine Core
- * Provides structured legal reasoning, rule execution, and compliant output.
- */
-
-export interface LegalContext {
-  actor: string;
-  action: string;
-  jurisdiction: string;
-  metadata?: Record<string, any>;
-}
-
-export interface LegalResult {
-  lawful: boolean;
-  reason: string;
-  references: string[];
-}
+import { LegalPolicy } from "./legal-policy";
+import { LegalAudit } from "./legal-audit";
+import { randomUUID } from "crypto";
 
 export class LegalEngine {
-  private rules: Array<(ctx: LegalContext) => LegalResult | null> = [];
+  static evaluate(payload: any) {
+    const policyResult = LegalPolicy.evaluate(payload);
 
-  registerRule(rule: (ctx: LegalContext) => LegalResult | null) {
-    this.rules.push(rule);
-  }
+    const auditEntry = {
+      id: randomUUID(),
+      timestamp: Date.now(),
+      category: "LEGAL_ENGINE_EVAL",
+      payloadHash: LegalEngine.simpleHash(JSON.stringify(payload)),
+      decision: policyResult.result
+    };
 
-  evaluate(ctx: LegalContext): LegalResult {
-    for (const rule of this.rules) {
-      const res = rule(ctx);
-      if (res) return res;
-    }
+    LegalAudit.record(auditEntry);
 
     return {
-      lawful: false,
-      reason: "No matching legal rule",
-      references: []
+      ...policyResult,
+      auditId: auditEntry.id
     };
   }
-}
 
-export const legalEngine = new LegalEngine();
+  static simpleHash(str: string): string {
+    let hash = 0;
+    for (const c of str) hash = (hash * 31 + c.charCodeAt(0)) >>> 0;
+    return hash.toString(16);
+  }
+}
