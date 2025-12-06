@@ -1,52 +1,27 @@
-import fs from "fs";
-import path from "path";
-import { runPredictiveModel } from "./autonomy-predict";
-import { buildAuditEntry } from "./autonomy-audit";
+import { StateProvider } from "./state-provider";
+import { BehaviourRegistry } from "./behaviour-registry";
 
-interface AutonomyState {
-  cycles: number;
-  stable: boolean;
-  adaptiveMode: boolean;
-  adaptiveBypass: boolean;
-  auditLog: any[];
-}
+export class AutonomyEngine {
+  private state = new StateProvider();
+  private behaviours = new BehaviourRegistry();
 
-const statePath = path.join(__dirname, "autonomy-state.json");
-
-export function runAutonomyCycle(): void {
-  let state: AutonomyState;
-
-  if (fs.existsSync(statePath)) {
-    state = JSON.parse(fs.readFileSync(statePath, "utf8"));
-  } else {
-    state = {
-      cycles: 0,
-      stable: true,
-      adaptiveMode: false,
-      adaptiveBypass: false,
-      auditLog: []
-    };
+  boot() {
+    this.state.incrementBootCount();
   }
 
-  state.cycles += 1;
+  registerBehaviour(key: string, fn: (ctx: any) => any) {
+    this.behaviours.register(key, fn);
+  }
 
-  const predictive = runPredictiveModel();
-  const audit = buildAuditEntry(state.cycles, state.stable, predictive);
+  async runBehaviour(key: string, ctx: any = {}) {
+    await this.behaviours.run(key, ctx);
+  }
 
-  state.auditLog.push(audit);
+  getState() {
+    return this.state.getState();
+  }
 
-  fs.writeFileSync(statePath, JSON.stringify(state, null, 2));
-
-  console.log("WyneOS Autonomy Engine");
-  console.log("=======================");
-  console.log("Cycle Timestamp:", new Date().toISOString());
-  console.log("System Stable:", state.stable);
-  console.log("Adaptive Mode:", state.adaptiveMode ? "ON" : "OFF");
-  console.log("-----------------------");
-  console.log("Predictive Forecast:", predictive.stabilityForecast);
-  console.log("Confidence:", predictive.confidence);
-  console.log("Notes:", predictive.notes.join("; ") || "None");
-  console.log("=======================");
-  console.log("Cycle Complete");
-  console.log("Cycles Run Total:", state.cycles);
+  getRegisteredBehaviours() {
+    return this.behaviours.list();
+  }
 }
