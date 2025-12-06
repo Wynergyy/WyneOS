@@ -1,21 +1,11 @@
-/**
- * WyneOS Integrity Hasher – Phase 0.2
- * Provides SHA-256 hashing for files, objects and buffers.
- */
-
 import { createHash } from "crypto";
 
-export class Hasher {
-  static hashString(data: string): string {
-    return createHash("sha256").update(data).digest("hex");
-  }
+export function sha256(data: string | Buffer): string {
+  const hash = createHash("sha256");
+  hash.update(data);
+  return hash.digest("hex");
+}
 
-  static hashObject(obj: any): string {
-    const json = JSON.stringify(obj, Object.keys(obj).sort());
-    return this.hashString(json);
-  }
-
-  static hashBuffer(buffer: Buffer): string {
-    return createHash("sha256").update(buffer).digest("hex");
-  }
+export function hashObject(obj: unknown): string {
+  return sha256(JSON.stringify(obj));
 }

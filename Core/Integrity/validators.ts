@@ -1,18 +1,17 @@
-/**
- * WyneOS Validators – Phase 0.2
- * Lightweight schema and consistency validation.
- */
+import { hashObject } from "./hasher";
 
-export class Validators {
-  static requireKeys(obj: any, keys: string[]) {
-    return keys.every(k => Object.prototype.hasOwnProperty.call(obj, k));
-  }
+export interface IntegrityRecord {
+  hash: string;
+  timestamp: number;
+}
 
-  static isNonEmptyString(value: any) {
-    return typeof value === "string" && value.trim().length > 0;
-  }
+export function validateIntegrity(input: unknown, record: IntegrityRecord) {
+  const computed = hashObject(input);
 
-  static isTimestamp(value: string) {
-    return !isNaN(Date.parse(value));
-  }
+  return {
+    valid: computed === record.hash,
+    expected: record.hash,
+    actual: computed,
+    timestamp: record.timestamp
+  };
 }
