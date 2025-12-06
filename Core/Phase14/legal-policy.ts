@@ -1,56 +1,40 @@
-/**
- * WyneOS Phase 14 – Legal Policy Layer
- * Defines structured, auditable policy rules for the Legal Engine.
- */
-
-import { LegalContext, LegalResult, legalEngine } from "./legal-engine";
-
 export interface LegalPolicyRule {
   id: string;
   description: string;
-  jurisdiction: string;
-  evaluate: (ctx: LegalContext) => LegalResult | null;
+  appliesTo: "input" | "output" | "storage" | "transmission";
+  condition: (payload: any) => boolean;
+  action: "allow" | "audit" | "block";
 }
 
-export class LegalPolicyRegistry {
-  private rules: LegalPolicyRule[] = [];
+export class LegalPolicy {
+  private static rules: LegalPolicyRule[] = [];
 
-  register(rule: LegalPolicyRule) {
+  static register(rule: LegalPolicyRule) {
     this.rules.push(rule);
-    legalEngine.registerRule((ctx) => {
-      if (ctx.jurisdiction !== rule.jurisdiction) return null;
-      return rule.evaluate(ctx);
-    });
   }
 
-  list() {
-    return this.rules;
-  }
-}
+  static evaluate(payload: any): { result: string; triggered: string[] } {
+    const triggered: string[] = [];
 
-export const legalPolicies = new LegalPolicyRegistry();
+    for (const rule of this.rules) {
+      try {
+        if (rule.condition(payload)) {
+          triggered.push(rule.id);
 
-/**
- * Default foundational policies.
- */
+          if (rule.action === "block") {
+            return { result: "LEGAL_BLOCK", triggered };
+          }
 
-legalPolicies.register({
-  id: "WLIL-GENERAL-LAWFUL-ACTION",
-  description: "Action must be explicitly allowed by framework or policy.",
-  jurisdiction: "uk",
-  evaluate(ctx: LegalContext): LegalResult | null {
-    if (ctx.action.startsWith("unauthorised")) {
-      return {
-        lawful: false,
-        reason: "Action not permitted within defined legal framework.",
-        references: ["WLIL-UK-ACT-CORE-001"]
-      };
+          if (rule.action === "audit") {
+            return { result: "AUDIT_REQUIRED", triggered };
+          }
+        }
+      } catch {
+        triggered.push(`ERR:${rule.id}`);
+        return { result: "LEGAL_BLOCK", triggered };
+      }
     }
 
-    return {
-      lawful: true,
-      reason: "Action falls within acceptable permitted boundaries.",
-      references: ["WLIL-UK-ACT-CORE-001"]
-    };
+    return { result: "ALLOW", triggered };
   }
-});
+}
