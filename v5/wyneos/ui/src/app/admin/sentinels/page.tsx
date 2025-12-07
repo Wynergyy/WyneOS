@@ -1,10 +1,8 @@
-export default function SentinelsModule() {
+export default function AdminSentinelsPage() {
   return (
-    <div className="text-neutral-100">
-      <h1 className="text-3xl font-bold mb-4">Sentinels</h1>
-      <p className="text-neutral-400">
-        Behaviour engine, flow orchestration, and sentinel lifecycle control.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>Sentinels Module</h1>
+      <p>Administrative controls for WyneOS sentinel systems.</p>
+    </main>
   );
 }
