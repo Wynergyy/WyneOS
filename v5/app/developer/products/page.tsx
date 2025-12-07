@@ -1,49 +1,73 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
-interface Product {
+interface ProductRecord {
   id: string;
   name: string;
-  created: number;
+  description?: string;
+  createdAt: number;
 }
 
-export default function ProductsPage() {
-  const [products, setProducts] = useState<Product[]>([]);
+export default function DeveloperProductsPage() {
+  const [items, setItems] = useState<ProductRecord[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let active = true;
+
     async function load() {
-      const res = await fetch("/api/developer/products");
-      const data = await res.json();
-      setProducts(data.products || []);
+      try {
+        const r = await fetch("/api/developer/products");
+        const data = await r.json();
+
+        if (active && Array.isArray(data.products)) {
+          setItems(data.products);
+        }
+      } catch {
+        if (active) setItems([]);
+      } finally {
+        if (active) setLoading(false);
+      }
     }
+
     load();
+    return () => {
+      active = false;
+    };
   }, []);
 
-  return (
-    <div style={{ padding: "40px", maxWidth: "800px", margin: "0 auto" }}>
-      <h1>Products</h1>
-
-      <Link href="/developer/products/new">Create New Product</Link>
-
-      <div style={{ marginTop: "30px" }}>
-        {products.length === 0 && <p>No products created yet.</p>}
-
-        <ul>
-          {products.map((p) => (
-            <li key={p.id} style={{ marginBottom: "10px" }}>
-              <strong>{p.name}</strong>  
-              <div style={{ opacity: 0.7 }}>
-                ID: {p.id}  
-              </div>
-              <div style={{ fontSize: "14px" }}>
-                Created: {new Date(p.created).toLocaleString()}
-              </div>
-            </li>
-          ))}
-        </ul>
+  if (loading) {
+    return (
+      <div className="p-6">
+        <h1 className="text-2xl font-bold">Developer Products</h1>
+        <p className="mt-4 text-muted-foreground">Loading products...</p>
       </div>
+    );
+  }
+
+  return (
+    <div className="p-6 space-y-6">
+      <h1 className="text-2xl font-bold">Developer Products</h1>
+
+      {items.length === 0 ? (
+        <p className="text-muted-foreground">No products found.</p>
+      ) : (
+        <div className="space-y-4">
+          {items.map((p) => (
+            <div
+              key={p.id}
+              className="border p-4 rounded-md bg-card shadow-sm space-y-1"
+            >
+              <p className="font-semibold">{p.name}</p>
+              {p.description && <p>{p.description}</p>}
+              <p className="text-sm text-muted-foreground">
+                Created {new Date(p.createdAt).toLocaleString()}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
