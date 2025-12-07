@@ -1,18 +1,26 @@
-﻿import fs from 'fs';
-import path from 'path';
+﻿/**
+ * WyneOS Phase 4 Behaviour Log
+ * Records basic behaviour evaluation events.
+ */
+
+export interface BehaviourLogEntry {
+  timestamp: number;
+  event: string;
+}
 
 export class BehaviourLog {
-  static log(event, output) {
-    const dir = path.join(process.cwd(), 'system', 'logs');
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  private entries: BehaviourLogEntry[] = [];
 
-    const entry = {
-      ts: new Date().toISOString(),
-      event,
-      output
-    };
+  record(event: string): void {
+    this.entries.push({
+      timestamp: Date.now(),
+      event
+    });
+  }
 
-    const file = path.join(dir, 'behaviour.log');
-    fs.appendFileSync(file, JSON.stringify(entry) + '\n');
+  getLogs(): BehaviourLogEntry[] {
+    return [...this.entries];
   }
 }
+
+export const behaviourLog = new BehaviourLog();
