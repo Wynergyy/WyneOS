@@ -1,19 +1,41 @@
-﻿export interface WyneModule {
-  name: string
-  initialise: () => void
+﻿/**
+ * WFSL Module Loader
+ * Safe, deterministic loader for internal WyneOS modules
+ */
+
+export interface LoadedModule<T = unknown> {
+  name: string;
+  ok: boolean;
+  module?: T;
+  error?: string;
 }
 
 export class ModuleLoader {
-  private static modules: WyneModule[] = []
+  async load<T = unknown>(path: string, name: string): Promise<LoadedModule<T>> {
+    try {
+      if (!path || typeof path !== "string") {
+        return {
+          name,
+          ok: false,
+          error: "Invalid module path"
+        };
+      }
 
-  static register(module: WyneModule) {
-    this.modules.push(module)
-    console.log(\[ModuleLoader] Registered module: \\)
-  }
+      const mod = (await import(path)) as T;
 
-  static initialiseAll() {
-    console.log("[ModuleLoader] Initialising Phase 1 modules…")
-    this.modules.forEach(m => m.initialise())
-    console.log("[ModuleLoader] All modules initialised.")
+      return {
+        name,
+        ok: true,
+        module: mod
+      };
+    } catch (err) {
+      return {
+        name,
+        ok: false,
+        error: err instanceof Error ? err.message : "Unknown module load error"
+      };
+    }
   }
 }
+
+export const moduleLoader = new ModuleLoader();
