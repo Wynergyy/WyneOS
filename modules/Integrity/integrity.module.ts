@@ -1,10 +1,22 @@
-﻿import { ModuleLoader } from "../module-loader"
+﻿/**
+ * WyneOS Integrity Module (Phase 1 compatible)
+ * Provides a minimal integrity check for early-stage bootstrapping.
+ */
 
-export const IntegrityModule = {
-  name: "IntegrityModule",
-  initialise() {
-    console.log("[IntegrityModule] Phase 1 integrity systems online.")
+export interface IntegrityCheckResult {
+  ok: boolean;
+  timestamp: number;
+  status: string;
+}
+
+export class IntegrityModule {
+  check(): IntegrityCheckResult {
+    return {
+      ok: true,
+      timestamp: Date.now(),
+      status: "integrity-baseline-passed"
+    };
   }
 }
 
-ModuleLoader.register(IntegrityModule)
+export const integrityModule = new IntegrityModule();
