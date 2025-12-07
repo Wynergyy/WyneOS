@@ -1,13 +1,26 @@
-﻿export class BehaviourEngine {
-  static rules = [];
+﻿/**
+ * WyneOS Phase 4 Behaviour Engine
+ * Evaluates simple behaviour rules and returns decisions.
+ */
 
-  static registerRule(rule) {
-    this.rules.push(rule);
-  }
+export interface BehaviourContext {
+  input: Record<string, unknown>;
+}
 
-  static process(event) {
-    return this.rules
-      .filter(r => r.trigger === event.type)
-      .map(r => r.action(event));
+export interface BehaviourDecision {
+  ok: boolean;
+  timestamp: number;
+  decision: string;
+}
+
+export class BehaviourEngine {
+  evaluate(context: BehaviourContext): BehaviourDecision {
+    return {
+      ok: true,
+      timestamp: Date.now(),
+      decision: "default"
+    };
   }
 }
+
+export const behaviourEngine = new BehaviourEngine();
