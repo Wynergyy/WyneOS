@@ -1,10 +1,8 @@
-export default function ComplianceModule() {
+export default function AdminCompliancePage() {
   return (
-    <div className="text-neutral-100">
-      <h1 className="text-3xl font-bold mb-4">Compliance Engine</h1>
-      <p className="text-neutral-400">
-        Regulatory stack, rules engine, and legal guard interface.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>Compliance Module</h1>
+      <p>Administrative controls for WyneOS compliance systems.</p>
+    </main>
   );
 }
