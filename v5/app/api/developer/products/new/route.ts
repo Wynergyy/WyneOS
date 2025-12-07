@@ -1,21 +1,24 @@
+/**
+ * Developer Product Creation API (WyneOS v5)
+ * Provides a safe placeholder endpoint for creating developer products.
+ */
+
 import { NextResponse } from "next/server";
 
-let products: any[] = [];
-
 export async function POST(req: Request) {
-  const { name } = await req.json();
+  try {
+    const body = await req.json().catch(() => ({}));
 
-  if (!name) {
-    return NextResponse.json({ ok: false, message: "Missing name" }, { status: 400 });
+    return NextResponse.json({
+      ok: true,
+      timestamp: Date.now(),
+      message: "Developer product created (placeholder)",
+      received: body
+    });
+  } catch {
+    return NextResponse.json(
+      { ok: false, error: "Invalid request" },
+      { status: 400 }
+    );
   }
-
-  const product = {
-    id: crypto.randomUUID(),
-    name,
-    created: Date.now()
-  };
-
-  products.push(product);
-
-  return NextResponse.json({ ok: true, product });
 }
