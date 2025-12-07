@@ -1,10 +1,8 @@
-export default function TelemetryModule() {
+export default function AdminTelemetryPage() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">Telemetry</h1>
-      <p className="text-neutral-400">
-        Real-time metrics, heartbeat data, event streams, and monitoring.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>Telemetry Module</h1>
+      <p>Administrative controls for WyneOS telemetry systems.</p>
+    </main>
   );
 }
