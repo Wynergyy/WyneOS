@@ -1,61 +1,75 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
-export default function NewProductPage() {
+export default function DeveloperNewProductPage() {
   const [name, setName] = useState("");
-  const router = useRouter();
-  const [loading, setLoading] = useState(false);
+  const [description, setDescription] = useState("");
+  const [status, setStatus] = useState<null | string>(null);
+  const [busy, setBusy] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
-    setLoading(true);
+    setBusy(true);
+    setStatus(null);
 
-    const res = await fetch("/api/developer/products/new", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name })
-    });
+    try {
+      const r = await fetch("/api/developer/products/new", {
+        method: "POST",
+        body: JSON.stringify({ name, description }),
+        headers: { "Content-Type": "application/json" }
+      });
 
-    if (res.ok) {
-      router.push("/developer/products");
-    } else {
-      alert("Error creating product");
+      const data = await r.json();
+
+      if (data.ok) {
+        setStatus("Product created");
+        setName("");
+        setDescription("");
+      } else {
+        setStatus("Failed to create product");
+      }
+    } catch {
+      setStatus("Error contacting server");
+    } finally {
+      setBusy(false);
     }
-
-    setLoading(false);
   }
 
   return (
-    <div style={{ padding: "40px", maxWidth: "700px", margin: "0 auto" }}>
-      <h1>Create New Product</h1>
+    <div className="p-6 space-y-6">
+      <h1 className="text-2xl font-bold">New Product</h1>
 
-      <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-        <div style={{ marginBottom: "20px" }}>
-          <label>Product Name</label>
+      <form onSubmit={submit} className="space-y-4 max-w-md">
+        <div>
+          <label className="block mb-1 font-medium">Name</label>
           <input
-            type="text"
-            required
+            className="border p-2 w-full rounded"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            style={{ width: "100%", padding: "10px", marginTop: "6px" }}
+            required
+          />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-medium">Description</label>
+          <textarea
+            className="border p-2 w-full rounded"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </div>
 
         <button
           type="submit"
-          style={{
-            padding: "12px 20px",
-            background: "#0060FF",
-            colour: "#fff",
-            border: "none",
-            cursor: "pointer"
-          }}
+          disabled={busy}
+          className="px-4 py-2 rounded bg-blue-600 text-white disabled:opacity-50"
         >
-          {loading ? "Creating..." : "Create Product"}
+          {busy ? "Saving..." : "Create Product"}
         </button>
       </form>
+
+      {status && <p className="text-muted-foreground">{status}</p>}
     </div>
   );
 }
