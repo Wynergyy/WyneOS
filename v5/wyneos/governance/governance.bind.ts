@@ -1,50 +1,36 @@
-import { KernelBus } from "../kernel/kernel.bus";
-import { AuditGrid } from "../auditgrid/auditgrid.bus";
-import { SentinelOrchestrator } from "../sentinels/sentinel.orchestrator";
-import { GuardianMesh } from "../guardian/guardian.mesh";
-import { TelemetryController } from "../telemetrymatrix/telemetry.controller";
-import { ComplianceEngine } from "../compliance/compliance.engine";
-import { GovernanceOrchestrator } from "./governance.orchestrator";
+/**
+ * WyneOS Governance Bind Module
+ * Responsible for connecting governance policies to kernel services.
+ */
 
-/*
-  Governance Binding Sequence v5
-  ------------------------------------------
-  Safe, non-autonomous wiring of the governance stack.
-  This unifies:
-    • Kernel
-    • Compliance Engine
-    • AuditGrid v2
-    • Sentinels
-    • Guardian Mesh
-    • TelemetryMatrix
-    • Governance Orchestrator
-*/
-
-export function bindGovernance(
-  kernel: KernelBus,
-  audit: AuditGrid,
-  sentinels: SentinelOrchestrator,
-  guardian: GuardianMesh,
-  telemetry: TelemetryController,
-  compliance: ComplianceEngine
-) {
-  const orchestrator = new GovernanceOrchestrator(
-    kernel,
-    audit,
-    sentinels,
-    guardian,
-    telemetry,
-    compliance
-  );
-
-  return {
-    kernel,
-    compliance,
-    audit,
-    sentinels,
-    guardian,
-    telemetry,
-    orchestrator,
-    status: "governance_stack_bound"
-  };
+export interface GovernanceBinding {
+  policy: string;
+  enabled: boolean;
 }
+
+export interface GovernanceBindingResult {
+  ok: boolean;
+  timestamp: number;
+  binding?: GovernanceBinding;
+  error?: string;
+}
+
+export class GovernanceBinder {
+  bind(policy: string, enabled: boolean): GovernanceBindingResult {
+    if (!policy || typeof policy !== "string") {
+      return {
+        ok: false,
+        timestamp: Date.now(),
+        error: "Invalid policy identifier"
+      };
+    }
+
+    return {
+      ok: true,
+      timestamp: Date.now(),
+      binding: { policy, enabled }
+    };
+  }
+}
+
+export const governanceBinder = new GovernanceBinder();
