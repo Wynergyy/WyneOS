@@ -1,84 +1,56 @@
-git restore Core/Phase16/risk-governor.ts
-git restore Core/Phase19/phase19-bootstrap.ts
-git restore Core/Phase25/phase25-bootstrap.ts
-git restore Core/Phase26/phase26-bootstrap.ts
 /**
- * ExecutionGrid Executor
- * Executes resolved tasks produced by ExecutionGridEngine.
- * Each task contains: id, action, params, priority, and state.
+ * Phase 27 ExecutionGrid Executor
+ * Stable, side-effect-controlled, safe executor for queued tasks
  */
 
 export interface ExecutionTask {
   id: string;
-  action: string;
-  params?: any;
-  priority: number;
-  state: "pending" | "running" | "completed" | "failed";
+  type: string;
+  payload: Record<string, unknown>;
+  createdAt: number;
 }
 
 export interface ExecutionResult {
   id: string;
-  status: "success" | "error";
+  ok: boolean;
   timestamp: number;
-  output?: any;
+  output?: unknown;
   error?: string;
 }
 
 export class ExecutionGridExecutor {
-  /**
-   * Execute a list of tasks in priority order.
-   * The engine ensures tasks are already sorted and validated.
-   */
-  run(tasks: ExecutionTask[]): ExecutionResult[] {
-    const results: ExecutionResult[] = [];
+  execute(task: ExecutionTask): ExecutionResult {
+    try {
+      const output = this.perform(task);
 
-    for (const task of tasks) {
-      try {
-        // Mark running
-        task.state = "running";
-
-        // Simulated handler – in the real system this will dispatch
-        // to subsystem-specific execution handlers
-        const output = this.handle(task);
-
-        // Mark complete
-        task.state = "completed";
-
-        results.push({
-          id: task.id,
-          status: "success",
-          timestamp: Date.now(),
-          output
-        });
-      } catch (err: any) {
-        task.state = "failed";
-
-        results.push({
-          id: task.id,
-          status: "error",
-          timestamp: Date.now(),
-          error: err?.message ?? "Unknown execution error"
-        });
-      }
+      return {
+        id: task.id,
+        ok: true,
+        timestamp: Date.now(),
+        output
+      };
+    } catch (err) {
+      return {
+        id: task.id,
+        ok: false,
+        timestamp: Date.now(),
+        error: err instanceof Error ? err.message : "Unknown execution error"
+      };
     }
-
-    return results;
   }
 
-  /**
-   * Placeholder execution handler.
-   * Each action type will map to a real subsystem command.
-   */
-  private handle(task: ExecutionTask): any {
-    switch (task.action) {
-      case "log":
-        return { logged: task.params?.message ?? "No message" };
+  private perform(task: ExecutionTask): unknown {
+    switch (task.type) {
+      case "echo":
+        return { echo: task.payload };
 
-      case "state_update":
-        return { updated: true, payload: task.params };
+      case "noop":
+        return { ok: true };
 
       default:
-        return { note: `Unhandled action '${task.action}'` };
+        throw new Error(`Unsupported task type: ${task.type}`);
     }
   }
 }
+
+export const executionGridExecutor = new ExecutionGridExecutor();
