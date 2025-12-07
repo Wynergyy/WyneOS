@@ -1,12 +1,29 @@
-﻿import { ModuleLoader } from "./module-loader"
+﻿/**
+ * WyneOS Phase 1 Discovery Module
+ * Performs minimal discovery of the environment before deeper bootstrapping.
+ */
 
-// Import new modules here as they are created
-import { IntegrityModule } from "./Integrity/integrity.module"
+export interface Phase1DiscoveryResult {
+  ok: boolean;
+  timestamp: number;
+  discovered: Record<string, unknown>;
+}
 
-// Phase 1 registry
-export const Phase1Modules = [
-  IntegrityModule
-]
+export class Phase1Discovery {
+  discover(): Phase1DiscoveryResult {
+    // Safe placeholder discovery output
+    const discovered: Record<string, unknown> = {
+      environment: "local",
+      version: "phase1",
+      status: "ready"
+    };
 
-// Auto-register
-Phase1Modules.forEach(m => ModuleLoader.register(m))
+    return {
+      ok: true,
+      timestamp: Date.now(),
+      discovered
+    };
+  }
+}
+
+export const phase1Discovery = new Phase1Discovery();
