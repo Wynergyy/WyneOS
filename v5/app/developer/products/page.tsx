@@ -2,72 +2,65 @@
 
 import { useEffect, useState } from "react";
 
-interface ProductRecord {
+interface Product {
   id: string;
   name: string;
   description?: string;
-  createdAt: number;
 }
 
 export default function DeveloperProductsPage() {
-  const [items, setItems] = useState<ProductRecord[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
-    let active = true;
-
     async function load() {
+      setLoading(true);
+      setErr(null);
+
       try {
         const r = await fetch("/api/developer/products");
         const data = await r.json();
 
-        if (active && Array.isArray(data.products)) {
-          setItems(data.products);
+        if (Array.isArray(data)) {
+          setProducts(data);
+        } else {
+          setErr("Invalid response");
         }
       } catch {
-        if (active) setItems([]);
+        setErr("Failed to load products");
       } finally {
-        if (active) setLoading(false);
+        setLoading(false);
       }
     }
 
     load();
-    return () => {
-      active = false;
-    };
   }, []);
-
-  if (loading) {
-    return (
-      <div className="p-6">
-        <h1 className="text-2xl font-bold">Developer Products</h1>
-        <p className="mt-4 text-muted-foreground">Loading products...</p>
-      </div>
-    );
-  }
 
   return (
     <div className="p-6 space-y-6">
-      <h1 className="text-2xl font-bold">Developer Products</h1>
+      <h1 className="text-2xl font-bold">Products</h1>
 
-      {items.length === 0 ? (
-        <p className="text-muted-foreground">No products found.</p>
-      ) : (
-        <div className="space-y-4">
-          {items.map((p) => (
-            <div
-              key={p.id}
-              className="border p-4 rounded-md bg-card shadow-sm space-y-1"
-            >
-              <p className="font-semibold">{p.name}</p>
-              {p.description && <p>{p.description}</p>}
-              <p className="text-sm text-muted-foreground">
-                Created {new Date(p.createdAt).toLocaleString()}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
+      {loading && <p>Loading...</p>}
+      {err && <p className="text-red-500">{err}</p>}
+
+      <div className="space-y-4">
+        {products.length === 0 && !loading && (
+          <p className="text-muted-foreground">No products found.</p>
+        )}
+
+        {products.map((p) => (
+          <div
+            key={p.id}
+            className="border p-4 rounded shadow-sm bg-white space-y-1"
+          >
+            <h2 className="text-lg font-semibold">{p.name}</h2>
+            {p.description && (
+              <p className="text-sm text-muted-foreground">{p.description}</p>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
