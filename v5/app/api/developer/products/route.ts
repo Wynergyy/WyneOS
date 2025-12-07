@@ -1,8 +1,27 @@
-notepad "E:\CIC\WyneOS\v5\app\api\developer\products\route.ts"
 import { NextResponse } from "next/server";
 
-let products: any[] = [];
+export async function GET(): Promise<NextResponse> {
+  return NextResponse.json({
+    ok: true,
+    products: []
+  });
+}
 
-export async function GET() {
-  return NextResponse.json({ products });
+export async function POST(req: Request): Promise<NextResponse> {
+  try {
+    const body = await req.json();
+
+    return NextResponse.json({
+      ok: true,
+      received: body
+    });
+  } catch {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Invalid JSON payload"
+      },
+      { status: 400 }
+    );
+  }
 }
