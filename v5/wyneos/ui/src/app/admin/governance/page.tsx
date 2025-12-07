@@ -1,10 +1,8 @@
-export default function GovernanceModule() {
+export default function AdminGovernancePage() {
   return (
-    <div className="text-neutral-100">
-      <h1 className="text-3xl font-bold mb-4">Governance</h1>
-      <p className="text-neutral-400">
-        Constitution registry, runtime authority, and Phase-6 signing console.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>Governance Module</h1>
+      <p>Administrative controls for WyneOS governance systems.</p>
+    </main>
   );
 }
