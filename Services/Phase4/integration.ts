@@ -1,13 +1,26 @@
-﻿import { BehaviourEngine } from './behaviour-engine';
-import { Phase4Rules } from './rules';
+﻿/**
+ * WyneOS Phase 4 Integration Module
+ * Bridges behaviour engine and behaviour log services.
+ */
 
-export class BehaviourIntegration {
-  static initialise() {
-    Phase4Rules.forEach(rule => BehaviourEngine.registerRule(rule));
-  }
+import { behaviourEngine, BehaviourContext } from "./behaviour-engine";
+import { behaviourLog } from "./behaviour-log";
 
-  static handle(event) {
-    const results = BehaviourEngine.process(event);
-    return results;
-  }
+export interface BehaviourIntegrationResult {
+  ok: boolean;
+  timestamp: number;
+  decision: string;
+}
+
+export function runBehaviourIntegration(
+  context: BehaviourContext
+): BehaviourIntegrationResult {
+  const decision = behaviourEngine.evaluate(context);
+  behaviourLog.record(`Decision processed: ${decision.decision}`);
+
+  return {
+    ok: true,
+    timestamp: Date.now(),
+    decision: decision.decision
+  };
 }
