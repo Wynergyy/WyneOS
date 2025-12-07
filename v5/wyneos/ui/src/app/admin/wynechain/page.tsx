@@ -1,10 +1,8 @@
-export default function WyneChainModule() {
+export default function AdminWyneChainPage() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">WyneChain</h1>
-      <p className="text-neutral-400">
-        Distributed ledger. Component registry. System integrity lineage.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>WyneChain Module</h1>
+      <p>Administrative controls for WyneOS WyneChain and chain-state systems.</p>
+    </main>
   );
 }
