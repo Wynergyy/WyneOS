@@ -1,10 +1,8 @@
-export default function KernelModule() {
+export default function AdminKernelPage() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">Kernel Module</h1>
-      <p className="text-neutral-400">
-        Core WyneOS kernel operations, processes, lifecycle, and orchestration.
-      </p>
-    </div>
+    <main style={{ padding: "2rem" }}>
+      <h1>Kernel Module</h1>
+      <p>Administrative controls for WyneOS kernel operations.</p>
+    </main>
   );
 }
