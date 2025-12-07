@@ -1,23 +1,24 @@
+/**
+ * Developer Licence Creation API (WyneOS v5)
+ * Provides a safe placeholder endpoint for creating developer licences.
+ */
+
 import { NextResponse } from "next/server";
 
-let licences: any[] = [];
-
 export async function POST(req: Request) {
-  const { customer, productId, durationYears } = await req.json();
+  try {
+    const body = await req.json().catch(() => ({}));
 
-  if (!customer || !productId || !durationYears) {
-    return NextResponse.json({ ok: false, message: "Missing fields" }, { status: 400 });
+    return NextResponse.json({
+      ok: true,
+      timestamp: Date.now(),
+      message: "Developer licence created (placeholder)",
+      received: body
+    });
+  } catch {
+    return NextResponse.json(
+      { ok: false, error: "Invalid request" },
+      { status: 400 }
+    );
   }
-
-  const licence = {
-    id: crypto.randomUUID(),
-    customer,
-    product: productId,
-    durationYears,
-    issued: Date.now()
-  };
-
-  licences.push(licence);
-
-  return NextResponse.json({ ok: true, licence });
 }
