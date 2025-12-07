@@ -1,15 +1,15 @@
-﻿import { ServiceRegistry } from './service-registry'
+﻿export class HeartbeatService {
+  static ping(): void {
+    console.log("[HEARTBEAT]");
+  }
 
-export class HeartbeatService {
-  static intervalMs = 5000
-  static timer: any = null
-
-  static initialise() {
-    this.timer = setInterval(() => {
-      console.log(\[HEARTBEAT] \\)
-    }, this.intervalMs)
+  static pulse(meta?: Record<string, unknown>): void {
+    const payload = {
+      timestamp: Date.now(),
+      meta: meta || null
+    };
+    console.log("[HEARTBEAT:PULSE]", payload);
   }
 }
 
-// Register automatically
-ServiceRegistry.register('heartbeat', HeartbeatService)
+export const heartbeatService = new HeartbeatService();
