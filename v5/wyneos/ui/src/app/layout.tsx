@@ -1,21 +1,19 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WyneOS Runtime v5",
-  description: "Phase 6 WyneOS control surface",
+  title: "WyneOS UI",
+  description: "Unified Interface for WyneOS Operational Controls"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-neutral-100">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
