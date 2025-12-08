@@ -1,0 +1,25 @@
+{
+  "trustSnapshots": [
+    {
+      "timestamp": "2025-12-05T05:11:09.349Z",
+      "cycle": 10,
+      "score": 1,
+      "grade": "A",
+      "reason": "Trust based on 5 convergence and 2 prediction samples."
+    },
+    {
+      "timestamp": "2025-12-05T05:14:14.642Z",
+      "cycle": 11,
+      "score": 1,
+      "grade": "A",
+      "reason": "Trust based on 6 convergence and 3 prediction samples."
+    },
+    {
+      "timestamp": "2025-12-05T05:18:59.761Z",
+      "cycle": 12,
+      "score": 1,
+      "grade": "A",
+      "reason": "Trust based on 7 convergence and 4 prediction samples."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "core",
+    "description": "Core system messaging channel for WyneOS",
+    "created": "' + (Get-Date).ToString("u") + '"
+}

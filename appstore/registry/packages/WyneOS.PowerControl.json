@@ -1,0 +1,11 @@
+{
+  "dependencies": [],
+  "publisher": "WyneOS",
+  "capabilities": [
+    "power",
+    "performance",
+    "system"
+  ],
+  "version": "2025.1",
+  "name": "WyneOS.PowerControl"
+}

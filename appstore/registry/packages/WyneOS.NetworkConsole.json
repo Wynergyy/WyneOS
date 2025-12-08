@@ -1,0 +1,10 @@
+{
+  "capabilities": [
+    "network",
+    "cli"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.NetworkConsole",
+  "dependencies": [],
+  "version": "2025.1"
+}

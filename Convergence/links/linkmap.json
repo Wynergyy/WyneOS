@@ -1,0 +1,32 @@
+[
+  {
+    "type": "core-flow",
+    "from": "kernel",
+    "to": "runtimeMesh"
+  },
+  {
+    "type": "runtime-flow",
+    "from": "runtimeMesh",
+    "to": "services"
+  },
+  {
+    "type": "distribution",
+    "from": "services",
+    "to": "appstore"
+  },
+  {
+    "type": "control",
+    "from": "services",
+    "to": "processMgr"
+  },
+  {
+    "type": "oversight",
+    "from": "security",
+    "to": "*"
+  },
+  {
+    "type": "governance",
+    "from": "licensing",
+    "to": "appstore"
+  }
+]

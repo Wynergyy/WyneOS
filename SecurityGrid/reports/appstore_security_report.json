@@ -1,0 +1,77 @@
+[
+  {
+    "name": "WyneOS.AnalyticsCore",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.ConfigCenter",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.CoreEditor",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.EventReplay",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.EventTracer",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.FileManager",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.NetworkConsole",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.PolicyEngine",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.PowerControl",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.SecureVault",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.SecurityPortal",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.SystemBackup",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.SystemMonitor",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.TaskRunner",
+    "version": "2025.1",
+    "issues": []
+  },
+  {
+    "name": "WyneOS.TerminalPlus",
+    "version": "2025.1",
+    "issues": []
+  }
+]

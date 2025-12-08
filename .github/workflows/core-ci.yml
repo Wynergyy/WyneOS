@@ -1,0 +1,32 @@
+﻿name: WyneOS Core CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install UI dependencies
+        working-directory: v5/wyneos-ui
+        run: npm install
+
+      - name: TypeScript compile check
+        working-directory: v5/wyneos-ui
+        run: npx tsc --noEmit
+
+      - name: Build UI
+        working-directory: v5/wyneos-ui
+        run: npm run build

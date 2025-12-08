@@ -1,0 +1,15 @@
+# WyneOS CLI Tools
+
+Simple, safe, local command-line helpers for testing WyneOS modules.
+
+## Usage
+
+node wyne.js /welcome
+node wyne.js /any-registered-path
+
+## Purpose
+
+- No networking
+- No automation
+- No system access
+- Just local module invocation for testing

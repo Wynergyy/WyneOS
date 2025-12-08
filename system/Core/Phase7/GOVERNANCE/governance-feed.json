@@ -1,0 +1,21 @@
+{
+  "source": "governance-controller",
+  "heartbeat": [
+    "{",
+    "  \"phase\": 7,",
+    "  \"source\": \"telemetry-heartbeat\",",
+    "  \"heartbeat\": \"active\",",
+    "  \"timestamp\": \"2025-12-03T13:35:47.1561280+00:00\"",
+    "}"
+  ],
+  "integrity": [
+    "{",
+    "  \"status\": \"OK\",",
+    "  \"seal\": \"INTEGRITY-SEAL: 12/03/2025 12:30:09\",",
+    "  \"hash\": \"8DE369213D7D680A57988B1A4D7E07FA8B11FEE6DE365018F60DC23B6BF65CFF\",",
+    "  \"timestamp\": \"2025-12-03T13:35:32.0924383+00:00\"",
+    "}"
+  ],
+  "phase": 7,
+  "timestamp": "2025-12-03T13:36:13.3772812+00:00"
+}

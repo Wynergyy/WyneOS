@@ -1,0 +1,72 @@
+{
+  "Event": "INTEGRITY_SENTINEL_START",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "SNAPSHOT_LATEST: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234249.json",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "SNAPSHOT_PREVIOUS: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234157.json",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "DRIFT_DETECTED",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "[\r\n  {\r\n    \"Timestamp\": \"2025-11-23T23:42:49\",\r\n    \"State\": \"stable\",\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"=>\"\r\n  },\r\n  {\r\n    \"Timestamp\": \"2025-11-23T23:41:57\",\r\n    \"State\": \"stable\",\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"<=\"\r\n  }\r\n]",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "INTEGRITY_SENTINEL_COMPLETE",
+  "Timestamp": "2025-11-23T23:54:13"
+}
+{
+  "Event": "INTEGRITY_SENTINEL_START",
+  "Timestamp": "2025-11-24T00:29:23"
+}
+{
+  "Event": "SNAPSHOT_LATEST: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_001101.json",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "SNAPSHOT_PREVIOUS: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_000759.json",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "DRIFT_DETECTED",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "[\r\n  {\r\n    \"Timestamp\": \"2025-11-24T00:11:01\",\r\n    \"State\": null,\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"=>\"\r\n  },\r\n  {\r\n    \"Timestamp\": \"2025-11-24T00:07:59\",\r\n    \"State\": null,\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"<=\"\r\n  }\r\n]",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "INTEGRITY_SENTINEL_COMPLETE",
+  "Timestamp": "2025-11-24T00:29:25"
+}
+{
+  "Event": "INTEGRITY_SENTINEL_START",
+  "Timestamp": "2025-11-24T00:31:04"
+}
+{
+  "Event": "SNAPSHOT_LATEST: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_001101.json",
+  "Timestamp": "2025-11-24T00:31:05"
+}
+{
+  "Event": "SNAPSHOT_PREVIOUS: E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_000759.json",
+  "Timestamp": "2025-11-24T00:31:05"
+}
+{
+  "Event": "DRIFT_DETECTED",
+  "Timestamp": "2025-11-24T00:31:05"
+}
+{
+  "Event": "[\r\n  {\r\n    \"Timestamp\": \"2025-11-24T00:11:01\",\r\n    \"State\": null,\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"=>\"\r\n  },\r\n  {\r\n    \"Timestamp\": \"2025-11-24T00:07:59\",\r\n    \"State\": null,\r\n    \"Seal\": null,\r\n    \"SideIndicator\": \"<=\"\r\n  }\r\n]",
+  "Timestamp": "2025-11-24T00:31:05"
+}
+{
+  "Event": "INTEGRITY_SENTINEL_COMPLETE",
+  "Timestamp": "2025-11-24T00:31:05"
+}

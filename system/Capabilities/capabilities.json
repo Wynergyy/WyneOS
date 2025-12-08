@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "SGI-Core",
+    "Path": "E:\\CIC\\WyneOS\\System\\SGI",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Guardian",
+    "Path": "E:\\CIC\\WyneOS\\System\\SGI",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Integrity-Engine",
+    "Path": "E:\\CIC\\WyneOS\\System\\SGI\\Integrity",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Heartbeat",
+    "Path": "E:\\CIC\\WyneOS\\System\\Heartbeat",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Telemetry",
+    "Path": "E:\\CIC\\WyneOS\\System\\Telemetry",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Policy-Engine",
+    "Path": "E:\\CIC\\WyneOS\\System\\Policy",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Upgrade-Engine",
+    "Path": "E:\\CIC\\WyneOS\\System\\Upgrade",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Node-Identity",
+    "Path": "E:\\CIC\\WyneOS\\System\\Identity",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  },
+  {
+    "Name": "Event-Catalogue",
+    "Path": "E:\\CIC\\WyneOS\\System\\Events",
+    "Version": "1.0",
+    "LastUpdated": "2025-11-24T07:48:34",
+    "Active": true,
+    "Health": "OK"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "WyneOS.AnalyticsCore",
+    "score": 0,
+    "capabilities": [
+      "analytics",
+      "telemetry",
+      "processing"
+    ]
+  },
+  {
+    "name": "WyneOS.ConfigCenter",
+    "score": 0,
+    "capabilities": [
+      "configuration",
+      "ui",
+      "system"
+    ]
+  },
+  {
+    "name": "WyneOS.CoreEditor",
+    "score": 0,
+    "capabilities": [
+      "editor",
+      "ui"
+    ]
+  },
+  {
+    "name": "WyneOS.EventReplay",
+    "score": 0,
+    "capabilities": [
+      "replay",
+      "forensics",
+      "diagnostics"
+    ]
+  },
+  {
+    "name": "WyneOS.EventTracer",
+    "score": 0,
+    "capabilities": [
+      "telemetry",
+      "diagnostics",
+      "tracing"
+    ]
+  },
+  {
+    "name": "WyneOS.FileManager",
+    "score": 0,
+    "capabilities": [
+      "filesystem",
+      "ui"
+    ]
+  },
+  {
+    "name": "WyneOS.NetworkConsole",
+    "score": 2,
+    "capabilities": [
+      "network",
+      "cli"
+    ]
+  },
+  {
+    "name": "WyneOS.PolicyEngine",
+    "score": 0,
+    "capabilities": [
+      "policy",
+      "rules",
+      "system"
+    ]
+  },
+  {
+    "name": "WyneOS.PowerControl",
+    "score": 0,
+    "capabilities": [
+      "power",
+      "performance",
+      "system"
+    ]
+  },
+  {
+    "name": "WyneOS.SecureVault",
+    "score": 0,
+    "capabilities": [
+      "encryption",
+      "storage",
+      "security"
+    ]
+  },
+  {
+    "name": "WyneOS.SecurityPortal",
+    "score": 0,
+    "capabilities": [
+      "security",
+      "ui"
+    ]
+  },
+  {
+    "name": "WyneOS.SystemBackup",
+    "score": 0,
+    "capabilities": [
+      "backup",
+      "filesystem",
+      "security"
+    ]
+  },
+  {
+    "name": "WyneOS.SystemMonitor",
+    "score": 0,
+    "capabilities": [
+      "system",
+      "metrics",
+      "ui"
+    ]
+  },
+  {
+    "name": "WyneOS.TaskRunner",
+    "score": 0,
+    "capabilities": [
+      "automation",
+      "scheduler"
+    ]
+  },
+  {
+    "name": "WyneOS.TerminalPlus",
+    "score": 0,
+    "capabilities": [
+      "cli",
+      "advanced-shell",
+      "system"
+    ]
+  }
+]

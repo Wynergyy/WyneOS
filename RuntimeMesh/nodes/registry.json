@@ -1,0 +1,7 @@
+[
+    {"id": "kernel", "role": "core", "path": "E:\\CIC\\WyneOS\\Kernel"},
+    {"id": "orchestrator", "role": "system", "path": "E:\\CIC\\WyneOS\\Orchestration"},
+    {"id": "services", "role": "service_hub", "path": "E:\\CIC\\WyneOS\\Services"},
+    {"id": "wcpm", "role": "process_manager", "path": "E:\\CIC\\WyneOS\\Core\\ProcessManager"},
+    {"id": "appstore", "role": "distribution", "path": "E:\\CIC\\WyneOS\\AppStore"}
+]

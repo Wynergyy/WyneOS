@@ -1,0 +1,78 @@
+{
+  "engineBoundaries": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the operational limits and permissions that each engine must follow to maintain system stability and safety.",
+
+  "generalRules": {
+    "noSelfModification": "Engines must not modify their own code or configuration files.",
+    "readOnlyManifests": "Engine access to manifests must be read only.",
+    "noDirectSystemWrite": "Engines may not write to system folders except through authorised channels.",
+    "runtimeIsolation": "Each engine must run in its own execution boundary.",
+    "boundedExecution": "Engines must complete operations within defined time and resource limits."
+  },
+
+  "resourceLimits": {
+    "cpuLimit": "Maximum 25 percent utilisation per engine instance.",
+    "memoryLimit": "Maximum 150 MB per engine instance.",
+    "executionTimeout": "Maximum 5000 milliseconds per operation."
+  },
+
+  "integrationRules": {
+    "telemetryDependency": "Engines must read validated telemetry before acting.",
+    "sealRequirement": "Engines may only activate if all seals are valid.",
+    "manifestRequirement": "Engines may only load if the corresponding manifest is verified.",
+    "governanceAlignment": "Engines must follow governance outcomes without override."
+  },
+
+  "restrictedActions": {
+    "fileWrite": [
+      "writing to phase folders",
+      "writing to seals folders",
+      "writing to manifests folders",
+      "writing to system registry"
+    ],
+    "processStart": [
+      "external processes",
+      "shell commands",
+      "network calls without authorisation"
+    ]
+  },
+
+  "engineSpecific": {
+    "governanceEngine": {
+      "restrictions": [
+        "no predictive operations",
+        "no optimisation logic",
+        "no emergent behaviours"
+      ]
+    },
+    "assuranceEngine": {
+      "restrictions": [
+        "cannot alter telemetry",
+        "cannot override manifests",
+        "cannot change seals"
+      ]
+    },
+    "emergentEngine": {
+      "restrictions": [
+        "cannot run in controlled mode",
+        "cannot run in critical mode",
+        "must pause on telemetry failure"
+      ]
+    }
+  },
+
+  "failureActions": {
+    "ruleBreach": "Stop the engine and write an audit entry.",
+    "repeatedBreaches": "Switch system to controlled mode and escalate to CoreController.",
+    "criticalBreach": "Stop all engines and enter critical mode."
+  },
+
+  "summary": {
+    "statement": "These boundary rules create a predictable and safe execution environment for all WyneOS engines. No engine may operate outside these limits."
+  }
+}

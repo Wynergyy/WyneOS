@@ -1,0 +1,98 @@
+{
+  "recoveryFramework": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Provide a structured response to failures, enforce predictable recovery, and protect system stability.",
+
+  "failureLevels": {
+    "level1": {
+      "description": "Minor, self-correcting issues.",
+      "examples": [
+        "telemetry delay",
+        "single engine timeout"
+      ],
+      "actions": [
+        "retry operation",
+        "increase engine logging",
+        "record audit entry"
+      ]
+    },
+
+    "level2": {
+      "description": "Moderate issues requiring system intervention.",
+      "examples": [
+        "repeated engine failures",
+        "manifest read errors",
+        "integrity warning"
+      ],
+      "actions": [
+        "switch to controlled mode",
+        "pause emergent engine",
+        "rerun seal checks",
+        "rerun manifest validation",
+        "write audit entry"
+      ]
+    },
+
+    "level3": {
+      "description": "Critical issues that threaten system safety.",
+      "examples": [
+        "seal validation failure",
+        "manifest mismatch",
+        "integrity breach",
+        "runtime rule violation"
+      ],
+      "actions": [
+        "switch to critical mode",
+        "stop all engines",
+        "lock behaviour layers",
+        "force governance evaluation",
+        "write high priority audit entry"
+      ]
+    }
+  },
+
+  "recoverySteps": {
+    "initialise": [
+      "confirm system identity",
+      "verify seals",
+      "validate manifests"
+    ],
+    "restoreTelemetry": [
+      "reload heartbeat",
+      "reload integrity readings",
+      "reload sync file"
+    ],
+    "reactivateEngines": [
+      "start CoreController",
+      "start governance engine",
+      "start assurance engine",
+      "start predictive engine",
+      "start optimisation engine",
+      "start emergent engine only in normal mode"
+    ]
+  },
+
+  "modeRestoration": {
+    "fromControlledToNormal": [
+      "confirm telemetry stable",
+      "confirm seals valid",
+      "resume optimisation engine",
+      "resume predictive engine",
+      "resume emergent engine"
+    ],
+    "fromCriticalToControlled": [
+      "complete seal scan",
+      "complete manifest verification",
+      "restore telemetry",
+      "enable governance evaluation"
+    ]
+  },
+
+  "summary": {
+    "statement": "This framework ensures WyneOS responds predictably to failures. The system must follow these steps to protect integrity and restore safe operation."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "capabilities": [
+    "filesystem",
+    "ui"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.FileManager",
+  "dependencies": [],
+  "version": "2025.1"
+}

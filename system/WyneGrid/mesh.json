@@ -1,0 +1,12 @@
+{
+  "MeshID": "ecfe9425-fbab-4dc1-abe0-7787a4f1a9ea",
+  "Nodes": [
+    {
+      "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+      "Region": "UK-West",
+      "Health": "OK",
+      "LastSeen": "2025-11-24T10:53:31.2393294+00:00"
+    }
+  ],
+  "Discovery": "2025-11-24T10:53:31.2408271+00:00"
+}

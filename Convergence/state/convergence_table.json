@@ -1,0 +1,50 @@
+[
+  {
+    "subsystem": "runtimeMesh",
+    "path": "E:\\CIC\\WyneOS\\RuntimeMesh",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "security",
+    "path": "E:\\CIC\\WyneOS\\Security",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "interlink",
+    "path": "E:\\CIC\\WyneOS\\Interlink",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "kernel",
+    "path": "E:\\CIC\\WyneOS\\Kernel",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "services",
+    "path": "E:\\CIC\\WyneOS\\Services",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "appstore",
+    "path": "E:\\CIC\\WyneOS\\AppStore",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "processMgr",
+    "path": "E:\\CIC\\WyneOS\\Core\\ProcessManager",
+    "exists": true,
+    "ts": "2025-11-23 06:25:04Z"
+  },
+  {
+    "subsystem": "licensing",
+    "path": "E:\\CIC\\WyneOS\\Licensing",
+    "exists": false,
+    "ts": "2025-11-23 06:25:04Z"
+  }
+]

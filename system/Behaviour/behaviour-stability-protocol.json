@@ -1,0 +1,84 @@
+{
+  "behaviourStabilityProtocol": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define consistent measures for evaluating, stabilising, and regulating behaviour patterns across all operational modes.",
+
+  "stabilityPrinciples": {
+    "predictability": "Behaviour should follow consistent patterns within approved boundaries.",
+    "traceability": "All behaviour changes must be linked to clear causes.",
+    "riskLimitation": "High risk behaviours must be paused or prevented.",
+    "auditVisibility": "Behaviour transitions must be recorded."
+  },
+
+  "behaviourInputs": {
+    "telemetry": [
+      "heartbeat.json",
+      "integrity.json",
+      "sync.json"
+    ],
+    "governanceStatus": "current mode and validated decisions",
+    "engineOutputs": [
+      "fusion results",
+      "emergent engine signals",
+      "predictive estimates"
+    ]
+  },
+
+  "stabilityChecks": {
+    "consistencyCheck": "Verify behaviour follows expected pattern ranges.",
+    "riskCheck": "Evaluate if behaviour is approaching prohibited boundaries.",
+    "integrityCheck": "Ensure behaviour is not influenced by invalid telemetry or seals.",
+    "timingCheck": "Confirm behaviour frequency is within acceptable limits."
+  },
+
+  "boundaries": {
+    "allowed": [
+      "adaptive response within mode constraints",
+      "pattern evolution within safe ranges",
+      "governance aligned behaviour shifts"
+    ],
+    "prohibited": [
+      "behaviour during critical mode",
+      "behaviour that bypasses governance",
+      "behaviour influenced by stale telemetry",
+      "rapid oscillation beyond timing limits"
+    ]
+  },
+
+  "actionsOnInstability": {
+    "softCorrection": [
+      "reduce emergent engine activity",
+      "re-evaluate fusion state",
+      "increase telemetry frequency"
+    ],
+    "hardCorrection": [
+      "pause emergent engine",
+      "switch system to controlled mode",
+      "force governance evaluation"
+    ],
+    "criticalResponse": [
+      "stop all behaviour engines",
+      "enter critical mode",
+      "write high priority audit entry"
+    ]
+  },
+
+  "auditRules": {
+    "fields": [
+      "timestamp",
+      "behaviour input snapshot",
+      "stability result",
+      "actions taken",
+      "system mode"
+    ],
+    "location": "system/audit"
+  },
+
+  "summary": {
+    "statement": "This protocol ensures all behavioural outputs remain predictable, safe, and aligned with governance requirements."
+  }
+}

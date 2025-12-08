@@ -1,0 +1,70 @@
+{
+  "system": {
+    "name": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": "",
+    "status": "operational"
+  },
+
+  "capabilities": {
+    "governance": {
+      "description": "Applies system policy, evaluates decisions, and enforces operational rules.",
+      "enabled": true,
+      "source": "Core/Phase7"
+    },
+
+    "integrity": {
+      "description": "Ensures system files, manifests, and seals remain secure and unchanged.",
+      "enabled": true,
+      "source": "system/seals"
+    },
+
+    "telemetry": {
+      "description": "Provides heartbeat, system integrity, and sync tracking for monitoring.",
+      "enabled": true,
+      "source": "telemetry"
+    },
+
+    "predictive": {
+      "description": "Forecasts load patterns and identifies future operational states.",
+      "enabled": true,
+      "source": "engine/Phase8/PREDICTIVE"
+    },
+
+    "optimisation": {
+      "description": "Improves system behaviour based on incoming data patterns and load.",
+      "enabled": true,
+      "source": "engine/Phase8/OPTIMISATION"
+    },
+
+    "analysis": {
+      "description": "Performs pattern analysis and baseline comparisons.",
+      "enabled": true,
+      "source": "engine/Phase8/ANALYSIS"
+    },
+
+    "emergentBehaviour": {
+      "description": "Generates higher order behaviour through fusion of system states.",
+      "enabled": true,
+      "source": "engine/Phase9/EMERGENT"
+    },
+
+    "audit": {
+      "description": "Maintains a verifiable chain of system logs, events, and seals.",
+      "enabled": true,
+      "source": "system/audit"
+    },
+
+    "runtime": {
+      "description": "Provides PowerShell and Node runtime support for internal tools.",
+      "enabled": true,
+      "source": "runtime"
+    }
+  },
+
+  "integration": {
+    "apiSupport": false,
+    "futureAPI": "planned",
+    "interoperability": "WFSL and SAS-CIC compatible"
+  }
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\kernel_binding.json",
+    "Hash": "6E8B84FA57B7CC7C98D3771A2251B4FE37A2111BDDEC0986D849514339055F3E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\sgi_link.json",
+    "Hash": "F320A3CF428C1941D30DA8093F151D7893D5D8AF0F249CA83E46BDB1C99DA44F"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\system_registry.json",
+    "Hash": "F26019C245F8ADA9B01B51E989D3BC09155BD001F3E3851C3E109F00F11C1A1B"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\WyneBoot.ps1",
+    "Hash": "3E7AB8981869D1AA28CEE18E85BA721D3BF28B638F972B21241F7AD8F6DFE895"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\WyneOS_SystemID.txt",
+    "Hash": "AAC68A3A6304AA5394EDC63D16A74D207E87B4A408258D630BDB9BF75084C311"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\manifest\\verify_manifest.ps1",
+    "Hash": "B59AC7CD69927FBACCAB66AECF7334D92AFB4604B5267AD0417317A9341D69BD"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\manifest\\WyneOS.EnterpriseManifest.json",
+    "Hash": "0871B448A07F87AC613B3BA7D50B5133BDA449E72B2109FECA40908CFBB871A6"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Governance\\Policies\\global.policy.json",
+    "Hash": "BE29678C686C4C212F090F6096A81E626F18DCF2FEE6963D548EE72DB11E0987"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Governance\\Schemas\\policy.schema.json",
+    "Hash": "E90C66767E17BC54252C7CB68768DAB442DFC7D81779D6BD11592699B3429791"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Governance\\Engine\\Invoke-GovernanceCheck.ps1",
+    "Hash": "2F393A38163A349BB838AB52F20E1ADDCC8E60BD8EC4CC6E0EFC7EFB16588352"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Governance\\Certificates\\system.governance.cert",
+    "Hash": "1DAF6D8CED5EE3210920A1E6C20064F4EC51A5A4ED32DFC333507B5CB2E72F5F"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Enforcement\\Profiles\\global.profile.json",
+    "Hash": "9D0A274D624B1EA0D39D86E057F09D429BC2B211830113ADFB0947BF9B54B70D"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Enforcement\\Profiles\\profile.schema.json",
+    "Hash": "E69635F745894E46B84DB141EE6838C6B7E09A5FB71A6B80676380F288DB2823"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Enforcement\\Engine\\Invoke-EnforcementCheck.ps1",
+    "Hash": "A77FA59770D802020A055A803499E9A21DE5EA62C0E97EE2DA1DC1621ADAF79E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Enforcement\\Engine\\Write-EnforcementLog.ps1",
+    "Hash": "0D8F3FAF49C1C3FD823D9C6BA3EDBE77D97B94E3776DAC313E80BA88C8B8E9B2"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Certificates\\Schemas\\app.cert.schema.json",
+    "Hash": "55F8F58B09DF97D1A6BA93FFCD7ADCE492A7BDEEBE37D6301BE719A59CBFBE94"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Certificates\\Engine\\New-AppCapabilityCertificate.ps1",
+    "Hash": "9C1A516CADD92B1457844E739CF9E9C1B12184D25A42DF3BA44EF4ADC4CA4C48"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Certificates\\Engine\\Sign-CapabilityCertificate.ps1",
+    "Hash": "4F851C556ECD613E3FDECF69A936F5113FD75B1B7E120155D62FD28E913B10A9"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Drift-Compare.ps1",
+    "Hash": "33BE0F76A6E0D37A77E97321EFD8559C0F08815CEF608C10B3D7083AD7ACD958"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\DriftEngine.ps1",
+    "Hash": "B4C0B2B3E760EE9429C279D835B8EC6F3AD3EF4919CDE0763A302BD004C86016"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Engine\\Invoke-Seal.ps1",
+    "Hash": "6D521FBA648FD1878CDEC6F327AAC965B47838AD641C879AC786196C969D7B07"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Engine\\Seal-CoreComponents.ps1",
+    "Hash": "E57B97C679AC061DEEA7ADDF38D9D8759BD75750BC7CC09897C94DB279D386D4"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Engine\\Seal-SystemManifest.ps1",
+    "Hash": "992D695D971C164D111F954CDB1D7F9A6EF9531252B014CC09D48187AEB1C31C"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\app.cert.schema.json.seal.json",
+    "Hash": "BB23F1742CC5BEC7AC394DF0826FF2E677ABC31944AA8FA24BE9766644D88683"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\global.policy.json.seal.json",
+    "Hash": "23C1E3372C60F0F005FAEB81E81B86D414D08F9B64F34C1F999A2412E1514EB7"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\global.profile.json.seal.json",
+    "Hash": "87892C99D4F9F4C3625C8ECA9CC11B52F07E3784368455C2DF15E1C06A544A0E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\Invoke-EnforcementCheck.ps1.seal.json",
+    "Hash": "631850624391640D8E41DD2ECAF675BBBD7B0095A8D7518B7641E6D82A1E0907"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\Invoke-GovernanceCheck.ps1.seal.json",
+    "Hash": "460F5791A53C287CB9DE9181B6B742EDDA32A75B4DE76DF4E2E084B9BF2455D0"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\New-AppCapabilityCertificate.ps1.seal.json",
+    "Hash": "334B741A2D7B3DD4C05F14C5ED2B0958A6764F302961DE5F810EB63E625F0D0E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\policy.schema.json.seal.json",
+    "Hash": "9C78CD25E819BA4A32905CE0F521A97C00DDEAAE7F9EBA1A06B701603B3914B0"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\profile.schema.json.seal.json",
+    "Hash": "90E16E87E13CDF41F120D2EFDE001817F251FEAD69F0997D2D2B102B76037EC7"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\Sign-CapabilityCertificate.ps1.seal.json",
+    "Hash": "EF3B9550F5EB62C02E22E5C5DCD362605CD08CF5EB6EFD71DC3FE71110FCC3A6"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\system.governance.cert.seal.json",
+    "Hash": "C5D56365C8395858D9E2775FB117621377D316C6B9819D778C68496BDED49186"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Hashes\\Write-EnforcementLog.ps1.seal.json",
+    "Hash": "1291734C1563F9DB470733C3D2C36D7390124BBC7EC0A4EF0FA12F372D06D5B0"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integrity\\Manifest\\system.manifest.json",
+    "Hash": "BFBF301D3000FC5524A177376B5F5E699C55B2F90C9B8EF597160A435106CECA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\GuardianMesh\\Nodes\\node.template.json",
+    "Hash": "AD20D735187E5F85007F4821D108E2DC7C5EE7CC81584DB6E18B5A4BF3AC4779"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\GuardianMesh\\Engine\\Broadcast-Pulse.ps1",
+    "Hash": "E66C8C30D13C3A57F9CE88BACB3A15E498CD93B2615E0EBDF64BC841085643C3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\GuardianMesh\\Engine\\Check-MeshStatus.ps1",
+    "Hash": "70BCCE0EBA9BFF7E4FE6ADF09B4BD978BD7A59A0BB4A07387AF7FAB7531C702A"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\GuardianMesh\\Engine\\Register-Node.ps1",
+    "Hash": "D389ECF1F064DA824CE3CC107CE93F42D35E7DC182B89095D204084088235897"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\GuardianMesh\\Pulse\\Send-Pulse.ps1",
+    "Hash": "059FECD42D733955A1C3DB2DD96194BF13BDFA72DE402F6ECF49814460020478"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\DriftLog.jsonl",
+    "Hash": "3ACC4420B4750D6CE90518A1AD58D2DBDE7BDE547E629104850B61E7D64783B3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\IntegrityIndex.json",
+    "Hash": "E3566B3A06430868D71E9287DFD6C6C520A3DA027AABEA01951D407EE131DC2F"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\IntegrityLog.jsonl",
+    "Hash": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Clean-IntegrityLedger.ps1",
+    "Hash": "1BC83C79146B731EA5145C3BFA4E1F2EA7904D2740D646157C747D66804DA61E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Generate-Snapshot.ps1",
+    "Hash": "CB28B6358787A95F4742234E45E8021EA1890F360A1A77F4F7E55F948DE746DC"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Integrity-RebuildIndex.ps1",
+    "Hash": "0667F2FCD7D541C9CD93B644457BFC161AC0F09AA5361BC13875E100A437ABAA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\IntegrityLedger-Normalise.ps1",
+    "Hash": "DF6A926FE6B0AD155DD99AECD3CDC611022837DFBF5C6C2683CBD797EF7E8792"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\IntegrityLedger.ps1",
+    "Hash": "5CD4E1B6549B29E6F76AC3181DBDFABDA451AB5D633405930F976D825BC4786B"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Register-Component.ps1",
+    "Hash": "E6F8EC6BBDD736B80388B8BE88A7A4258DDA0CEED519CF78310FFBF38B8EBF5A"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Save-SystemSnapshot.ps1",
+    "Hash": "E40EAF22B640E44ABD27A27F10CDCFA5A58FE695FA1129AF19314107F8D4E6ED"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Sign-Snapshot.ps1",
+    "Hash": "2E7AAB5FE0CC0BC28BFE6D04B90B60CD60E0205C088C1AFEF5F09EF62B92FCEA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Engine\\Validate-SystemModel.ps1",
+    "Hash": "37B996C38A8B22ECC7AE8F3BB712F76BD13EF8EE37C2631A196066E28AA8A6B9"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Registry\\component.schema.json",
+    "Hash": "4CA9F10ED62892E3946321A777A6C6BAA384CC5AB50F49398BC1A6441A08A549"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\Registry\\system.registry.json",
+    "Hash": "FE13629A868D536E7E77AC4F99D5E5941072EBBEEA312384AB6EA3A9EFA04179"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_212910.json",
+    "Hash": "DA9634B289868BA7EED87433A66ECCD65943FDE04C02BEA909D054CC0BA5FB52"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_220642.json",
+    "Hash": "1093C90814F51B8D9F77980793826AF397BFFF505D329B683E42CACEB3DCE079"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_221147.json",
+    "Hash": "657CEF42172827C17D1BB1DFB09D305CBC98F8A91B7A4654454021424776B739"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_222510.json",
+    "Hash": "62C5FB8DEBC7A728E453513F34460584F167529120D85E2C1AD588087E087671"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230538.json",
+    "Hash": "FBA8C8B6B3FE1823ED20D08982CD255CD515FB3A16DC96F85A2A32DBA1E62C36"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230736.json",
+    "Hash": "2479F64D31F250998393D80927A4C448F46BEADE05EAD11CB046D94625CAA932"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_230928.json",
+    "Hash": "C5D8A61EE0FC955198D700D84DDD823362429DE9BF5DFD74EFB8EEFF1E011508"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_232052.json",
+    "Hash": "9E1122A6046C2BD8E0EBC7410E8B490DF075D323158B477FF87F58979754BA41"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_233241.json",
+    "Hash": "51299A6C3F111DDD058800842F2E96B273C481FBA3E9DF810999785E06D34FAD"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_233929.json",
+    "Hash": "7CB28649412B12361A82C45AF46BE16F37928409E8FAAA418A52E545002104EA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234109.json",
+    "Hash": "267883EDD93C0C6F1C4A8C9A40705D290619B8A67875980C62546475612C8B44"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234157.json",
+    "Hash": "FB16C8951B945889C1725BAB2BD3BDD10896AAC53BA7196842E22B5D5ED442C7"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251123_234249.json",
+    "Hash": "CAFCD26AAE545AF879147F916F1FF6E81D19B0085A0A8FC6DA6EEC3CCF3F06BA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_000759.json",
+    "Hash": "10A443CAB231D201FDF703EDCC912D6F811EC9F634998EABAC3D4961B511B120"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\SystemModel\\State\\snapshot_20251124_001101.json",
+    "Hash": "7B60E342C96CF88627A50091D30384221740D3DBC2665194B72DC36C9616285D"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Invoke-Enforcement.ps1",
+    "Hash": "6812222919410EEB61495F91A297FE32F9D41B2DCCCDD34CD43156928C68D807"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Invoke-FullIntegration.ps1",
+    "Hash": "776A9F6C14FC8F463235F84E74E249A5361B4F94F72AD70724CA45AD58ADCDC0"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Invoke-Governance.ps1",
+    "Hash": "EE87CEB90064EE44DD3D500605306DB2F674BA2FEEE6E8C04194567ACB72AA53"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Register-AppToSystemModel.ps1",
+    "Hash": "A5CA9EE2C2CF4221D8043EF7A06B1364518CD961F802A9E10D7CC4050B27D95C"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Resolve-Certificate.ps1",
+    "Hash": "DF005E726A1B8FEFAEB0411E93A0B901DDE59A2BDE2C6ACDB083503A0B6BC47E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Sync-GuardianMesh.ps1",
+    "Hash": "C5763A477DA21CBB8AF7A77648623742E553E1C3E19AAC84EA777DAC90B60FAA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Integration\\Engine\\Sync-Integrity.ps1",
+    "Hash": "420B251E10BDC66315F1A45DBC8A230016F7171279D8306C3A268FC7076B86C5"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Security\\Compute-IntegrityHash.ps1",
+    "Hash": "815CD8D0FB77E9253CD981E31D19A6FE9ADB5E1D7D775FB16DF44216D9310376"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Security\\Generate-KeyPair.ps1",
+    "Hash": "A4EB911BA00730B1CA762B207C35BC1E24BE143271A5600578672F941E9C1915"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Security\\Sign-Snapshot.ps1",
+    "Hash": "D327322848EEA6300F55F0E74E3419984123A52DBA3DB6F5AF1A918EDD5EDD3B"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Security\\Verify-Integrity.ps1",
+    "Hash": "318537573175B70B29292DDF08A879B7D497E4F58B28A9A14E3AE5B69AAA4F6C"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Core\\Security\\Keys\\wyneos_private.xml",
+    "Hash": "22EF76AF782E96F4B8DD8C564387A668EA240FAACD86F19EF798AA01AF24DD7E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\ServiceRegistry.ps1",
+    "Hash": "E46B9BAD18072C5CC2C84C3948CB63D4C4A73B6CD25505B9017FDF49094E0963"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Running\\GuardianMeshWatcher.ps1",
+    "Hash": "093406F4884391E6603B70268688DDA0F219EFEA3FB332C9DF106430B7BDB76C"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Running\\IntegritySentinel.ps1",
+    "Hash": "7011FEA6AFA05E87380FE37081E33A21439E8E6CE8C2FDB6F8DA5177E41DC6FC"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Running\\PolicyDaemon.ps1",
+    "Hash": "246675316472ED0707FEF209A9D612A2E5592B409051068FFD51F1C31F48D93D"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Running\\SystemStateMonitor.ps1",
+    "Hash": "9081CF98507E8EBEFCB03E2CF5024337B0D806340D24C4E4BE2C189098799BDF"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Logs\\GuardianMeshWatcher.log",
+    "Hash": "FFFBEC5B4ED2D88EE4A2914F717AF14C161219DC3A393AB4CCAC9FC81D8025F0"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Logs\\IntegritySentinel.log",
+    "Hash": "39B384F0F9979D9E8B4BB1C90D987D95EA0B76364A1E1FB6FC1EEC87DD4A8C0E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Services\\Logs\\PolicyDaemon.log",
+    "Hash": "8A4518CF40710424ED276958D031C24E6891E0F51E6726DFC81C0172A231F6A3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Security\\Automation\\Protect-GitHubRepos.ps1",
+    "Hash": "1F64C5B7F2CF83BB5C46D92757FBE92E68E7532726FF5BB4DC248B47B58E720F"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Upgrade\\Invoke-WyneOSUpgrade.ps1",
+    "Hash": "57B2E58CA7000518015855722181B7D48798AD1FDFF40DFF437A824028268F33"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Upgrade\\upgrade.log",
+    "Hash": "228D9D4B976EE7A531C868467C6B4A8C67F603756C3986F361383F8F58D60C68"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SGI\\SGI-Guardian.ps1",
+    "Hash": "0BA883B2B977EB769AC8FE69F0E5388332071D2FC84EDBBC2BEBCF392E22D767"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SGI\\Integrity\\Invoke-IntegrityCheck.ps1",
+    "Hash": "072B7BAB0C538440557351C99B2ABFCBCA2C8AA5810B89E1B99217C2D8922342"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\EventBus\\WyneOS-EventBus.ps1",
+    "Hash": "273F9932D58874EAC920F3D1AFFB3080C91A87DBB829CD93FB6E2594B2802FA8"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\State\\WyneOS-StateMonitor.ps1",
+    "Hash": "0FC79F36946E3667784DE922A93B657F67CAA39CC3EB47568D17B757B0F4C3E7"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Telemetry\\WyneOS-Telemetry.ps1",
+    "Hash": "CDD0D8B22F0CE441931F6BF70F208AFF6E213E3EA369EAF5B25E190D31B8F6CA"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Alerts\\WyneOS-AlertEngine.ps1",
+    "Hash": "61E01AE9330E018B3EDA8808F50DAA3A628DA697DD184C65D51BE468DD9D7296"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Heartbeat\\WyneOS-Heartbeat.ps1",
+    "Hash": "2D9D1EA0546D9BE514DBB86213DCD909DC75406D1AA4E5DE4F0DBD957CBF7CDB"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Policy\\WyneOS-PolicyEngine.ps1",
+    "Hash": "492F5348D08C85A963CC481D0353BCEFE459F04D7FC717333C0AD68479CED4F5"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Events\\Event-Catalogue.json",
+    "Hash": "32DD10FB50D75B4CEA5E48819C079E2ED0405CD96E5893C1FAA13593FC30B843"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Events\\Load-EventCatalogue.ps1",
+    "Hash": "F11178CAB878E3F1D0F678D357DB174A15E28A09111A80C5EF03707A116A7808"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Identity\\node_identity.json",
+    "Hash": "C707827020F7FDF82DC8AA21428C38B67E74FB5C1C2C6CA5C0F8F6E1AAB2AFAB"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Identity\\node-id.txt",
+    "Hash": "C7C2D2FD2AA69A4AD5396EAAF9B1EE2D746C4FAADE4477E22635FA8C806CA3D3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Identity\\WyneOS-NodeIdentity.ps1",
+    "Hash": "5625430373FBEAB6FCE62AF818D86691AD7AD458EFF3344BA7EEA16B14B3D1C7"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Capabilities\\capabilities.json",
+    "Hash": "8885C5CC360EF1457BFBEBA174587D96D659CE6E7AD49474E5039C914DA4CC58"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Capabilities\\WyneOS-CapabilityRegistry.ps1",
+    "Hash": "77471253928AE037701D41245865BA980FEC011C83404C08A08D11F2C1693512"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\CloudLink\\cloudlink-state.json",
+    "Hash": "224425BC8CC57EA69A23D123B475A379F89D87913D248EA8608BE7EC9888ECA4"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\CloudLink\\WyneOS-CloudLink.ps1",
+    "Hash": "0582C0A55A406960C5C7B6169C0B5E11A5CED3FA03E9C0B4415BD00548199A53"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\WyneGrid\\mesh.json",
+    "Hash": "7E4880085EF2FDFAD56BF56EAFA2D594AF35DFEF8E628EF6185473BE202F73B3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\WyneGrid\\nodemesh.json",
+    "Hash": "3B5D2D9665CC027B542ECAADC32CCA24F0175DC67D7B78098FDD5C99D8DA32B1"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\WyneGrid\\WyneOS-NodeMesh.ps1",
+    "Hash": "71BB53CAC77C588E5B022F79FA53C238ACE6CA7E1628882881952CEB6C06608E"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Ledger\\ledger.json",
+    "Hash": "E20880C8C4CC6D41461FA5A9E3A3DE1718F86C51B3CD7911821560C2BD9653A3"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Ledger\\ledger.log",
+    "Hash": "0EFBF035E785A420D899595C5080573EE382B858ABA70F4027D558906EFA8831"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Ledger\\WyneOS-LedgerEngine.ps1",
+    "Hash": "781BA713C1C73528EBF237F120B0BE26A4647AAAB6D8C6E9F237D03974896F97"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\TrustSeal\\trustseal.json",
+    "Hash": "58BDAAD975743ED4A3F0DA1C878D3C9E9136F133FF6D90A832085E3B18056121"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\TrustSeal\\trustseal.log",
+    "Hash": "8C17B7E20BB8982A17DB3516FBE9ED2377C4363CF5D15F9D10CDA19D6143C250"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\TrustSeal\\WyneOS-TrustSeal.ps1",
+    "Hash": "7BE063568DE46BEBBF2184750E847279D1CB413623F46AB5168A16C148B487FF"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SyncChain\\syncchain.json",
+    "Hash": "5C2FE439EA4492D20BFD57EC8C066E51C1A8291C22B1D7164482B8A7A8E18495"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SyncChain\\WyneOS-SyncChain.ps1",
+    "Hash": "D443AE81D083B8ECB1F6D49858031026D1FE9BD0E92E53976F0BE10E89B5B6FE"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Compliance\\chain.json",
+    "Hash": "8B35D5F96179C7BCB39DD613AAC45A167B42181A8766AA2FE048DFE1FC9DFB3B"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Compliance\\WyneOS-ComplianceChain.ps1",
+    "Hash": "760BAE0155AA284FDA423D8AB3FE057E432AA61F5660D3B2CE95C33739AC0A7A"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Governance\\governance.log",
+    "Hash": "08887DF028FEB239471A8A8C909C1677E1C032F82BAB551178396A9956AE0622"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\Governance\\WyneOS-GovernanceEngine.ps1",
+    "Hash": "54FC01125BD69112823546DC1430B89B1FA66F4F5231191B65E9AC12CC54D4FD"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SecurityBaseline\\baseline.log",
+    "Hash": "C0E32848C021DB3B3C567923AC9C1B9937F5AFC4D9A5C4DB75F6E7E344A40A41"
+  },
+  {
+    "File": "E:\\CIC\\WyneOS\\system\\SecurityBaseline\\WyneOS-SecurityBaseline.ps1",
+    "Hash": "81DD6E489D1F600015CA68B694B0810C3774052A31D92C714C013E2958BBE3E0"
+  }
+]

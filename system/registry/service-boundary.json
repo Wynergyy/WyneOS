@@ -1,0 +1,50 @@
+{
+  "serviceBoundary": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "defined",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the operational boundary of WyneOS and clarify responsibilities shared with external systems and operators.",
+
+  "wyneosResponsibilities": {
+    "governance": "Evaluate actions through the governance model and apply policy rules.",
+    "integrity": "Protect system files, manifests, and seals from unauthorised change.",
+    "telemetry": "Provide heartbeat, integrity, and sync telemetry.",
+    "predictiveFunctions": "Generate predictive insights to support operational decisions.",
+    "optimisation": "Improve system behaviour through analysis and adjustments.",
+    "emergentBehaviour": "Produce controlled emergent behaviour through Phase 9 processes.",
+    "auditChain": "Maintain logs and chain of custody for system evidence.",
+    "runtime": "Offer controlled PowerShell and Node runtime environments."
+  },
+
+  "externalResponsibilities": {
+    "infrastructure": "Provide stable compute, storage, and execution environment.",
+    "backup": "Perform off-system backup or archiving, if required.",
+    "securityControls": "Apply external security measures such as firewalls and access control.",
+    "deployment": "Manage hosting, deployment, and operational lifecycle.",
+    "monitoring": "Monitor system telemetry outputs and take action when required."
+  },
+
+  "outOfScope": {
+    "userAuthentication": "WyneOS does not manage authentication for end-users or operators.",
+    "networkSecurity": "External systems must apply their own network protection.",
+    "externalAPIs": "Not included in v1.0. API support planned for future versions.",
+    "dataProcessing": "WyneOS does not store or process end-user data beyond system telemetry."
+  },
+
+  "integrationExpectations": {
+    "requirements": [
+      "Access to WyneOS telemetry files.",
+      "Access to system registry files.",
+      "Stable runtime environment.",
+      "Ability to read version and capability files."
+    ],
+    "recommendedPractices": [
+      "Monitor telemetry for anomalies.",
+      "Regularly verify seals and manifests.",
+      "Maintain independent infrastructure security."
+    ]
+  }
+}

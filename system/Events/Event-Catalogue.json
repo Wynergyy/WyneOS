@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "events": [
+    { "id": "HEARTBEAT_OK", "type": "health", "severity": "info", "message": "Heartbeat normal" },
+    { "id": "HEARTBEAT_MISSED", "type": "health", "severity": "warning", "message": "Heartbeat missed" },
+
+    { "id": "INTEGRITY_OK", "type": "integrity", "severity": "info", "message": "Integrity check passed" },
+    { "id": "INTEGRITY_FAIL", "type": "integrity", "severity": "critical", "message": "Integrity violation detected" },
+
+    { "id": "UPGRADE_EXECUTED", "type": "upgrade", "severity": "info", "message": "Upgrade cycle executed" },
+    { "id": "UPGRADE_ERROR", "type": "upgrade", "severity": "error", "message": "Upgrade cycle failed" },
+
+    { "id": "POLICY_APPLIED", "type": "policy", "severity": "info", "message": "Policy rule applied" },
+    { "id": "POLICY_VIOLATION", "type": "policy", "severity": "warning", "message": "Policy violation detected" },
+
+    { "id": "SECURITY_ALERT", "type": "security", "severity": "critical", "message": "Security event raised" }
+  ]
+}

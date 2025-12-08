@@ -1,0 +1,50 @@
+{
+  "versionContract": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "status": "stable",
+    "releaseType": "enterprise",
+    "lastUpdated": ""
+  },
+
+  "guarantees": {
+    "coreStability": "Core modules will remain stable and compatible for all 1.x releases.",
+    "backwardsCompatibility": "No breaking changes to public interfaces within the 1.x lifecycle.",
+    "manifestIntegrity": "All manifests and seals must remain present, readable, and valid.",
+    "telemetryContinuity": "Telemetry format and files will remain consistent across updates.",
+    "governanceValidity": "Governance rules must remain enforceable and compatible across 1.x.",
+    "auditPreservation": "Audit logs and seal history must be preserved during upgrades."
+  },
+
+  "inclusions": {
+    "phases": [
+      "Phase 0: System Guard",
+      "Phase 1: Identity",
+      "Phase 2: SyncChain",
+      "Phase 3: Telemetry",
+      "Phase 4: Integrity",
+      "Phase 5: Predictive Grid",
+      "Phase 6: Immutability Seal",
+      "Phase 7: Governance",
+      "Phase 8: Intelligence",
+      "Phase 9: Emergent Behaviour"
+    ],
+    "engines": [
+      "Governance Engine",
+      "Optimisation Engine",
+      "Predictive Engine",
+      "Analysis Engine",
+      "Emergent Engine"
+    ],
+    "runtimeSupport": [
+      "Node runtime",
+      "PowerShell runtime"
+    ]
+  },
+
+  "upgradePolicy": {
+    "allowed": "Minor and patch releases may add functionality without breaking behaviour.",
+    "restricted": "Major structural changes require a new major version.",
+    "prohibited": "Removal of sealed phases or altering historical audit data."
+  }
+}

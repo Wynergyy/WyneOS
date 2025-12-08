@@ -1,0 +1,8 @@
+{
+  "name": "WyneOS Genesis",
+  "version": "1.0.0",
+  "safeMode": true,
+  "networking": false,
+  "telemetry": false,
+  "autonomy": false
+}

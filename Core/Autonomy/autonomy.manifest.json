@@ -1,0 +1,36 @@
+{
+  "module": "WyneOS.AutonomyEngine",
+  "version": "7.0.0",
+  "phase": 7,
+  "description": "Phase 7 autonomous behaviour module for WyneOS, providing adaptive response, stability assurance, and predictive capability boundaries.",
+  "status": "active",
+  "safety": {
+    "allowAdaptiveBehaviours": true,
+    "allowPredictiveBehaviours": false,
+    "allowExternalInfluence": false,
+    "sandboxed": true,
+    "selfModification": false
+  },
+  "audit": {
+    "hashAlgorithm": "SHA-256",
+    "lastSeal": null,
+    "lastVerified": null
+  },
+  "files": [
+    "autonomy-engine.ts",
+    "autonomy-state.json",
+    "autonomy.log"
+  ],
+  "behaviourRules": {
+    "SYSTEM_STABLE": "Confirm structural stability and reinforce deterministic pathways",
+    "ENABLE_ADAPTIVE": "Allow controlled adaptive behaviour inside sandbox",
+    "DISABLE_ADAPTIVE": "Revert to deterministic-only logic",
+    "ENABLE_PREDICTIVE": "Activate predictive hooks (must be authorised)"
+  },
+  "boundaries": {
+    "maxProcessingPerCycle": "5ms",
+    "maxStateSize": "50KB",
+    "externalNetworkAccess": false,
+    "fileWriteRestrictions": true
+  }
+}

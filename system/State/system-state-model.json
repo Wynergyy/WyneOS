@@ -1,0 +1,125 @@
+{
+  "systemStateModel": {
+    "system": "WyneOS",
+    "version": "1.0.0",
+    "lastUpdated": ""
+  },
+
+  "purpose": "Define the permitted system modes, their meaning, and the rules that control transitions between states.",
+
+  "states": {
+    "normal": {
+      "description": "Full operation. All engines active within boundaries.",
+      "permissions": [
+        "emergent engine allowed",
+        "optimisation engine allowed",
+        "predictive engine allowed",
+        "full governance evaluation",
+        "full telemetry usage"
+      ],
+      "restrictions": []
+    },
+
+    "controlled": {
+      "description": "Restricted operation. Used when anomalies or intermediate failures occur.",
+      "permissions": [
+        "heartbeat allowed",
+        "integrity scans allowed",
+        "governance checks allowed"
+      ],
+      "restrictions": [
+        "emergent engine paused",
+        "optimisation engine paused",
+        "predictive engine paused",
+        "no behavioural expansion"
+      ]
+    },
+
+    "critical": {
+      "description": "Emergency mode. Triggered when a failure threatens system integrity.",
+      "permissions": [
+        "audit writing",
+        "telemetry refresh attempts",
+        "seal and manifest checks"
+      ],
+      "restrictions": [
+        "all engines off",
+        "no predictive or emergent logic",
+        "no optimisation",
+        "no governance overrides"
+      ]
+    }
+  },
+
+  "transitionRules": {
+    "normalToControlled": {
+      "trigger": [
+        "telemetry delay",
+        "soft instability in behaviour",
+        "repeated engine timeouts"
+      ],
+      "actions": [
+        "pause high level engines",
+        "increase telemetry frequency",
+        "write audit entry"
+      ]
+    },
+
+    "controlledToNormal": {
+      "trigger": [
+        "telemetry stable",
+        "integrity restored",
+        "governance approval"
+      ],
+      "actions": [
+        "resume optimisation engine",
+        "resume predictive engine",
+        "resume emergent engine",
+        "audit restoration event"
+      ]
+    },
+
+    "controlledToCritical": {
+      "trigger": [
+        "integrity breach",
+        "seal failure",
+        "manifest mismatch",
+        "runtime rule violation"
+      ],
+      "actions": [
+        "stop all engines",
+        "lock behaviour output",
+        "write high priority audit entry",
+        "rerun seal validation"
+      ]
+    },
+
+    "criticalToControlled": {
+      "trigger": [
+        "seal validity restored",
+        "manifest verified",
+        "telemetry operational"
+      ],
+      "actions": [
+        "restart governance engine",
+        "restart assurance engine",
+        "write audit entry"
+      ]
+    }
+  },
+
+  "verificationRequirements": {
+    "mustCheck": [
+      "telemetry freshness",
+      "manifest validity",
+      "seal validity",
+      "runtime boundaries",
+      "audit chain integrity"
+    ],
+    "frequency": "At every mode transition"
+  },
+
+  "summary": {
+    "statement": "This model defines how WyneOS moves between operational modes. It ensures predictable, safe, and auditable behaviour across all states."
+  }
+}

@@ -1,0 +1,36 @@
+# Security Hardening .gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Keys and private material
+*.key
+*.pem
+*.pfx
+*.cert
+*.der
+keys/
+secrets/
+private/
+
+# Licence Engine sensitive paths
+Core/LicenceEngine/keys/
+Core/LicenceEngine/signatures/
+Core/LicenceEngine/private/
+
+# Build outputs
+dist/
+out/
+build/
+tmp/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+.cache/

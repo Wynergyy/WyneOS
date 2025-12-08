@@ -1,0 +1,24 @@
+{
+  "event": "CONVERGENCE_INIT_START",
+  "ts": "2025-11-23 06:25:03Z"
+}
+{
+  "event": "CONVERGENCE_TABLE_BUILT",
+  "ts": "2025-11-23 06:25:04Z"
+}
+{
+  "event": "STATE_BUS_DEPLOYED",
+  "ts": "2025-11-23 06:25:04Z"
+}
+{
+  "event": "ORCHESTRATOR_DEPLOYED",
+  "ts": "2025-11-23 06:25:04Z"
+}
+{
+  "event": "LINKMAP_BUILT",
+  "ts": "2025-11-23 06:25:04Z"
+}
+{
+  "event": "CONVERGENCE_SIGNATURE_ISSUED",
+  "ts": "2025-11-23 06:25:04Z"
+}

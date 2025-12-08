@@ -1,0 +1,11 @@
+{
+  "capabilities": [
+    "configuration",
+    "ui",
+    "system"
+  ],
+  "publisher": "WyneOS",
+  "name": "WyneOS.ConfigCenter",
+  "dependencies": [],
+  "version": "2025.1"
+}

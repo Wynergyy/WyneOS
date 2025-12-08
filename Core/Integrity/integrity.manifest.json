@@ -1,0 +1,34 @@
+{
+  "module": "WyneOS.IntegrityEngine",
+  "version": "1.0.0",
+  "description": "Core integrity, hashing, snapshotting and behavioural validation module for WyneOS.",
+  "author": "WyneOS System",
+  "status": "stable",
+  "files": [
+    "hasher.ts",
+    "snapshot.ts",
+    "validators.ts",
+    "history.ts",
+    "integrity-engine.ts"
+  ],
+  "entry": "integrity-engine.ts",
+  "hashing": {
+    "algorithm": "SHA-256",
+    "mode": "deterministic",
+    "preserveFileOrder": true
+  },
+  "telemetry": {
+    "enabled": true,
+    "capture": [
+      "load",
+      "hash",
+      "validate",
+      "snapshot"
+    ]
+  },
+  "seal": {
+    "phase": 6,
+    "sealed": true,
+    "lastVerified": "2025-12-05T02:30:35.392Z"
+  }
+}

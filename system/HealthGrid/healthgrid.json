@@ -1,0 +1,66 @@
+{
+  "NodeID": "5293ac47-0641-4baa-a459-c22ff62e27f4",
+  "Timestamp": "2025-11-24T08:59:19.5275411+00:00",
+  "Engines": [
+    {
+      "Exists": false,
+      "Name": "SGI-Core",
+      "Status": "Missing",
+      "Timestamp": "2025-11-24T08:59:19.5336147+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "Guardian",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5343772+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "Integrity",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5350034+00:00"
+    },
+    {
+      "Exists": false,
+      "Name": "Heartbeat",
+      "Status": "Missing",
+      "Timestamp": "2025-11-24T08:59:19.5352658+00:00"
+    },
+    {
+      "Exists": false,
+      "Name": "Telemetry",
+      "Status": "Missing",
+      "Timestamp": "2025-11-24T08:59:19.5355076+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "Policy",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5360302+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "Ledger",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5362778+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "SyncChain",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5364964+00:00"
+    },
+    {
+      "Exists": false,
+      "Name": "ClusterState",
+      "Status": "Missing",
+      "Timestamp": "2025-11-24T08:59:19.5368215+00:00"
+    },
+    {
+      "Exists": true,
+      "Name": "TrustSeal",
+      "Status": "OK",
+      "Timestamp": "2025-11-24T08:59:19.5370862+00:00"
+    }
+  ]
+}

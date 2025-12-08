@@ -1,0 +1,30 @@
+[
+  {
+    "file": "snapshot_2025-11-29_03-59-59.zip",
+    "fullPath": "E:\\CIC\\WyneOS\\Backups\\snapshot_2025-11-29_03-59-59.zip",
+    "size": 23678,
+    "hash": "F3D55FAC61B3D8991E0D15A290E54370B3CE547276DC53543106F7A4E5F0FA44",
+    "timestamp": "2025-11-29T04:00:02.0000000Z"
+  },
+  {
+    "file": "snapshot_2025-11-29_04-04-16.zip",
+    "fullPath": "E:\\CIC\\WyneOS\\Backups\\snapshot_2025-11-29_04-04-16.zip",
+    "size": 137284829,
+    "hash": "CC5EB233967460FCBB7C800CE6333A26DDFCBB0B8311E9DDB10C1926A8C6B077",
+    "timestamp": "2025-11-29T04:25:32.0000000Z"
+  },
+  {
+    "file": "snapshot_2025-11-29_04-31-37.zip",
+    "fullPath": "E:\\CIC\\WyneOS\\Backups\\snapshot_2025-11-29_04-31-37.zip",
+    "size": 1997672,
+    "hash": "6AF0778D8BBC130A951BBE1015619AC0BFEDAF2B9EC49BF2065F6591636AB9B6",
+    "timestamp": "2025-11-29T04:33:16.0000000Z"
+  },
+  {
+    "file": "snapshot_2025-11-29_04-33-37.zip",
+    "fullPath": "E:\\CIC\\WyneOS\\Backups\\snapshot_2025-11-29_04-33-37.zip",
+    "size": 137284829,
+    "hash": "A887F9D40CC70684E510714B3FBB6D899D2BD39D7AE1ED1C57787DDADF56FCF4",
+    "timestamp": "2025-11-29T04:39:54.0000000Z"
+  }
+]

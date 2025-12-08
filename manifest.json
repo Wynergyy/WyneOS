@@ -1,0 +1,13 @@
+# WyneOS Diagnostics
+
+This module provides safe, local-only diagnostic helpers.
+
+Included:
+- systemHealth() – simple status check
+
+No networking.
+No environment probing.
+No file-system scanning.
+No automation.
+
+All diagnostics are user-invoked and transparent.

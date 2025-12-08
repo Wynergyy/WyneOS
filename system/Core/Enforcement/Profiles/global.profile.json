@@ -1,0 +1,23 @@
+{
+  "component": "GLOBAL",
+  "allowedIO": [
+    "read-config",
+    "write-telemetry"
+  ],
+  "blockedIO": [
+    "raw-disk-write",
+    "external-exec",
+    "unauthorised-network-call"
+  ],
+  "maxCpu": 50,
+  "maxMemory": 512,
+  "networkRules": [
+    "deny-external-post",
+    "deny-external-put"
+  ],
+  "filesystemRules": [
+    "deny-write-system",
+    "deny-delete-core"
+  ],
+  "requiresCertificate": true
+}

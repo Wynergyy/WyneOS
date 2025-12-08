@@ -1,0 +1,44 @@
+[
+  {
+    "Component": "NodeIdentity",
+    "Path": "E:\\CIC\\WyneOS\\System\\Identity\\node_identity.json",
+    "Status": "OK",
+    "CheckedAt": "2025-11-24T08:52:26.9944885+00:00"
+  },
+  {
+    "Component": "TrustSeal",
+    "Path": "E:\\CIC\\WyneOS\\System\\TrustSeal\\trustseal.json",
+    "Status": "OK",
+    "CheckedAt": "2025-11-24T08:52:26.9997267+00:00"
+  },
+  {
+    "Component": "Ledger",
+    "Path": "E:\\CIC\\WyneOS\\System\\Ledger\\ledger.json",
+    "Status": "OK",
+    "CheckedAt": "2025-11-24T08:52:26.9999708+00:00"
+  },
+  {
+    "Component": "ComplianceChain",
+    "Path": "E:\\CIC\\WyneOS\\System\\Compliance\\chain.json",
+    "Status": "OK",
+    "CheckedAt": "2025-11-24T08:52:27.0001571+00:00"
+  },
+  {
+    "Component": "SyncChain",
+    "Path": "E:\\CIC\\WyneOS\\System\\SyncChain\\sync.json",
+    "Status": "MISSING",
+    "CheckedAt": "2025-11-24T08:52:27.0003309+00:00"
+  },
+  {
+    "Component": "NodeMesh",
+    "Path": "E:\\CIC\\WyneOS\\System\\WyneGrid\\node-mesh.json",
+    "Status": "MISSING",
+    "CheckedAt": "2025-11-24T08:52:27.0004823+00:00"
+  },
+  {
+    "Component": "ClusterState",
+    "Path": "E:\\CIC\\WyneOS\\System\\Cluster\\cluster-state.json",
+    "Status": "MISSING",
+    "CheckedAt": "2025-11-24T08:52:27.0006359+00:00"
+  }
+]

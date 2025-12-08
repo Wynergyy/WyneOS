@@ -1,0 +1,44 @@
+{
+  "event": "UNIFICATION_PHASE_START",
+  "ts": "2025-11-23 06:19:52Z"
+}
+{
+  "event": "SERVICE_ROUTER_INSTALLED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "KERNEL_SERVICE_BRIDGE_WRAPPED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "TASK_DISPATCHER_INSTALLED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "EVENT_GATEWAY_INSTALLED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "APPSTORE_SERVICE_INSTALLED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "TELEMETRY_SERVICE_INSTALLED",
+  "ts": "2025-11-23 06:19:53Z"
+}
+{
+  "event": "SECURITY_SERVICE_INSTALLED",
+  "ts": "2025-11-23 06:19:54Z"
+}
+{
+  "event": "INTEGRITY_SERVICE_INSTALLED",
+  "ts": "2025-11-23 06:19:54Z"
+}
+{
+  "event": "UNIFICATION_SIGNATURE_GENERATED",
+  "ts": "2025-11-23 06:19:54Z"
+}
+{
+  "event": "UNIFICATION_HEARTBEAT_OK",
+  "ts": "2025-11-23 06:19:54Z"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "critical",
+    "link": "kernel-runtimeMesh"
+  },
+  {
+    "type": "primary",
+    "link": "runtimeMesh-services"
+  },
+  {
+    "type": "runtime",
+    "link": "services-appstore"
+  },
+  {
+    "type": "control",
+    "link": "processMgr-kernel"
+  },
+  {
+    "type": "mandatory",
+    "link": "security-everything"
+  },
+  {
+    "type": "governance",
+    "link": "licensing-appstore"
+  }
+]

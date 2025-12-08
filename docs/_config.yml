@@ -1,0 +1,23 @@
+name: "WyneOS Documentation"
+repo: "https://github.com/Wynergyy/WyneOS"
+baseUrl: "/WyneOS/docs"
+themeColor: "#0A84FF"
+
+# Enable useful GitHub Pages features
+loadSidebar: true
+subMaxLevel: 3
+maxLevel: 4
+auto2top: true
+
+# Branding
+logo: "/WyneOS/docs-site/images/logo.png"
+
+# Search options
+search:
+  maxAge: 86400000
+  paths: auto
+  placeholder: "Search WyneOS…"
+
+# Plugins
+plugins:
+  - search

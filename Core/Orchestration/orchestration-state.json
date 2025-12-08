@@ -1,0 +1,368 @@
+{
+  "orchestrationCycles": 12,
+  "lastAutonomyCycle": {
+    "timestamp": "2025-12-05T05:18:59.760Z",
+    "orchestrationCycle": 12,
+    "autonomyDurationMs": 29,
+    "health": "optimal"
+  },
+  "systemHealth": "optimal",
+  "notes": [],
+  "history": [
+    {
+      "timestamp": "2025-12-05T04:47:50.508Z",
+      "orchestrationCycle": 1,
+      "autonomyDurationMs": 34,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T04:49:44.641Z",
+      "orchestrationCycle": 2,
+      "autonomyDurationMs": 34,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T04:51:23.264Z",
+      "orchestrationCycle": 3,
+      "autonomyDurationMs": 103,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T04:53:54.342Z",
+      "orchestrationCycle": 4,
+      "autonomyDurationMs": 34,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T04:55:59.961Z",
+      "orchestrationCycle": 5,
+      "autonomyDurationMs": 84,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:00:41.982Z",
+      "orchestrationCycle": 6,
+      "autonomyDurationMs": 40,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:00:47.796Z",
+      "orchestrationCycle": 7,
+      "autonomyDurationMs": 28,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:05:30.995Z",
+      "orchestrationCycle": 8,
+      "autonomyDurationMs": 33,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:08:06.508Z",
+      "orchestrationCycle": 9,
+      "autonomyDurationMs": 32,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:11:09.348Z",
+      "orchestrationCycle": 10,
+      "autonomyDurationMs": 29,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:14:14.641Z",
+      "orchestrationCycle": 11,
+      "autonomyDurationMs": 26,
+      "health": "optimal"
+    },
+    {
+      "timestamp": "2025-12-05T05:18:59.760Z",
+      "orchestrationCycle": 12,
+      "autonomyDurationMs": 29,
+      "health": "optimal"
+    }
+  ],
+  "ruleStatus": "normal",
+  "schedulerLog": [],
+  "signalLog": [
+    {
+      "id": "e5dc12af-8a18-4713-bdd3-1246cfe96ec7",
+      "timestamp": "2025-12-05T04:47:50.510Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 1,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 34
+      }
+    },
+    {
+      "id": "94ba5a4c-4a31-494c-b9eb-22e6dc81fbc4",
+      "timestamp": "2025-12-05T04:49:44.642Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 2,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 34
+      }
+    },
+    {
+      "id": "f668db0e-439f-43c1-aeb2-c861cce09bdc",
+      "timestamp": "2025-12-05T04:51:23.264Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 3,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 103
+      }
+    },
+    {
+      "id": "5b695b53-12c9-4e3a-9b52-a8b194caccd7",
+      "timestamp": "2025-12-05T04:53:54.343Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 4,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 34
+      }
+    },
+    {
+      "id": "b652b8f8-48c2-401a-916c-4f5b6c29d0be",
+      "timestamp": "2025-12-05T04:55:59.961Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 5,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 84
+      }
+    },
+    {
+      "id": "b6a5ca68-15e4-412c-ad43-6aefc7a1b428",
+      "timestamp": "2025-12-05T05:00:41.982Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 6,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 40
+      }
+    },
+    {
+      "id": "f23105ce-e119-4140-b338-d923f464ff62",
+      "timestamp": "2025-12-05T05:00:47.797Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 7,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 28
+      }
+    },
+    {
+      "id": "c268094d-f230-4a8b-8114-167595851c7b",
+      "timestamp": "2025-12-05T05:05:30.995Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 8,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 33
+      }
+    },
+    {
+      "id": "cbf4011f-3c1d-4d3a-8bd4-d139605a7c2b",
+      "timestamp": "2025-12-05T05:08:06.508Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 9,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 32
+      }
+    },
+    {
+      "id": "10c048d0-27e6-483f-bc00-8473a901af8a",
+      "timestamp": "2025-12-05T05:11:09.349Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 10,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 29
+      }
+    },
+    {
+      "id": "0a90adab-7173-4de0-a7c0-de5b6ef49f13",
+      "timestamp": "2025-12-05T05:14:14.641Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 11,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 26
+      }
+    },
+    {
+      "id": "8aeff32d-507b-4d1c-a755-250ee98e360a",
+      "timestamp": "2025-12-05T05:18:59.760Z",
+      "type": "system_cycle",
+      "payload": {
+        "cycle": 12,
+        "health": "optimal",
+        "rules": "normal",
+        "autonomyDuration": 29
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "cycle": 1,
+      "timestamp": "2025-12-05T04:47:50.510Z",
+      "alerts": []
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2025-12-05T04:49:44.642Z",
+      "alerts": []
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2025-12-05T04:51:23.264Z",
+      "alerts": []
+    },
+    {
+      "cycle": 4,
+      "timestamp": "2025-12-05T04:53:54.343Z",
+      "alerts": []
+    },
+    {
+      "cycle": 5,
+      "timestamp": "2025-12-05T04:55:59.961Z",
+      "alerts": []
+    },
+    {
+      "cycle": 6,
+      "timestamp": "2025-12-05T05:00:41.982Z",
+      "alerts": []
+    },
+    {
+      "cycle": 7,
+      "timestamp": "2025-12-05T05:00:47.797Z",
+      "alerts": []
+    },
+    {
+      "cycle": 8,
+      "timestamp": "2025-12-05T05:05:30.995Z",
+      "alerts": []
+    },
+    {
+      "cycle": 9,
+      "timestamp": "2025-12-05T05:08:06.508Z",
+      "alerts": []
+    },
+    {
+      "cycle": 10,
+      "timestamp": "2025-12-05T05:11:09.349Z",
+      "alerts": []
+    },
+    {
+      "cycle": 11,
+      "timestamp": "2025-12-05T05:14:14.641Z",
+      "alerts": []
+    },
+    {
+      "cycle": 12,
+      "timestamp": "2025-12-05T05:18:59.761Z",
+      "alerts": []
+    }
+  ],
+  "retentionSummary": [
+    {
+      "cycle": 1,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 2,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 3,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 4,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 5,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 6,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 7,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 8,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 9,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 10,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 11,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    },
+    {
+      "cycle": 12,
+      "historyTrimmed": false,
+      "signalTrimmed": false,
+      "alertTrimmed": false
+    }
+  ],
+  "governorStatus": "normal",
+  "governorActions": [
+    {
+      "cycle": 12,
+      "status": "normal",
+      "actions": [
+        "System stable. No enforcement required."
+      ],
+      "timestamp": "2025-12-05T05:18:59.761Z"
+    }
+  ]
+}

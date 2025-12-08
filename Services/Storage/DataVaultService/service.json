@@ -1,0 +1,14 @@
+{
+  "lifecycle": [
+    "start.ps1",
+    "stop.ps1",
+    "restart.ps1",
+    "status.ps1",
+    "health.ps1",
+    "init.ps1"
+  ],
+  "status": "PLANNED",
+  "category": "Storage",
+  "name": "DataVaultService",
+  "version": "1.0.0"
+}

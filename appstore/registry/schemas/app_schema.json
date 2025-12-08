@@ -1,0 +1,7 @@
+{
+  "name": "string (required)",
+  "version": "string (required)",
+  "publisher": "string (required)",
+  "capabilities": "array",
+  "dependencies": "array"
+}

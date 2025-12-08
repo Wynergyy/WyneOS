@@ -1,0 +1,37 @@
+[
+  {
+    "subsystem": "services",
+    "path": "E:\\CIC\\WyneOS\\Services",
+    "active": true
+  },
+  {
+    "subsystem": "security",
+    "path": "E:\\CIC\\WyneOS\\Security",
+    "active": true
+  },
+  {
+    "subsystem": "processMgr",
+    "path": "E:\\CIC\\WyneOS\\Core\\ProcessManager",
+    "active": true
+  },
+  {
+    "subsystem": "licensing",
+    "path": "E:\\CIC\\WyneOS\\Licensing",
+    "active": false
+  },
+  {
+    "subsystem": "appstore",
+    "path": "E:\\CIC\\WyneOS\\AppStore",
+    "active": true
+  },
+  {
+    "subsystem": "kernel",
+    "path": "E:\\CIC\\WyneOS\\Kernel",
+    "active": true
+  },
+  {
+    "subsystem": "runtimeMesh",
+    "path": "E:\\CIC\\WyneOS\\RuntimeMesh",
+    "active": true
+  }
+]

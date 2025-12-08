@@ -1,0 +1,54 @@
+{
+  "Version": "1.0",
+  "LastUpdated": "2025-11-24T10:52:49.7688777+00:00",
+  "Engines": {
+    "NodeIdentity": {
+      "Path": "E:\\CIC\\WyneOS\\System\\Identity\\WyneOS-NodeIdentity.ps1",
+      "Health": "Unknown"
+    },
+    "NodeMesh": {
+      "Path": "E:\\CIC\\WyneOS\\System\\WyneGrid\\WyneOS-NodeMesh.ps1",
+      "Health": "Unknown"
+    },
+    "TrustSeal": {
+      "Path": "E:\\CIC\\WyneOS\\System\\TrustSeal\\WyneOS-TrustSeal.ps1",
+      "Health": "Unknown"
+    },
+    "SyncChain": {
+      "Path": "E:\\CIC\\WyneOS\\System\\SyncChain\\WyneOS-SyncChain.ps1",
+      "Health": "Unknown"
+    },
+    "Ledger": {
+      "Path": "E:\\CIC\\WyneOS\\System\\Ledger\\WyneOS-LedgerEngine.ps1",
+      "Health": "Unknown"
+    },
+    "ComplianceChain": {
+      "Path": "E:\\CIC\\WyneOS\\System\\Compliance\\WyneOS-ComplianceChain.ps1",
+      "Health": "Unknown"
+    },
+    "SecurityBaseline": {
+      "Path": "E:\\CIC\\WyneOS\\System\\Enterprise\\Security\\WyneOS-SecurityBaseline.ps1",
+      "Health": "Unknown"
+    },
+    "ConfigBaseline": {
+      "Path": "E:\\CIC\\WyneOS\\System\\ConfigBaseline\\WyneOS-ConfigBaseline.ps1",
+      "Health": "Unknown"
+    },
+    "OperationalIntegrity": {
+      "Path": "E:\\CIC\\WyneOS\\System\\OperationalIntegrity\\WyneOS-OperationalIntegrity.ps1",
+      "Health": "Unknown"
+    },
+    "AuditGrid": {
+      "Path": "E:\\CIC\\WyneOS\\System\\AuditGrid\\WyneOS-AuditGrid.ps1",
+      "Health": "Unknown"
+    },
+    "PredictiveGrid": {
+      "Path": "E:\\CIC\\WyneOS\\System\\PredictiveGrid\\WyneOS-PredictiveGrid.ps1",
+      "Health": "Unknown"
+    },
+    "ClusterState": {
+      "Path": "E:\\CIC\\WyneOS\\System\\Cluster\\WyneOS-ClusterState.ps1",
+      "Health": "Unknown"
+    }
+  }
+}

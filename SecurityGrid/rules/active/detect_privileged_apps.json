@@ -1,0 +1,6 @@
+{
+  "name": "Privileged App Detection",
+  "description": "Detects any app declaring kernel or privileged capabilities.",
+  "severity": "high",
+  "condition": "(Get-ChildItem 'E:\\CIC\\WyneOS\\AppStore\\registry\\packages' -File | ForEach-Object { (Get-Content $_.FullName | ConvertFrom-Json).capabilities } | Where-Object { $_ -contains 'kernel' -or $_ -contains 'privileged' }).Count -gt 0"
+}
