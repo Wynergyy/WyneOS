@@ -2,31 +2,41 @@
 
 
 
-The latest tagged version of this repository is considered supported.
+Wynergy Fibre Solutions Ltd maintains strict security controls across all repositories.
 
 
 
-\## Reporting Security Issues
+\## Reporting security issues
+
+If you discover a vulnerability, contact:
 
 
 
-Do not open public issues for vulnerabilities.
+security@wynergy.co.uk
 
 
 
-At this time, there is no public security email inbox.
-
-Please use GitHub’s “Report a vulnerability” feature in the Security tab.
+Do not open public issues for security-sensitive topics.
 
 
 
-\## Private Components
+\## Supported security practices
+
+\- Zero trust by default  
+
+\- Signed commits  
+
+\- Controlled CI/CD pipelines  
+
+\- No secrets stored in repositories  
+
+\- Mandatory audit trails  
 
 
 
-Sensitive modules or keys must never be committed.
+\## Disclosure expectations
 
-Use private repositories for signing keys, activation engines, and internal logic.
+Wynergy will acknowledge valid reports and work with the submitter to coordinate responsible disclosure.
 
 
 
