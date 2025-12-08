@@ -1,0 +1,21 @@
+# pack-refs with: peeled fully-peeled sorted 
+41e99191deec503a5131032a31136565b7f6bf06 refs/heads/dependabot/npm_and_yarn/web/next-14.2.32
+f2ee9984619ee632868dfdf40365d2957a2320c5 refs/heads/main
+e7c923aded891786d492110b91530644917331d6 refs/heads/phase1-guardianbots
+2946073b15871686283e3fa6b942ea604f535a35 refs/heads/phase1-signals
+bd07361ca678931756730ba7f380fa3c449e7cc6 refs/heads/phase10-integration
+0436d7094238ba34746d118c3326a66134d3b2ff refs/heads/phase2-10-full
+41e99191deec503a5131032a31136565b7f6bf06 refs/pull/1/head
+e5366581117b935d177efdcaea5cf9e366274212 refs/pull/1/merge
+bd07361ca678931756730ba7f380fa3c449e7cc6 refs/pull/2/head
+43dd245c5448c2903dc9cb894625b04eb859332f refs/pull/2/merge
+e7c923aded891786d492110b91530644917331d6 refs/pull/3/head
+95ddf3629015ded5ac50a4427014d1f2f3a6695a refs/pull/3/merge
+2946073b15871686283e3fa6b942ea604f535a35 refs/pull/4/head
+6c72b8d72cfbd20312fc45dcd80fc5f3bdc8105b refs/pull/4/merge
+0436d7094238ba34746d118c3326a66134d3b2ff refs/pull/5/head
+45c2ce89c50a521d921d2cf62b02453a7738d73c refs/pull/5/merge
+d9b2d2020d4f7460d3207b6dc3991f8089974da6 refs/tags/v0.10.0-phase10-stable
+^0d4834bb3f115a0eda83b0f061bab517d0af629a
+518c52070bbd61bbe7f82ef6eada6f3c6c472527 refs/tags/v1.0-RC
+ebf7db7eb89e3202976e54258ec3071f5f3b19f5 refs/tags/v10.0-phase10
