@@ -5,6 +5,9 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
   },
   "main": "index.js",
@@ -23,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/Wynergyy/WyneOS/issues"
   },
-  "homepage": "https://github.com/Wynergyy/WyneOS#readme"
+  "homepage": "https://github.com/Wynergyy/WyneOS#readme",
+  "dependencies": {
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  }
 }

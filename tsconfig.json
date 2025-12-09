@@ -1,13 +1,30 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": ".",
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "outDir": "./dist"
+    "allowJs": false,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
   },
-  "include": ["./"]
+  "include": [
+    "Core/**/*",
+    "scripts/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "v5/wyneos/ui/**/*",
+    "web/**/*",
+    "**/*.test.ts",
+    "**/*.tsx"
+  ]
 }
