@@ -22,8 +22,9 @@
   "exclude": [
     "node_modules",
     "dist",
-    "v5/**",
-    "web/**",
-    "**/*.test.ts"
+    "v5/wyneos/ui/**/*",
+    "web/**/*",
+    "**/*.test.ts",
+    "**/*.tsx"
   ]
 }
