@@ -1,14 +1,32 @@
 /**
- * Integrity Engine – Public API
+ * WyneOS Integrity Engine
+ * Public API Boundary
  *
- * This file defines the only supported public surface
- * for the WyneOS Integrity Engine.
+ * This file defines the only supported import surface for
+ * integrity, hashing, snapshotting, and validation logic.
  *
- * All external consumers must import from this module.
+ * Internal files are intentionally not exported.
  */
 
+/* Core engine */
 export { IntegrityEngine } from "./integrity-engine";
+
+/* Providers */
 export { IntegrityProvider } from "./integrity-provider";
-export { IntegritySnapshot } from "./snapshot";
-export { IntegrityValidator } from "./validators";
+
+/* Hashing and snapshot utilities */
 export { createHash } from "./hasher";
+export { createSnapshot } from "./snapshot";
+
+/* Validation */
+export { validateIntegrity } from "./validators";
+
+/* Historical and audit context */
+export { IntegrityHistory } from "./history";
+
+/* Types */
+export type {
+  IntegrityManifest,
+  IntegrityResult,
+  IntegritySnapshot,
+} from "./integrity.manifest";
