@@ -1,13 +1,24 @@
-﻿import { ServiceRegistry } from './service-registry'
+﻿import { emitTelemetryEvent, TelemetryEvent } from "../Core/Telemetry";
+import { ServiceRegistry } from "./service-registry";
 
+/**
+ * Telemetry Router
+ *
+ * Routes telemetry events through the public telemetry boundary.
+ * Contains no telemetry implementation logic.
+ *
+ * No side effects.
+ * No logging.
+ * Deterministic dispatch only.
+ */
 export class TelemetryRouter {
-  static initialise() {
-    console.log('[TELEMETRY] Router online')
+  static initialise(): void {
+    // Intentionally inert. Initialisation is handled upstream.
   }
 
-  static route(event: any) {
-    console.log('[TELEMETRY EVENT]', JSON.stringify(event))
+  static route(event: TelemetryEvent): void {
+    emitTelemetryEvent(event);
   }
 }
 
-ServiceRegistry.register('telemetry', TelemetryRouter)
+ServiceRegistry.register("telemetry", TelemetryRouter);
