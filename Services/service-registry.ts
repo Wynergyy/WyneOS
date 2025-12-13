@@ -1,23 +1,47 @@
-﻿export class ServiceRegistry {
-  private static services: Map<string, any> = new Map()
+﻿/**
+ * Service Registry
+ *
+ * Provides a deterministic registry for core WyneOS services.
+ * Services are registered explicitly and may optionally expose
+ * an initialise hook.
+ *
+ * No logging.
+ * No I/O.
+ * Controlled global mutation only.
+ */
 
-  static register(name: string, instance: any) {
-    this.services.set(name, instance)
+export interface RegisteredService {
+  initialise?(): void;
+}
+
+export class ServiceRegistry {
+  private static readonly services = new Map<string, RegisteredService>();
+
+  static register(name: string, service: RegisteredService): void {
+    if (this.services.has(name)) {
+      throw new Error(`Service already registered: ${name}`);
+    }
+
+    this.services.set(name, service);
   }
 
-  static get(name: string) {
-    return this.services.get(name)
+  static get<T extends RegisteredService>(name: string): T {
+    const service = this.services.get(name);
+
+    if (!service) {
+      throw new Error(`Service not found: ${name}`);
+    }
+
+    return service as T;
   }
 
-  static list() {
-    return Array.from(this.services.keys())
+  static list(): readonly string[] {
+    return Array.from(this.services.keys());
   }
 
-  static initialiseAll() {
-    for (const [name, svc] of this.services.entries()) {
-      if (typeof svc.initialise === 'function') {
-        svc.initialise()
-      }
+  static initialiseAll(): void {
+    for (const service of this.services.values()) {
+      service.initialise?.();
     }
   }
 }

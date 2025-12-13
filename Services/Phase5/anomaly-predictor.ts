@@ -1,21 +1,53 @@
 /**
- * Phase 5 – AnomalyPredictor
- * Scores deviations and unusual patterns.
+ * Phase 5 – Anomaly Predictor
+ *
+ * Produces deterministic anomaly assessments based on
+ * predictive graph correlation patterns.
+ *
+ * No side effects.
+ * No I/O.
  */
 
 import { PredictiveGraph } from "./predictive-graph";
 
+export type AnomalyLevel = "low" | "medium";
+
+export interface AnomalyResult {
+  readonly status: "ok" | "insufficient_data";
+  readonly level: AnomalyLevel;
+  readonly details: string;
+}
+
+const MIN_HISTORY_SIZE = 10;
+const HEARTBEAT_RATIO_THRESHOLD = 0.4;
+
 export class AnomalyPredictor {
-  static score() {
+  static score(): AnomalyResult {
     const total = PredictiveGraph.getAll().length;
-    if (total < 10) return { level: "low", details: "insufficient history" };
 
-    const heartbeat = PredictiveGraph.correlation("heartbeat");
-    const ratio = heartbeat / total;
+    if (total < MIN_HISTORY_SIZE) {
+      return {
+        status: "insufficient_data",
+        level: "low",
+        details: "Insufficient history for anomaly detection",
+      };
+    }
 
-    if (ratio < 0.4)
-      return { level: "medium", details: "heartbeat frequency lower than expected" };
+    const heartbeatCount = PredictiveGraph.correlation("heartbeat");
+    const ratio = heartbeatCount / total;
 
-    return { level: "low", details: "normal pattern" };
+    if (ratio < HEARTBEAT_RATIO_THRESHOLD) {
+      return {
+        status: "ok",
+        level: "medium",
+        details: "Heartbeat frequency lower than expected",
+      };
+    }
+
+    return {
+      status: "ok",
+      level: "low",
+      details: "Normal pattern detected",
+    };
   }
 }
